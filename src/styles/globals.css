@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Azbuka W01 Condensed";
+    src: url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.eot");
+    src: url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.svg#Azbuka W01 Condensed")format("svg");
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@layer components {
+    .tooltip-answer-row {
+        @apply lg:tooltip lg:tooltip-top before:lg:w-max before:whitespace-pre-line lg:before:content-[attr(data-tip)]
+    }
+
+    .answer-row {
+        @apply h-20 w-20 m-1.5 items-center justify-center
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(0);
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+@keyframes win {
+    0% {
+        transform: rotateX(90deg);
+        opacity: 0
+    }
+    25% {
+        transform: rotateX(0);
+        opacity: 1
+    }
+    65% {
+        transform: translate(0);
+    }
+    70% {
+        transform: translateY(-20%);
+    }
+    75% {
+        transform: translateY(5%);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0
+    }
+    10% {
+        opacity: 1
+    }
+    90% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+

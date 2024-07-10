@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Operator {
+  name       String            @unique
+  gender     String
+  race       String
+  group      String?
+  nation     String
+  profession String
+  archetype  String
+  position   String
+  infected   String
+  rarity     Int
+  costE0     Int
+  costE2     Int
+  alias     String[]
+  id         Int               @id @default(autoincrement())
+  charId     String            @default("x")
+  chosen     ChosenOperators[]
+}
+
+model ChosenOperators {
+  gameId       Int      @id @default(autoincrement())
+  date         String
+  timesGuessed Int      @default(0)
+  operatorId   Int
+  operator     Operator @relation(fields: [operatorId], references: [id])
+}
+
+model Blob {
+  id          Int        @id @default(autoincrement())
+  date        String
+  edit        String?
+  title       String
+  description String?
+  tags        BlobTags[]
+  images      String[]
+  videos      String[]
+  likes       Int        @default(0)
+}
+
+enum BlobTags {
+  PROJECTS
+  HOBBIES
+  MUSIC
+  GAMES
+  MALARKEY
+  OTHER
+}

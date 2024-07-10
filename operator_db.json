@@ -1,0 +1,5409 @@
+{
+    "Lancet-2": {
+        "charId": "char_285_medic2",
+        "alias": [],
+        "gender": "Female",
+        "race": "Robot",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "N/A"
+    },
+    "Castle-3": {
+        "charId": "char_286_cast3",
+        "alias": [],
+        "gender": "Male",
+        "race": "Robot",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "N/A"
+    },
+    "THRM-EX": {
+        "charId": "char_376_therex",
+        "alias": [],
+        "gender": "Male",
+        "race": "Robot",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "N/A"
+    },
+    "'Justice Knight'": {
+        "charId": "char_4000_jnight",
+        "alias": [],
+        "gender": "Female",
+        "race": "Robot",
+        "group": "Pinus Sylvestris",
+        "nation": "Kazimierz",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "N/A"
+    },
+    "Terra Research Commission": {
+        "charId": "char_4077_palico",
+        "alias": [],
+        "gender": "Unknown",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Bombarder",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "No"
+    },
+    "U-Official": {
+        "charId": "char_4091_ulika",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Bard",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "No"
+    },
+    "Friston-3": {
+        "charId": "char_4093_frston",
+        "alias": [],
+        "gender": "Male",
+        "race": "Robot",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "N/A"
+    },
+    "Yato": {
+        "charId": "char_502_nblade",
+        "alias": [],
+        "gender": "Female",
+        "race": "Oni",
+        "group": "Action 4",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 2,
+        "cost": [
+            7,
+            7
+        ],
+        "infected": "Yes"
+    },
+    "Noir Corne": {
+        "charId": "char_500_noirc",
+        "alias": [],
+        "gender": "Male",
+        "race": "Oni",
+        "group": "Action 4",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 2,
+        "cost": [
+            14,
+            14
+        ],
+        "infected": "Yes"
+    },
+    "Rangers": {
+        "charId": "char_503_rang",
+        "alias": [],
+        "gender": "Male",
+        "race": "Savra",
+        "group": "Action 4",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 2,
+        "cost": [
+            7,
+            7
+        ],
+        "infected": "No"
+    },
+    "Durin": {
+        "charId": "char_501_durin",
+        "alias": [],
+        "gender": "Female",
+        "race": "Durin",
+        "group": "Action 4",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 2,
+        "cost": [
+            12,
+            12
+        ],
+        "infected": "No"
+    },
+    "12F": {
+        "charId": "char_009_12fce",
+        "alias": [],
+        "gender": "Male",
+        "race": "Savra",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 2,
+        "cost": [
+            24,
+            24
+        ],
+        "infected": "No"
+    },
+    "Fang": {
+        "charId": "char_123_fang",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "Reserve 1",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 3,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Vanilla": {
+        "charId": "char_240_wyvern",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vouivre",
+        "group": "Blacksteel",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 3,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "No"
+    },
+    "Plume": {
+        "charId": "char_192_falco",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Charger",
+        "rarity": 3,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "No"
+    },
+    "Melantha": {
+        "charId": "char_208_melan",
+        "alias": [
+            "Kyostinv"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Reserve 4",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 3,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "Yes"
+    },
+    "Popukar": {
+        "charId": "char_281_popka",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "Reserve 6",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Centurion",
+        "rarity": 3,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "Yes"
+    },
+    "Cardigan": {
+        "charId": "char_209_ardign",
+        "alias": [],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "Reserve 4",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 3,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "No"
+    },
+    "Beagle": {
+        "charId": "char_122_beagle",
+        "alias": [],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "Reserve 1",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 3,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Spot": {
+        "charId": "char_284_spot",
+        "alias": [],
+        "gender": "Male",
+        "race": "Rebbah",
+        "group": "Reserve 6",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 3,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Kroos": {
+        "charId": "char_124_kroos",
+        "alias": [
+            "Kokodayo"
+        ],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "Reserve 1",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 3,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Adnachiel": {
+        "charId": "char_211_adnach",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "Reserve 4",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 3,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Lava": {
+        "charId": "char_121_lava",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "Reserve 1",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 3,
+        "cost": [
+            27,
+            30
+        ],
+        "infected": "Yes"
+    },
+    "Hibiscus": {
+        "charId": "char_120_hibisc",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "Reserve 1",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 3,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Ansel": {
+        "charId": "char_212_ansel",
+        "alias": [],
+        "gender": "Male",
+        "race": "Cautus",
+        "group": "Reserve 4",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 3,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "No"
+    },
+    "Steward": {
+        "charId": "char_210_stward",
+        "alias": [],
+        "gender": "Male",
+        "race": "Vulpo",
+        "group": "Reserve 4",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 3,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Orchid": {
+        "charId": "char_278_orchid",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Reserve 6",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 3,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Haze": {
+        "charId": "char_141_nights",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 4,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "Yes"
+    },
+    "Gitano": {
+        "charId": "char_109_fmout",
+        "alias": [],
+        "gender": "Female",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Sami",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 4,
+        "cost": [
+            29,
+            32
+        ],
+        "infected": "Yes"
+    },
+    "Greyy": {
+        "charId": "char_253_greyy",
+        "alias": [],
+        "gender": "Male",
+        "race": "Perro",
+        "group": "",
+        "nation": "Bolivar",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 4,
+        "cost": [
+            29,
+            32
+        ],
+        "infected": "Yes"
+    },
+    "Click": {
+        "charId": "char_328_cammou",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Funnel",
+        "rarity": 4,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Indigo": {
+        "charId": "char_469_indigo",
+        "alias": [],
+        "gender": "Female",
+        "race": "Pythia",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Mystic",
+        "rarity": 4,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "No"
+    },
+    "Pudding": {
+        "charId": "char_4004_pudd",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Chain",
+        "rarity": 4,
+        "cost": [
+            28,
+            31
+        ],
+        "infected": "Yes"
+    },
+    "Jessica": {
+        "charId": "char_235_jesica",
+        "alias": [
+            "Depressed cat",
+            "Rich",
+            "Sad cat"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Blacksteel",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 4,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Meteor": {
+        "charId": "char_126_shotst",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 4,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Vermeil": {
+        "charId": "char_190_clour",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 4,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "May": {
+        "charId": "char_133_mm",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 4,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Shirayuki": {
+        "charId": "char_118_yuki",
+        "alias": [],
+        "gender": "Female",
+        "race": "Anaty",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Aoesniper",
+        "rarity": 4,
+        "cost": [
+            23,
+            27
+        ],
+        "infected": "No"
+    },
+    "Pinecone": {
+        "charId": "char_440_pinecn",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Reaperrange",
+        "rarity": 4,
+        "cost": [
+            27,
+            30
+        ],
+        "infected": "No"
+    },
+    "Ambriel": {
+        "charId": "char_302_glaze",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Longrange",
+        "rarity": 4,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Aciddrop": {
+        "charId": "char_366_acdrop",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Closerange",
+        "rarity": 4,
+        "cost": [
+            14,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Totter": {
+        "charId": "char_4062_totter",
+        "alias": [],
+        "gender": "Male",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Siegesniper",
+        "rarity": 4,
+        "cost": [
+            20,
+            22
+        ],
+        "infected": "Yes"
+    },
+    "Caper": {
+        "charId": "char_4100_caper",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Bolivar",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Loopshooter",
+        "rarity": 4,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "Yes"
+    },
+    "Courier": {
+        "charId": "char_198_blackd",
+        "alias": [],
+        "gender": "Male",
+        "race": "Itra",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 4,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Scavenger": {
+        "charId": "char_149_scave",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "S.W.E.E.P.",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 4,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Vigna": {
+        "charId": "char_290_vigna",
+        "alias": [
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Guitar"
+        ],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Charger",
+        "rarity": 4,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Myrtle": {
+        "charId": "char_151_myrtle",
+        "alias": [
+            "Printer"
+        ],
+        "gender": "Female",
+        "race": "Durin",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Bearer",
+        "rarity": 4,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "No"
+    },
+    "Beanstalk": {
+        "charId": "char_452_bstalk",
+        "alias": [
+            "Breeder"
+        ],
+        "gender": "Female",
+        "race": "Rebbah",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Vanguard",
+        "archetype": "Tactician",
+        "rarity": 4,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Dobermann": {
+        "charId": "char_130_doberm",
+        "alias": [],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Instructor",
+        "rarity": 4,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "Yes"
+    },
+    "Matoimaru": {
+        "charId": "char_289_gyuki",
+        "alias": [],
+        "gender": "Female",
+        "race": "Oni",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 4,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "No"
+    },
+    "Conviction": {
+        "charId": "char_159_peacok",
+        "alias": [],
+        "gender": "Conviction",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Minos",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 4,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "Yes"
+    },
+    "Frostleaf": {
+        "charId": "char_193_frostl",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 4,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Estelle": {
+        "charId": "char_127_estell",
+        "alias": [],
+        "gender": "Female",
+        "race": "Archosauria",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Centurion",
+        "rarity": 4,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "Yes"
+    },
+    "Mousse": {
+        "charId": "char_185_frncat",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Artsfghter",
+        "rarity": 4,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Cutter": {
+        "charId": "char_301_cutter",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Sword",
+        "rarity": 4,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Utage": {
+        "charId": "char_337_utage",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Musha",
+        "rarity": 4,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "Yes"
+    },
+    "Arene": {
+        "charId": "char_271_spikes",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 4,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Luo Xiaohei": {
+        "charId": "char_4067_lolxh",
+        "alias": [],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 4,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "No"
+    },
+    "Quartz": {
+        "charId": "char_4063_quartz",
+        "alias": [],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Crusher",
+        "rarity": 4,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
+    "Humus": {
+        "charId": "char_491_humus",
+        "alias": [],
+        "gender": "Male",
+        "race": "Forte",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Reaper",
+        "rarity": 4,
+        "cost": [
+            18,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Gravel": {
+        "charId": "char_237_gravel",
+        "alias": [
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Guitar"
+        ],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 4,
+        "cost": [
+            6,
+            8
+        ],
+        "infected": "No"
+    },
+    "Jaye": {
+        "charId": "char_272_strong",
+        "alias": [],
+        "gender": "Male",
+        "race": "Ursus",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Merchant",
+        "rarity": 4,
+        "cost": [
+            5,
+            7
+        ],
+        "infected": "No"
+    },
+    "Rope": {
+        "charId": "char_236_rope",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Hookmaster",
+        "rarity": 4,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Myrrh": {
+        "charId": "char_117_myrrh",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 4,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "No"
+    },
+    "Gavial": {
+        "charId": "char_187_ccheal",
+        "alias": [],
+        "gender": "Female",
+        "race": "Archosauria",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 4,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Sussurro": {
+        "charId": "char_298_susuro",
+        "alias": [
+            "Among Us"
+        ],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 4,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Perfumer": {
+        "charId": "char_181_flower",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Ringhealer",
+        "rarity": 4,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "Yes"
+    },
+    "Purestream": {
+        "charId": "char_385_finlpp",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Yan",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Healer",
+        "rarity": 4,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "No"
+    },
+    "Chestnut": {
+        "charId": "char_4041_chnut",
+        "alias": [],
+        "gender": "Male",
+        "race": "Durin",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Wandermedic",
+        "rarity": 4,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Matterhorn": {
+        "charId": "char_199_yak",
+        "alias": [],
+        "gender": "Male",
+        "race": "Forte",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 4,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "No"
+    },
+    "Cuora": {
+        "charId": "char_150_snakek",
+        "alias": [],
+        "gender": "Female",
+        "race": "Petram",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 4,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Bubble": {
+        "charId": "char_381_bubble",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cerato",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 4,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Gummy": {
+        "charId": "char_196_sunbr",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "Ursus Student Self-Governing Group",
+        "nation": "Ursus",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 4,
+        "cost": [
+            16,
+            20
+        ],
+        "infected": "No"
+    },
+    "Dur-nar": {
+        "charId": "char_260_durnar",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Artsprotector",
+        "rarity": 4,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "No"
+    },
+    "Deepcolor": {
+        "charId": "char_110_deepcl",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Ægir",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Summoner",
+        "rarity": 4,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "No"
+    },
+    "Earthspirit": {
+        "charId": "char_183_skgoat",
+        "alias": [],
+        "gender": "Female",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 4,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "Yes"
+    },
+    "Podenco": {
+        "charId": "char_258_podego",
+        "alias": [],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 4,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Roberta": {
+        "charId": "char_484_robrta",
+        "alias": [],
+        "gender": "Female",
+        "race": "Anaty",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Supporter",
+        "archetype": "Craftsman",
+        "rarity": 4,
+        "cost": [
+            13,
+            17
+        ],
+        "infected": "No"
+    },
+    "Ethan": {
+        "charId": "char_355_ethan",
+        "alias": [],
+        "gender": "Male",
+        "race": "Savra",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Stalker",
+        "rarity": 4,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "Yes"
+    },
+    "Shaw": {
+        "charId": "char_277_sqrrel",
+        "alias": [
+            "Rap god",
+            "Eminem"
+        ],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Pusher",
+        "rarity": 4,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "No"
+    },
+    "Verdant": {
+        "charId": "char_4107_vrdant",
+        "alias": [],
+        "gender": "Male",
+        "race": "Pythia",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Dollkeeper",
+        "rarity": 4,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "Yes"
+    },
+    "Ptilopsis": {
+        "charId": "char_128_plosis",
+        "alias": [
+            "Table",
+            "Tea Apple Sauce"
+        ],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Ringhealer",
+        "rarity": 5,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Breeze": {
+        "charId": "char_275_breeze",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Ringhealer",
+        "rarity": 5,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Zima": {
+        "charId": "char_115_headbr",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "Ursus Student Self-Governing Group",
+        "nation": "Ursus",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Texas": {
+        "charId": "char_102_texas",
+        "alias": [],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "Penguin Logistics",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Chiave": {
+        "charId": "char_349_chiave",
+        "alias": [],
+        "gender": "Male",
+        "race": "Vulpo",
+        "group": "Chiave's Gang",
+        "nation": "Siracusa",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "Yes"
+    },
+    "Poncirus": {
+        "charId": "char_488_buildr",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Siesta",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "Yes"
+    },
+    "Reed": {
+        "charId": "char_261_sddrag",
+        "alias": [],
+        "gender": "Female",
+        "race": "Draco",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Charger",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Wild Mane": {
+        "charId": "char_496_wildmn",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "Pinus Sylvestris",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Charger",
+        "rarity": 5,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "Yes"
+    },
+    "Elysium": {
+        "charId": "char_401_elysm",
+        "alias": [],
+        "gender": "Male",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Bearer",
+        "rarity": 5,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Blacknight": {
+        "charId": "char_476_blkngt",
+        "alias": [],
+        "gender": "Female",
+        "race": "Savra",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Ranged",
+        "profession": "Vanguard",
+        "archetype": "Tactician",
+        "rarity": 5,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "Yes"
+    },
+    "Cantabile": {
+        "charId": "char_497_ctable",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Agent",
+        "rarity": 5,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "Yes"
+    },
+    "Puzzle": {
+        "charId": "char_4017_puzzle",
+        "alias": [],
+        "gender": "Male",
+        "race": "Vouivre",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Agent",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Swire": {
+        "charId": "char_308_swire",
+        "alias": [
+            "Gao",
+            "Rich"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "LGD",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Instructor",
+        "rarity": 5,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "No"
+    },
+    "Whislash": {
+        "charId": "char_265_sophia",
+        "alias": [
+            "Auntie",
+            "Aunty"
+        ],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Instructor",
+        "rarity": 5,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "No"
+    },
+    "Bryophyta": {
+        "charId": "char_4106_bryota",
+        "alias": [],
+        "gender": "Male",
+        "race": "Liberi",
+        "group": "Siesta",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Instructor",
+        "rarity": 5,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Franka": {
+        "charId": "char_106_franka",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "Blacksteel",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 5,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Flamebringer": {
+        "charId": "char_131_flameb",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Morgan": {
+        "charId": "char_154_morgan",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Glasgow",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Indra": {
+        "charId": "char_155_tiger",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Glasgow",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fighter",
+        "rarity": 5,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "No"
+    },
+    "Flint": {
+        "charId": "char_415_flint",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fighter",
+        "rarity": 5,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "No"
+    },
+    "Dagda": {
+        "charId": "char_157_dagda",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Glasgow",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fighter",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Lappland": {
+        "charId": "char_140_whitew",
+        "alias": [
+            "Lappy"
+        ],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 5,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "Yes"
+    },
+    "Ayerscarpe": {
+        "charId": "char_294_ayer",
+        "alias": [],
+        "gender": "Male",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 5,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "No"
+    },
+    "Wind Chimes": {
+        "charId": "char_4083_chimes",
+        "alias": [],
+        "gender": "Female",
+        "race": "Forte",
+        "group": "",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Crusher",
+        "rarity": 5,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "Yes"
+    },
+    "Bibeak": {
+        "charId": "char_252_bibeak",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Sami",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Sword",
+        "rarity": 5,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "Yes"
+    },
+    "Tachanka": {
+        "charId": "char_459_tachak",
+        "alias": [],
+        "gender": "Male",
+        "race": "Unknown/Undisclosed",
+        "group": "Rainbow 6",
+        "nation": "None",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Sword",
+        "rarity": 5,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "No"
+    },
+    "Specter": {
+        "charId": "char_143_ghost",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Abyssal Hunter",
+        "nation": "Ægir",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Centurion",
+        "rarity": 5,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "Yes"
+    },
+    "Broca": {
+        "charId": "char_356_broca",
+        "alias": [],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "Chiave's Gang",
+        "nation": "Siracusa",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Centurion",
+        "rarity": 5,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "Yes"
+    },
+    "Astesia": {
+        "charId": "char_274_astesi",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Artsfghter",
+        "rarity": 5,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Sideroca": {
+        "charId": "char_333_sidero",
+        "alias": [],
+        "gender": "Female",
+        "race": "Forte",
+        "group": "",
+        "nation": "Minos",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Artsfghter",
+        "rarity": 5,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "No"
+    },
+    "Akafuyu": {
+        "charId": "char_475_akafyu",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Musha",
+        "rarity": 5,
+        "cost": [
+            21,
+            25
+        ],
+        "infected": "No"
+    },
+    "Rathalos S Noir Corne": {
+        "charId": "char_1030_noirc2",
+        "alias": [
+            "Noir"
+        ],
+        "gender": "Male",
+        "race": "Oni",
+        "group": "Action 4",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Musha",
+        "rarity": 5,
+        "cost": [
+            21,
+            25
+        ],
+        "infected": "Yes"
+    },
+    "La Pluma": {
+        "charId": "char_421_crow",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Bolivar",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Reaper",
+        "rarity": 5,
+        "cost": [
+            19,
+            22
+        ],
+        "infected": "No"
+    },
+    "Highmore": {
+        "charId": "char_4066_highmo",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Reaper",
+        "rarity": 5,
+        "cost": [
+            19,
+            22
+        ],
+        "infected": "No"
+    },
+    "Tequila": {
+        "charId": "char_486_takila",
+        "alias": [],
+        "gender": "Male",
+        "race": "Perro",
+        "group": "",
+        "nation": "Bolivar",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Librator",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Blue Poison": {
+        "charId": "char_129_bluep",
+        "alias": [
+            "bp",
+            "Table"
+        ],
+        "gender": "Female",
+        "race": "Anura",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Platinum": {
+        "charId": "char_204_platnm",
+        "alias": [
+            "Cutting board",
+            "Ab roller"
+        ],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "GreyThroat": {
+        "charId": "char_367_swllow",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "April": {
+        "charId": "char_365_aprl",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "Yes"
+    },
+    "Kroos the Keen Glint": {
+        "charId": "char_1021_kroos2",
+        "alias": [
+            "Kokodayo"
+        ],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "Yes"
+    },
+    "Insider": {
+        "charId": "char_498_inside",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Meteorite": {
+        "charId": "char_219_meteo",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Aoesniper",
+        "rarity": 5,
+        "cost": [
+            24,
+            28
+        ],
+        "infected": "Yes"
+    },
+    "Sesa": {
+        "charId": "char_379_sesa",
+        "alias": [],
+        "gender": "Male",
+        "race": "Vouivre",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Aoesniper",
+        "rarity": 5,
+        "cost": [
+            24,
+            28
+        ],
+        "infected": "No"
+    },
+    "Jieyun": {
+        "charId": "char_4078_bdhkgt",
+        "alias": [],
+        "gender": "Female",
+        "race": "Anasa",
+        "group": "",
+        "nation": "Yan",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Aoesniper",
+        "rarity": 5,
+        "cost": [
+            26,
+            30
+        ],
+        "infected": "Yes"
+    },
+    "Executor": {
+        "charId": "char_279_excu",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Reaperrange",
+        "rarity": 5,
+        "cost": [
+            28,
+            31
+        ],
+        "infected": "No"
+    },
+    "Aosta": {
+        "charId": "char_346_aosta",
+        "alias": [],
+        "gender": "Male",
+        "race": "Lupo",
+        "group": "Chiave's Gang",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Reaperrange",
+        "rarity": 5,
+        "cost": [
+            28,
+            31
+        ],
+        "infected": "Yes"
+    },
+    "Amiya": {
+        "charId": "char_002_amiya",
+        "alias": [
+            "Donkey"
+        ],
+        "gender": "Female",
+        "race": "Chimera",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Absinthe": {
+        "charId": "char_405_absin",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "",
+        "nation": "Ursus",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 5,
+        "cost": [
+            20,
+            22
+        ],
+        "infected": "No"
+    },
+    "Tomimi": {
+        "charId": "char_411_tomimi",
+        "alias": [],
+        "gender": "Female",
+        "race": "Archosauria",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 5,
+        "cost": [
+            20,
+            22
+        ],
+        "infected": "No"
+    },
+    "Qanipalaat": {
+        "charId": "char_466_qanik",
+        "alias": [],
+        "gender": "Male",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Sami",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Skyfire": {
+        "charId": "char_166_skfire",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 5,
+        "cost": [
+            30,
+            33
+        ],
+        "infected": "No"
+    },
+    "Leizi": {
+        "charId": "char_306_leizi",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kylin",
+        "group": "",
+        "nation": "Yan",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Chain",
+        "rarity": 5,
+        "cost": [
+            29,
+            32
+        ],
+        "infected": "No"
+    },
+    "Astgenne": {
+        "charId": "char_135_halo",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Chain",
+        "rarity": 5,
+        "cost": [
+            31,
+            34
+        ],
+        "infected": "Yes"
+    },
+    "Beeswax": {
+        "charId": "char_344_beewax",
+        "alias": [],
+        "gender": "Female",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Phalanx",
+        "rarity": 5,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "No"
+    },
+    "Leonhardt": {
+        "charId": "char_373_lionhd",
+        "alias": [],
+        "gender": "Male",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 5,
+        "cost": [
+            30,
+            33
+        ],
+        "infected": "Yes"
+    },
+    "Santalla": {
+        "charId": "char_341_sntlla",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Sami",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 5,
+        "cost": [
+            30,
+            33
+        ],
+        "infected": "Yes"
+    },
+    "Mint": {
+        "charId": "char_388_mint",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Phalanx",
+        "rarity": 5,
+        "cost": [
+            23,
+            25
+        ],
+        "infected": "Yes"
+    },
+    "Iris": {
+        "charId": "char_338_iris",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Mystic",
+        "rarity": 5,
+        "cost": [
+            22,
+            24
+        ],
+        "infected": "No"
+    },
+    "Harmonie": {
+        "charId": "char_297_hamoni",
+        "alias": [
+            "Smug cat"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Dublinn",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Mystic",
+        "rarity": 5,
+        "cost": [
+            22,
+            24
+        ],
+        "infected": "No"
+    },
+    "Delphine": {
+        "charId": "char_4110_delphn",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Mystic",
+        "rarity": 5,
+        "cost": [
+            24,
+            26
+        ],
+        "infected": "No"
+    },
+    "Lava the Purgatory": {
+        "charId": "char_1011_lava2",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 5,
+        "cost": [
+            32,
+            35
+        ],
+        "infected": "Yes"
+    },
+    "Corroserum": {
+        "charId": "char_489_serum",
+        "alias": [],
+        "gender": "Male",
+        "race": "Pythia",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Blastcaster",
+        "rarity": 5,
+        "cost": [
+            30,
+            33
+        ],
+        "infected": "No"
+    },
+    "Kjera": {
+        "charId": "char_4013_kjera",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Funnel",
+        "rarity": 5,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "No"
+    },
+    "Rockrock": {
+        "charId": "char_4040_rockr",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Funnel",
+        "rarity": 5,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Minimalist": {
+        "charId": "char_4054_malist",
+        "alias": [],
+        "gender": "Male",
+        "race": "Durin",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Funnel",
+        "rarity": 5,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "Yes"
+    },
+    "Diamante": {
+        "charId": "char_499_kaitou",
+        "alias": [],
+        "gender": "Male",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Primcaster",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Mayer": {
+        "charId": "char_242_otter",
+        "alias": [],
+        "gender": "Female",
+        "race": "Anaty",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Summoner",
+        "rarity": 5,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "No"
+    },
+    "Scene": {
+        "charId": "char_336_folivo",
+        "alias": [],
+        "gender": "Female",
+        "race": "Pilosa",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Summoner",
+        "rarity": 5,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Silence": {
+        "charId": "char_108_silent",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 5,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "Yes"
+    },
+    "Warfarin": {
+        "charId": "char_171_bldsk",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 5,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "No"
+    },
+    "Folinic": {
+        "charId": "char_345_folnic",
+        "alias": [
+            "Harmacist"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 5,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Ceylon": {
+        "charId": "char_348_ceylon",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Siesta",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Healer",
+        "rarity": 5,
+        "cost": [
+            20,
+            22
+        ],
+        "infected": "No"
+    },
+    "Whisperain": {
+        "charId": "char_436_whispr",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Healer",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Tuye": {
+        "charId": "char_402_tuye",
+        "alias": [],
+        "gender": "Female",
+        "race": "Forte",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 5,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Mulberry": {
+        "charId": "char_473_mberry",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Yan",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Wandermedic",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "Yes"
+    },
+    "Honeyberry": {
+        "charId": "char_449_glider",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Wandermedic",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Hibiscus the Purifier": {
+        "charId": "char_1024_hbisc2",
+        "alias": [
+            "Harmacist"
+        ],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Incantationmedic",
+        "rarity": 5,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Vendela": {
+        "charId": "char_494_vendla",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Incantationmedic",
+        "rarity": 5,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Paprika": {
+        "charId": "char_4071_peper",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Chainhealer",
+        "rarity": 5,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Nearl": {
+        "charId": "char_148_nearl",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "Followers",
+        "nation": "None",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 5,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Hung": {
+        "charId": "char_226_hmau",
+        "alias": [],
+        "gender": "Male",
+        "race": "Perro",
+        "group": "Lee's Detective Agency",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 5,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "No"
+    },
+    "Bassline": {
+        "charId": "char_4109_baslin",
+        "alias": [],
+        "gender": "Male",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 5,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "No"
+    },
+    "Projekt Red": {
+        "charId": "char_144_red",
+        "alias": [],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "S.W.E.E.P.",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 5,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "No"
+    },
+    "Waai Fu": {
+        "charId": "char_243_waaifu",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Lee's Detective Agency",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 5,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "No"
+    },
+    "Kafka": {
+        "charId": "char_214_kafka",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 5,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "Yes"
+    },
+    "Mr. Nothing": {
+        "charId": "char_455_nothin",
+        "alias": [],
+        "gender": "Male",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Merchant",
+        "rarity": 5,
+        "cost": [
+            6,
+            8
+        ],
+        "infected": "No"
+    },
+    "Liskarm": {
+        "charId": "char_107_liskam",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vouivre",
+        "group": "Blacksteel",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Shotprotector",
+        "rarity": 5,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
+    "Croissant": {
+        "charId": "char_201_moeshd",
+        "alias": [],
+        "gender": "Female",
+        "race": "Forte",
+        "group": "Penguin Logistics",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 5,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
+    "Bison": {
+        "charId": "char_325_bison",
+        "alias": [],
+        "gender": "Male",
+        "race": "Forte",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 5,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "No"
+    },
+    "Vulcan": {
+        "charId": "char_163_hpsts",
+        "alias": [],
+        "gender": "Female",
+        "race": "Forte",
+        "group": "",
+        "nation": "Minos",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Unyield",
+        "rarity": 5,
+        "cost": [
+            31,
+            35
+        ],
+        "infected": "Yes"
+    },
+    "Asbestos": {
+        "charId": "char_378_asbest",
+        "alias": [
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Speaker"
+        ],
+        "gender": "Female",
+        "race": "Savra",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Artsprotector",
+        "rarity": 5,
+        "cost": [
+            21,
+            25
+        ],
+        "infected": "Yes"
+    },
+    "Shalem": {
+        "charId": "char_4025_aprot2",
+        "alias": [],
+        "gender": "Male",
+        "race": "Pythia",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Artsprotector",
+        "rarity": 5,
+        "cost": [
+            21,
+            25
+        ],
+        "infected": "Yes"
+    },
+    "Czerny": {
+        "charId": "char_4047_pianst",
+        "alias": [],
+        "gender": "Male",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Artsprotector",
+        "rarity": 5,
+        "cost": [
+            23,
+            27
+        ],
+        "infected": "Yes"
+    },
+    "Blitz": {
+        "charId": "char_457_blitz",
+        "alias": [],
+        "gender": "Male",
+        "race": "Unknown/Undisclosed",
+        "group": "Rainbow 6",
+        "nation": "None",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Shotprotector",
+        "rarity": 5,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
+    "Heavyrain": {
+        "charId": "char_304_zebra",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 5,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "No"
+    },
+    "Ashlock": {
+        "charId": "char_431_ashlok",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "Pinus Sylvestris",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Fortress",
+        "rarity": 5,
+        "cost": [
+            23,
+            27
+        ],
+        "infected": "Yes"
+    },
+    "Firewhistle": {
+        "charId": "char_493_firwhl",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Fortress",
+        "rarity": 5,
+        "cost": [
+            23,
+            27
+        ],
+        "infected": "No"
+    },
+    "Aurora": {
+        "charId": "char_422_aurora",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Duelist",
+        "rarity": 5,
+        "cost": [
+            28,
+            32
+        ],
+        "infected": "Yes"
+    },
+    "Cement": {
+        "charId": "char_464_cement",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Duelist",
+        "rarity": 5,
+        "cost": [
+            28,
+            32
+        ],
+        "infected": "No"
+    },
+    "Provence": {
+        "charId": "char_145_prove",
+        "alias": [],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Closerange",
+        "rarity": 5,
+        "cost": [
+            15,
+            19
+        ],
+        "infected": "Yes"
+    },
+    "Melanite": {
+        "charId": "char_4006_melnte",
+        "alias": [],
+        "gender": "Female",
+        "race": "Pythia",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Closerange",
+        "rarity": 5,
+        "cost": [
+            15,
+            19
+        ],
+        "infected": "Yes"
+    },
+    "Firewatch": {
+        "charId": "char_158_milu",
+        "alias": [],
+        "gender": "Female",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Longrange",
+        "rarity": 5,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Andreana": {
+        "charId": "char_218_cuttle",
+        "alias": [
+            "Lowlight",
+            "UmiNeko",
+            "HaiMao"
+        ],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "Abyssal Hunter",
+        "nation": "Ægir",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Longrange",
+        "rarity": 5,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Lunacub": {
+        "charId": "char_4014_lunacu",
+        "alias": [],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Longrange",
+        "rarity": 5,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Toddifons": {
+        "charId": "char_363_toddi",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vouivre",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Siegesniper",
+        "rarity": 5,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "Yes"
+    },
+    "Erato": {
+        "charId": "char_4043_erato",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Minos",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Siegesniper",
+        "rarity": 5,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "No"
+    },
+    "Greyy the Lightningbearer": {
+        "charId": "char_1027_greyy2",
+        "alias": [],
+        "gender": "Male",
+        "race": "Perro",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Bombarder",
+        "rarity": 5,
+        "cost": [
+            22,
+            24
+        ],
+        "infected": "Yes"
+    },
+    "Coldshot": {
+        "charId": "char_4104_coldst",
+        "alias": [],
+        "gender": "Female",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Hunter",
+        "rarity": 5,
+        "cost": [
+            17,
+            21
+        ],
+        "infected": "No"
+    },
+    "Spuria": {
+        "charId": "char_4015_spuria",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Specialist",
+        "archetype": "Geek",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Cliffheart": {
+        "charId": "char_173_slchan",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Hookmaster",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "Yes"
+    },
+    "Snowsant": {
+        "charId": "char_383_snsant",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Hookmaster",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Almond": {
+        "charId": "char_4105_almond",
+        "alias": [],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "Blacksteel",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Hookmaster",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "Yes"
+    },
+    "Pramanix": {
+        "charId": "char_174_slbell",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Underminer",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Shamare": {
+        "charId": "char_254_vodfox",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Underminer",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Istina": {
+        "charId": "char_195_glassb",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "Ursus Student Self-Governing Group",
+        "nation": "Ursus",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Glaucus": {
+        "charId": "char_326_glacus",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Proviso": {
+        "charId": "char_4032_provs",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Windflit": {
+        "charId": "char_433_windft",
+        "alias": [],
+        "gender": "Male",
+        "race": "Perro",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Supporter",
+        "archetype": "Craftsman",
+        "rarity": 5,
+        "cost": [
+            14,
+            18
+        ],
+        "infected": "No"
+    },
+    "Sora": {
+        "charId": "char_101_sora",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Penguin Logistics",
+        "nation": "Lungmen",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Bard",
+        "rarity": 5,
+        "cost": [
+            5,
+            7
+        ],
+        "infected": "No"
+    },
+    "Heidi": {
+        "charId": "char_4045_heidi",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Bard",
+        "rarity": 5,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "No"
+    },
+    "Tsukinogi": {
+        "charId": "char_343_tknogi",
+        "alias": [],
+        "gender": "Female",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Blessing",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "Yes"
+    },
+    "Nine-Colored Deer": {
+        "charId": "char_4019_ncdeer",
+        "alias": [],
+        "gender": "Female",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Yan",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Blessing",
+        "rarity": 5,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "No"
+    },
+    "Quercus": {
+        "charId": "char_492_quercu",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Blessing",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Valarqvin": {
+        "charId": "char_4102_threye",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Sami",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Ritualist",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "Yes"
+    },
+    "Manticore": {
+        "charId": "char_215_mantic",
+        "alias": [],
+        "gender": "Female",
+        "race": "Manticore",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Stalker",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Kirara": {
+        "charId": "char_478_kirara",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Stalker",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "FEater": {
+        "charId": "char_241_panda",
+        "alias": [
+            "Po"
+        ],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Pusher",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Enforcer": {
+        "charId": "char_4036_forcer",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Pusher",
+        "rarity": 5,
+        "cost": [
+            20,
+            22
+        ],
+        "infected": "No"
+    },
+    "Robin": {
+        "charId": "char_451_robin",
+        "alias": [],
+        "gender": "Female",
+        "race": "Anaty",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Specialist",
+        "archetype": "Traper",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Frost": {
+        "charId": "char_458_rfrost",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Rainbow 6",
+        "nation": "None",
+        "position": "Ranged",
+        "profession": "Specialist",
+        "archetype": "Traper",
+        "rarity": 5,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "No"
+    },
+    "Bena": {
+        "charId": "char_369_bena",
+        "alias": [],
+        "gender": "Female",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Dollkeeper",
+        "rarity": 5,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "No"
+    },
+    "Kazemaru": {
+        "charId": "char_4016_kazema",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Dollkeeper",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Exusiai": {
+        "charId": "char_103_angel",
+        "alias": [
+            "Apple pie",
+            "Exia",
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Drums"
+        ],
+        "gender": "Female",
+        "race": "Sankta",
+        "group": "Penguin Logistics",
+        "nation": "Lungmen",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 6,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Archetto": {
+        "charId": "char_332_archet",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 6,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Ash": {
+        "charId": "char_456_ash",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Rainbow 6",
+        "nation": "None",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 6,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Schwarz": {
+        "charId": "char_340_shwaz",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Siesta",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Closerange",
+        "rarity": 6,
+        "cost": [
+            16,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Pozëmka": {
+        "charId": "char_4055_bgsnow",
+        "alias": [],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Closerange",
+        "rarity": 6,
+        "cost": [
+            16,
+            20
+        ],
+        "infected": "No"
+    },
+    "Fartooth": {
+        "charId": "char_430_fartth",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Pinus Sylvestris",
+        "nation": "Kazimierz",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Longrange",
+        "rarity": 6,
+        "cost": [
+            20,
+            22
+        ],
+        "infected": "Yes"
+    },
+    "W": {
+        "charId": "char_113_cqbw",
+        "alias": [
+            "Cockroach",
+            "Wei wai wei wai",
+            "wei wei wei wei",
+            "Dance",
+            "wdance",
+            "Renegade"
+        ],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "Babel",
+        "nation": "None",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Aoesniper",
+        "rarity": 6,
+        "cost": [
+            25,
+            29
+        ],
+        "infected": "Yes"
+    },
+    "Fiammetta": {
+        "charId": "char_300_phenxi",
+        "alias": [
+            "Angry Bird"
+        ],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Aoesniper",
+        "rarity": 6,
+        "cost": [
+            25,
+            29
+        ],
+        "infected": "No"
+    },
+    "Rosa": {
+        "charId": "char_197_poca",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "Ursus Student Self-Governing Group",
+        "nation": "Ursus",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Siegesniper",
+        "rarity": 6,
+        "cost": [
+            22,
+            24
+        ],
+        "infected": "No"
+    },
+    "Typhon": {
+        "charId": "char_2012_typhon",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Sami",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Siegesniper",
+        "rarity": 6,
+        "cost": [
+            22,
+            24
+        ],
+        "infected": "Yes"
+    },
+    "Rosmontis": {
+        "charId": "char_391_rosmon",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Elite Operators",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Bombarder",
+        "rarity": 6,
+        "cost": [
+            23,
+            25
+        ],
+        "infected": "Yes"
+    },
+    "Ch'en the Holungday": {
+        "charId": "char_1013_chen2",
+        "alias": [
+            "Waifu",
+            "Lung Wrath",
+            "Female Tourist C",
+            "Balans"
+        ],
+        "gender": "Female",
+        "race": "Lung",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Reaperrange",
+        "rarity": 6,
+        "cost": [
+            29,
+            32
+        ],
+        "infected": "Yes"
+    },
+    "Siege": {
+        "charId": "char_112_siege",
+        "alias": [
+            "Saber"
+        ],
+        "gender": "Female",
+        "race": "Aslan",
+        "group": "Glasgow",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 6,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Bagpipe": {
+        "charId": "char_222_bpipe",
+        "alias": [
+            "Coco",
+            "Nino"
+        ],
+        "gender": "Female",
+        "race": "Vouivre",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Charger",
+        "rarity": 6,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Saga": {
+        "charId": "char_362_saga",
+        "alias": [
+            "Doggo",
+            "Doge",
+            "Natto Gohan",
+            "Aburaage"
+        ],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 6,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Saileach": {
+        "charId": "char_479_sleach",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vouivre",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Bearer",
+        "rarity": 6,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Flametail": {
+        "charId": "char_420_flamtl",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "Pinus Sylvestris",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 6,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "Yes"
+    },
+    "Vigil": {
+        "charId": "char_427_vigil",
+        "alias": [],
+        "gender": "Male",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Vanguard",
+        "archetype": "Tactician",
+        "rarity": 6,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "No"
+    },
+    "Muelsyse": {
+        "charId": "char_249_mlyss",
+        "alias": [
+            "Mumu",
+            "Elf"
+        ],
+        "gender": "Female",
+        "race": "Elf",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Vanguard",
+        "archetype": "Tactician",
+        "rarity": 6,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Ines": {
+        "charId": "char_4087_ines",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Agent",
+        "rarity": 6,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Ifrit": {
+        "charId": "char_134_ifrit",
+        "alias": [
+            "Tile"
+        ],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Blastcaster",
+        "rarity": 6,
+        "cost": [
+            31,
+            34
+        ],
+        "infected": "Yes"
+    },
+    "Mostima": {
+        "charId": "char_213_mostma",
+        "alias": [
+            "Za warudo",
+            "Dio",
+            "Blueberry pie"
+        ],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 6,
+        "cost": [
+            31,
+            34
+        ],
+        "infected": "No"
+    },
+    "Eyjafjalla": {
+        "charId": "char_180_amgoat",
+        "alias": [
+            "Volcano",
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Vocals"
+        ],
+        "gender": "Female",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Ceobe": {
+        "charId": "char_2013_cerber",
+        "alias": [
+            "Doggo",
+            "Kay"
+        ],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Ho'olheyak": {
+        "charId": "char_4027_heyak",
+        "alias": [
+            "Birb",
+            "Snek",
+            "Shogun"
+        ],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Dusk": {
+        "charId": "char_2015_dusk",
+        "alias": [
+            "Bean"
+        ],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Sui",
+        "nation": "Yan",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Splashcaster",
+        "rarity": 6,
+        "cost": [
+            31,
+            34
+        ],
+        "infected": "No"
+    },
+    "Passenger": {
+        "charId": "char_472_pasngr",
+        "alias": [
+            "Godsenger",
+            "I am the storm that is approaching"
+        ],
+        "gender": "Male",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Chain",
+        "rarity": 6,
+        "cost": [
+            30,
+            33
+        ],
+        "infected": "Yes"
+    },
+    "Carnelian": {
+        "charId": "char_426_billro",
+        "alias": [],
+        "gender": "Female",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Phalanx",
+        "rarity": 6,
+        "cost": [
+            22,
+            24
+        ],
+        "infected": "No"
+    },
+    "Lin": {
+        "charId": "char_4080_lin",
+        "alias": [
+            "Lung Wrath",
+            "Rat"
+        ],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Phalanx",
+        "rarity": 6,
+        "cost": [
+            22,
+            24
+        ],
+        "infected": "No"
+    },
+    "Goldenglow": {
+        "charId": "char_377_gdglow",
+        "alias": [
+            "Dog",
+            "Namie",
+            "gg",
+            "Doggo"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Funnel",
+        "rarity": 6,
+        "cost": [
+            20,
+            22
+        ],
+        "infected": "Yes"
+    },
+    "Ebenholz": {
+        "charId": "char_4046_ebnhlz",
+        "alias": [],
+        "gender": "Male",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Mystic",
+        "rarity": 6,
+        "cost": [
+            23,
+            25
+        ],
+        "infected": "Yes"
+    },
+    "Gnosis": {
+        "charId": "char_206_gnosis",
+        "alias": [],
+        "gender": "Male",
+        "race": "Liberi",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Underminer",
+        "rarity": 6,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Angelina": {
+        "charId": "char_291_aglina",
+        "alias": [],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 6,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "Yes"
+    },
+    "Suzuran": {
+        "charId": "char_358_lisa",
+        "alias": [
+            "Light",
+            "Sob",
+            "Our light"
+        ],
+        "gender": "Female",
+        "race": "Vulpo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 6,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "Yes"
+    },
+    "Magallan": {
+        "charId": "char_248_mgllan",
+        "alias": [
+            "Pingu",
+            "Noot noot"
+        ],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Summoner",
+        "rarity": 6,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Skadi the Corrupting Heart": {
+        "charId": "char_1012_skadi2",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Ægir",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Bard",
+        "rarity": 6,
+        "cost": [
+            6,
+            8
+        ],
+        "infected": "No"
+    },
+    "Silence the Paradigmatic": {
+        "charId": "char_1031_slent2",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Blessing",
+        "rarity": 6,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "Yes"
+    },
+    "Ling": {
+        "charId": "char_2023_ling",
+        "alias": [
+            "Blue woman",
+            "Bean"
+        ],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Sui",
+        "nation": "Yan",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Summoner",
+        "rarity": 6,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Stainless": {
+        "charId": "char_4072_ironmn",
+        "alias": [],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Supporter",
+        "archetype": "Craftsman",
+        "rarity": 6,
+        "cost": [
+            15,
+            19
+        ],
+        "infected": "No"
+    },
+    "Virtuosa": {
+        "charId": "char_245_cello",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Ritualist",
+        "rarity": 6,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "No"
+    },
+    "Phantom": {
+        "charId": "char_250_phatom",
+        "alias": [],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 6,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "Yes"
+    },
+    "Texas the Omertosa": {
+        "charId": "char_1028_texas2",
+        "alias": [
+            "Delete",
+            "Taxes"
+        ],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "Penguin Logistics",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 6,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "No"
+    },
+    "Kirin R Yato": {
+        "charId": "char_1029_yato2",
+        "alias": [
+            "Delete",
+            "Yato"
+        ],
+        "gender": "Female",
+        "race": "Oni",
+        "group": "Action 4",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Executor",
+        "rarity": 6,
+        "cost": [
+            8,
+            10
+        ],
+        "infected": "Yes"
+    },
+    "Lee": {
+        "charId": "char_322_lmlee",
+        "alias": [],
+        "gender": "Male",
+        "race": "Lung",
+        "group": "Lee's Detective Agency",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Merchant",
+        "rarity": 6,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "No"
+    },
+    "Swire the Elegant Wit": {
+        "charId": "char_1033_swire2",
+        "alias": [
+            "Gao",
+            "Rich"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Merchant",
+        "rarity": 6,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "No"
+    },
+    "Weedy": {
+        "charId": "char_400_weedy",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Pusher",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Aak": {
+        "charId": "char_225_haak",
+        "alias": [
+            "Harmacist"
+        ],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "Lee's Detective Agency",
+        "nation": "Lungmen",
+        "position": "Ranged",
+        "profession": "Specialist",
+        "archetype": "Geek",
+        "rarity": 6,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
+    },
+    "Gladiia": {
+        "charId": "char_474_glady",
+        "alias": [],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Abyssal Hunter",
+        "nation": "Ægir",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Hookmaster",
+        "rarity": 6,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "No"
+    },
+    "Mizuki": {
+        "charId": "char_437_mizuki",
+        "alias": [
+            "Namie",
+            "Armpits"
+        ],
+        "gender": "Male",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Higashi",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Stalker",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Specter the Unchained": {
+        "charId": "char_1023_ghost2",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ægir",
+        "group": "Abyssal Hunter",
+        "nation": "Ægir",
+        "position": "Melee",
+        "profession": "Specialist",
+        "archetype": "Dollkeeper",
+        "rarity": 6,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "Yes"
+    },
+    "Dorothy": {
+        "charId": "char_4048_doroth",
+        "alias": [],
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Specialist",
+        "archetype": "Traper",
+        "rarity": 6,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Shining": {
+        "charId": "char_147_shining",
+        "alias": [
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Keyboard"
+        ],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "Followers",
+        "nation": "None",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 6,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Nightingale": {
+        "charId": "char_179_cgbird",
+        "alias": [],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "Followers",
+        "nation": "None",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Ringhealer",
+        "rarity": 6,
+        "cost": [
+            16,
+            18
+        ],
+        "infected": "Yes"
+    },
+    "Kal'tsit": {
+        "charId": "char_003_kalts",
+        "alias": [
+            "Old Well",
+            "Well",
+            "Ex wife",
+            "Hag",
+            "Fossil",
+            "Harmacist"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Physician",
+        "rarity": 6,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Lumen": {
+        "charId": "char_4042_lumen",
+        "alias": [],
+        "gender": "Male",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Healer",
+        "rarity": 6,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "No"
+    },
+    "Eyjafjalla the Hvít Aska": {
+        "charId": "char_1016_agoat2",
+        "alias": [
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Vocals"
+        ],
+        "gender": "Female",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Wandermedic",
+        "rarity": 6,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "Yes"
+    },
+    "Reed the Flame Shadow": {
+        "charId": "char_1020_reed2",
+        "alias": [
+            "Harmacist"
+        ],
+        "gender": "Female",
+        "race": "Draco",
+        "group": "Dublinn",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Incantationmedic",
+        "rarity": 6,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Hoshiguma": {
+        "charId": "char_136_hsguma",
+        "alias": [
+            "Yes Im on fire",
+            "Ignited by a burning desire",
+            "Bass"
+        ],
+        "gender": "Female",
+        "race": "Oni",
+        "group": "LGD",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 6,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "No"
+    },
+    "Saria": {
+        "charId": "char_202_demkni",
+        "alias": [
+            "Dad"
+        ],
+        "gender": "Female",
+        "race": "Vouivre",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 6,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
+    "Blemishine": {
+        "charId": "char_423_blemsh",
+        "alias": [
+            "Maria"
+        ],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 6,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
+    "Nian": {
+        "charId": "char_2014_nian",
+        "alias": [
+            "Bean"
+        ],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Sui",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 6,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "Undisclosed"
+    },
+    "Mudrock": {
+        "charId": "char_311_mudrok",
+        "alias": [
+            "Bonk"
+        ],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Unyield",
+        "rarity": 6,
+        "cost": [
+            32,
+            36
+        ],
+        "infected": "Yes"
+    },
+    "Penance": {
+        "charId": "char_4065_judge",
+        "alias": [
+            "Lavinia"
+        ],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Siracusa",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Unyield",
+        "rarity": 6,
+        "cost": [
+            32,
+            36
+        ],
+        "infected": "No"
+    },
+    "Eunectes": {
+        "charId": "char_416_zumama",
+        "alias": [],
+        "gender": "Female",
+        "race": "Pythia",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Duelist",
+        "rarity": 6,
+        "cost": [
+            29,
+            33
+        ],
+        "infected": "Yes"
+    },
+    "Horn": {
+        "charId": "char_4039_horn",
+        "alias": [],
+        "gender": "Female",
+        "race": "Lupo",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Fortress",
+        "rarity": 6,
+        "cost": [
+            24,
+            28
+        ],
+        "infected": "No"
+    },
+    "Jessica the Liberated": {
+        "charId": "char_1034_jesca2",
+        "alias": [
+            "Depressed cat",
+            "Rich",
+            "Sad cat"
+        ],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Blacksteel",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Shotprotector",
+        "rarity": 6,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "No"
+    },
+    "Mountain": {
+        "charId": "char_264_f12yin",
+        "alias": [],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fighter",
+        "rarity": 6,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Chongyue": {
+        "charId": "char_2024_chyue",
+        "alias": [
+            "Kei Nario Nazasu",
+            "Sensou Hyakushiki",
+            "Kisamara no mondai",
+            "KEIHA SUREBA KOUCHOU OCHIRU",
+            "Bean"
+        ],
+        "gender": "Male",
+        "race": "Unknown/Undisclosed",
+        "group": "Sui",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fighter",
+        "rarity": 6,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "No"
+    },
+    "SilverAsh": {
+        "charId": "char_172_svrash",
+        "alias": [
+            "Shwing",
+            "SA",
+            "Bloodline"
+        ],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 6,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Thorns": {
+        "charId": "char_293_thorns",
+        "alias": [
+            "Destreza"
+        ],
+        "gender": "Male",
+        "race": "Ægir",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 6,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Qiubai": {
+        "charId": "char_4082_qiubai",
+        "alias": [],
+        "gender": "Female",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 6,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
+    "Hoederer": {
+        "charId": "char_4088_hodrer",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Crusher",
+        "rarity": 6,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "Yes"
+    },
+    "Ch'en": {
+        "charId": "char_010_chen",
+        "alias": [
+            "Waifu",
+            "Lung Wrath",
+            "Female Tourist C"
+        ],
+        "gender": "Female",
+        "race": "Lung",
+        "group": "LGD",
+        "nation": "Lungmen",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Sword",
+        "rarity": 6,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "Undisclosed"
+    },
+    "Irene": {
+        "charId": "char_4009_irene",
+        "alias": [
+            "4head",
+            "5head",
+            "Spin",
+            "Tic Tac Toe"
+        ],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Iberia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Sword",
+        "rarity": 6,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "No"
+    },
+    "Blaze": {
+        "charId": "char_017_huang",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Elite Operators",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Centurion",
+        "rarity": 6,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "Yes"
+    },
+    "Gavial the Invincible": {
+        "charId": "char_1026_gvial2",
+        "alias": [
+            "Harmacist"
+        ],
+        "gender": "Female",
+        "race": "Archosauria",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Centurion",
+        "rarity": 6,
+        "cost": [
+            20,
+            24
+        ],
+        "infected": "Yes"
+    },
+    "Surtr": {
+        "charId": "char_350_surtr",
+        "alias": [
+            "Delete"
+        ],
+        "gender": "Female",
+        "race": "Sarkaz",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Artsfghter",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "Yes"
+    },
+    "Viviana": {
+        "charId": "char_4098_vvana",
+        "alias": [
+            "Candle Knight"
+        ],
+        "gender": "Female",
+        "race": "Elafia",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Artsfghter",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Hellagur": {
+        "charId": "char_188_helage",
+        "alias": [],
+        "gender": "Male",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Ursus",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Musha",
+        "rarity": 6,
+        "cost": [
+            22,
+            26
+        ],
+        "infected": "Yes"
+    },
+    "Pallas": {
+        "charId": "char_485_pallas",
+        "alias": [],
+        "gender": "Female",
+        "race": "Forte",
+        "group": "",
+        "nation": "Minos",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Instructor",
+        "rarity": 6,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "Yes"
+    },
+    "Nearl the Radiant Knight": {
+        "charId": "char_1014_nearl2",
+        "alias": [
+            "NTR",
+            "Netorare"
+        ],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 6,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "No"
+    },
+    "Lessing": {
+        "charId": "char_4011_lessng",
+        "alias": [],
+        "gender": "Male",
+        "race": "Caprinae",
+        "group": "",
+        "nation": "Leithanien",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
+    "Executor the Ex Foedere": {
+        "charId": "char_1032_excu2",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Reaper",
+        "rarity": 6,
+        "cost": [
+            20,
+            23
+        ],
+        "infected": "No"
+    },
+    "Młynar": {
+        "charId": "char_4064_mlynar",
+        "alias": [
+            "Uncle",
+            "Shwing"
+        ],
+        "gender": "Male",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Kazimierz",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Librator",
+        "rarity": 6,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
+    },
+    "Savage": {
+        "charId": "char_230_savage",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Centurion",
+        "rarity": 5,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
+    "Catapult": {
+        "charId": "char_282_catap",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "Reserve 6",
+        "nation": "Rhodes Island",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Aoesniper",
+        "rarity": 3,
+        "cost": [
+            21,
+            23
+        ],
+        "infected": "Yes"
+    },
+    "Midnight": {
+        "charId": "char_283_midn",
+        "alias": [],
+        "gender": "Male",
+        "race": "Sarkaz",
+        "group": "Reserve 6",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 3,
+        "cost": [
+            14,
+            16
+        ],
+        "infected": "Yes"
+    },
+    "Beehunter": {
+        "charId": "char_137_brownb",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "",
+        "nation": "Ursus",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fighter",
+        "rarity": 4,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "Yes"
+    },
+    "Jackie": {
+        "charId": "char_347_jaksel",
+        "alias": [],
+        "gender": "Female",
+        "race": "Perro",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fighter",
+        "rarity": 4,
+        "cost": [
+            7,
+            9
+        ],
+        "infected": "Yes"
+    },
+    "Nightmare": {
+        "charId": "char_164_nightm",
+        "alias": [],
+        "gender": "Female",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Grani": {
+        "charId": "char_220_grani",
+        "alias": [],
+        "gender": "Female",
+        "race": "Kuranta",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Charger",
+        "rarity": 5,
+        "cost": [
+            12,
+            14
+        ],
+        "infected": "No"
+    },
+    "Skadi": {
+        "charId": "char_263_skadi",
+        "alias": [
+            "Kyaa"
+        ],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Abyssal Hunter",
+        "nation": "Ægir",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 6,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "No"
+    }
+}
