@@ -6,7 +6,7 @@ import AnswerBoxCost from "./answerBoxCost";
 import type { Correctness, Range } from "~/helper/helper";
 import AnswerBoxAllegiance from "./answerBoxAllegiance";
 import AnswerBoxRarity from "./answerBoxRarity";
-import { GameModeContext } from "~/pages/arknights-wordle";
+import { GameModeContext } from "~/pages/index";
 import React from "react";
 
 export const animationDelay = 225;

@@ -1,6 +1,6 @@
 import { Range, Correctness } from "~/helper/helper";
 import React from "react";
-import { GameModeContext } from "~/pages/arknights-wordle";
+import { GameModeContext } from "~/pages/index";
 
 type Props = {
   gameId: number;

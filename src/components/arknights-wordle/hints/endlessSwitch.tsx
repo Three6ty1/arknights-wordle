@@ -1,5 +1,5 @@
 import React from "react";
-import { GameModeContext } from "~/pages/arknights-wordle";
+import { GameModeContext } from "~/pages/index";
 
 export default function EndlessSwitch() {
   const {isNormalMode, setIsNormalMode} = React.useContext(GameModeContext)

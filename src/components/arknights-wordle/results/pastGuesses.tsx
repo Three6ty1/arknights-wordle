@@ -1,5 +1,5 @@
 import React from "react"
-import { GameModeContext } from "~/pages/arknights-wordle"
+import { GameModeContext } from "~/pages/index"
 import CategoryRows from "./categoryRow"
 import type { GuessResult } from "~/helper/compare"
 import AnswerRow from "./answerRow"

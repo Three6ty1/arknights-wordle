@@ -1,5 +1,5 @@
 import React from "react"
-import { GameModeContext } from "~/pages/arknights-wordle"
+import { GameModeContext } from "~/pages/index"
 import Search from "./search/search"
 import ShareBox from "./share/shareBox"
 

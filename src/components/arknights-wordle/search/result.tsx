@@ -2,7 +2,7 @@ import type { Operator } from "@prisma/client";
 import Image from "next/image";
 import React from "react";
 import { getOperatorIconUrl } from "~/helper/helper";
-import { GameModeContext } from "~/pages/arknights-wordle";
+import { GameModeContext } from "~/pages/index";
 import { SearchContext } from "./search";
 
 type Props = {

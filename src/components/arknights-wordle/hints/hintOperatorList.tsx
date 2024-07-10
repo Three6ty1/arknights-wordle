@@ -4,7 +4,7 @@ import { getProfessionIconUrl, wordleColors } from "~/helper/helper";
 import { HintBreakpoints } from "./hints";
 import Image from "next/image";
 import type { Operator } from "@prisma/client";
-import { GameModeContext } from "~/pages/arknights-wordle";
+import { GameModeContext } from "~/pages/index";
 
 const Professsions = [
   "Vanguard",

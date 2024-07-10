@@ -1,7 +1,7 @@
 import type { Operator } from "@prisma/client";
 import React from "react";
 import { SearchContext } from "./search";
-import { GameModeContext } from "~/pages/arknights-wordle";
+import { GameModeContext } from "~/pages/index";
 
 export default function SearchBar() {
   const [input, setInput] = React.useState("");
