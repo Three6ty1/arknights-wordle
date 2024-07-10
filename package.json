@@ -7,7 +7,7 @@
     "seed": "tsx prisma/seed.ts"
   },
   "scripts": {
-    "build": "prisma migrate deploy && prisma generate && next build",
+    "build": "next build",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
     "dev": "next dev",
