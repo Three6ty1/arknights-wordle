@@ -4,12 +4,8 @@
 
 @font-face {
     font-family: "Azbuka W01 Condensed";
-    src: url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.eot");
-    src: url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.svg#Azbuka W01 Condensed")format("svg");
+    src: local("Azbuka-W01-Condensed"),
+        url("~/src/fonts/Azbuka-W01-Condensed/Azbuka-W01-Condensed.ttf") format("truetype");
 }
 
 @layer utilities {

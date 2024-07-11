@@ -96,6 +96,7 @@ export default function HintHelp() {
           </ul>
           <br />
           <p>Reset at 12:00AM AEST / 2:00PM UTC / 10AM EST</p>
+          <div>Azbuka W01 Condensed font made from <a className="underline text-blue-600" href="http://www.onlinewebfonts.com" target="_blank">Web Fonts</a> is licensed by CC BY 4.0</div>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
