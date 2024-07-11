@@ -275,7 +275,10 @@
     },
     "Popukar": {
         "charId": "char_281_popka",
-        "alias": [],
+        "alias": [
+            "The regret in my head got me taken over",
+            "Whistles"
+        ],
         "gender": "Female",
         "race": "Cautus",
         "group": "Reserve 6",
@@ -413,7 +416,9 @@
     },
     "Ansel": {
         "charId": "char_212_ansel",
-        "alias": [],
+        "alias": [
+            "Trap"
+        ],
         "gender": "Male",
         "race": "Cautus",
         "group": "Reserve 4",
@@ -689,7 +694,10 @@
     },
     "Aciddrop": {
         "charId": "char_366_acdrop",
-        "alias": [],
+        "alias": [
+            "Go ahead and try to test me",
+            "We are never backing down never letting up"
+        ],
         "gender": "Female",
         "race": "Liberi",
         "group": "",
@@ -777,7 +785,8 @@
         "alias": [
             "Yes Im on fire",
             "Ignited by a burning desire",
-            "Guitar"
+            "Guitar",
+            "Harlequin Wheels"
         ],
         "gender": "Female",
         "race": "Sarkaz",
@@ -796,7 +805,8 @@
     "Myrtle": {
         "charId": "char_151_myrtle",
         "alias": [
-            "Printer"
+            "Printer",
+            "Most Used Operator"
         ],
         "gender": "Female",
         "race": "Durin",
@@ -833,7 +843,9 @@
     },
     "Dobermann": {
         "charId": "char_130_doberm",
-        "alias": [],
+        "alias": [
+            "Catapult"
+        ],
         "gender": "Female",
         "race": "Perro",
         "group": "",
@@ -1040,7 +1052,8 @@
         "alias": [
             "Yes Im on fire",
             "Ignited by a burning desire",
-            "Guitar"
+            "Guitar",
+            "Bait"
         ],
         "gender": "Female",
         "race": "Zalak",
@@ -1457,7 +1470,10 @@
     },
     "Texas": {
         "charId": "char_102_texas",
-        "alias": [],
+        "alias": [
+            "Move your body let it dance again",
+            "At the speed of light we can stand on our feet You go after my lead"
+        ],
         "gender": "Female",
         "race": "Lupo",
         "group": "Penguin Logistics",
@@ -1631,8 +1647,7 @@
     "Whislash": {
         "charId": "char_265_sophia",
         "alias": [
-            "Auntie",
-            "Aunty"
+            "Auntie"
         ],
         "gender": "Female",
         "race": "Kuranta",
@@ -1770,7 +1785,11 @@
     "Lappland": {
         "charId": "char_140_whitew",
         "alias": [
-            "Lappy"
+            "Lappy",
+            "You drive me insane",
+            "Hit hard a broken wall",
+            "Hit hard I gave it all",
+            "Hit hard a family tie"
         ],
         "gender": "Female",
         "race": "Lupo",
@@ -1822,7 +1841,10 @@
     },
     "Bibeak": {
         "charId": "char_252_bibeak",
-        "alias": [],
+        "alias": [
+            "The regret in my head got me taken over",
+            "Whistles"
+        ],
         "gender": "Female",
         "race": "Liberi",
         "group": "",
@@ -1873,7 +1895,10 @@
     },
     "Broca": {
         "charId": "char_356_broca",
-        "alias": [],
+        "alias": [
+            "I used to freeze up in the face of danger",
+            "Now that youre my guardian angel"
+        ],
         "gender": "Male",
         "race": "Feline",
         "group": "Chiave's Gang",
@@ -1994,7 +2019,9 @@
     },
     "Tequila": {
         "charId": "char_486_takila",
-        "alias": [],
+        "alias": [
+            "You aint seen nothing like this"
+        ],
         "gender": "Male",
         "race": "Perro",
         "group": "",
@@ -2207,7 +2234,14 @@
     "Amiya": {
         "charId": "char_002_amiya",
         "alias": [
-            "Donkey"
+            "Donkey",
+            "Miya",
+            "Pog",
+            "Im getting closer like its right in front of me",
+            "And we'll burn the clouds away",
+            "Wheres our tomorrow where does our future go",
+            "Does our hope have to be sown upon somebodys sorrow",
+            "Vergilius"
         ],
         "gender": "Female",
         "race": "Chimera",
@@ -2567,7 +2601,10 @@
     },
     "Scene": {
         "charId": "char_336_folivo",
-        "alias": [],
+        "alias": [
+            "Yes Im on fire",
+            "Ignited by a burning desire"
+        ],
         "gender": "Female",
         "race": "Pilosa",
         "group": "",
@@ -2584,7 +2621,10 @@
     },
     "Silence": {
         "charId": "char_108_silent",
-        "alias": [],
+        "alias": [
+            "Mum",
+            "Mom"
+        ],
         "gender": "Female",
         "race": "Liberi",
         "group": "Rhine Lab",
@@ -2601,7 +2641,9 @@
     },
     "Warfarin": {
         "charId": "char_171_bldsk",
-        "alias": [],
+        "alias": [
+            "Oh nah nah nah, Cant stop us nah nah nah"
+        ],
         "gender": "Female",
         "race": "Sarkaz",
         "group": "",
@@ -2671,7 +2713,10 @@
     },
     "Tuye": {
         "charId": "char_402_tuye",
-        "alias": [],
+        "alias": [
+            "The regret in my head got me taken over",
+            "Whistles"
+        ],
         "gender": "Female",
         "race": "Forte",
         "group": "",
@@ -2741,7 +2786,9 @@
     },
     "Vendela": {
         "charId": "char_494_vendla",
-        "alias": [],
+        "alias": [
+            "Harmacist"
+        ],
         "gender": "Female",
         "race": "Feline",
         "group": "",
@@ -2894,7 +2941,9 @@
     },
     "Liskarm": {
         "charId": "char_107_liskam",
-        "alias": [],
+        "alias": [
+            "Battery"
+        ],
         "gender": "Female",
         "race": "Vouivre",
         "group": "Blacksteel",
@@ -2963,9 +3012,8 @@
     "Asbestos": {
         "charId": "char_378_asbest",
         "alias": [
-            "Yes Im on fire",
-            "Ignited by a burning desire",
-            "Speaker"
+            "Electricity is running through my veins our history wont be written in chains",
+            "Though I lost myself through what Ive done the price wont be in vain"
         ],
         "gender": "Female",
         "race": "Savra",
@@ -3225,7 +3273,9 @@
     },
     "Erato": {
         "charId": "char_4043_erato",
-        "alias": [],
+        "alias": [
+            "Come close to me come close to me"
+        ],
         "gender": "Female",
         "race": "Liberi",
         "group": "",
@@ -3548,7 +3598,9 @@
     },
     "Manticore": {
         "charId": "char_215_mantic",
-        "alias": [],
+        "alias": [
+            "Burn me to the ground"
+        ],
         "gender": "Female",
         "race": "Manticore",
         "group": "",
@@ -3691,7 +3743,9 @@
             "Exia",
             "Yes Im on fire",
             "Ignited by a burning desire",
-            "Drums"
+            "Drums",
+            "Move your body let it dance again",
+            "At the speed of light we can stand on our feet You go after my lead"
         ],
         "gender": "Female",
         "race": "Sankta",
@@ -3760,7 +3814,9 @@
     },
     "Pozëmka": {
         "charId": "char_4055_bgsnow",
-        "alias": [],
+        "alias": [
+            "Durin"
+        ],
         "gender": "Female",
         "race": "Lupo",
         "group": "",
@@ -3800,7 +3856,9 @@
             "wei wei wei wei",
             "Dance",
             "wdance",
-            "Renegade"
+            "The only thing you gotta know is that I do what it takes do what it takes",
+            "I do what it takes do what it takes",
+            "Bang Ahahaha"
         ],
         "gender": "Female",
         "race": "Sarkaz",
@@ -3819,7 +3877,9 @@
     "Fiammetta": {
         "charId": "char_300_phenxi",
         "alias": [
-            "Angry Bird"
+            "Angry Bird",
+            "Suffering",
+            "ASHES ASHES ASHES"
         ],
         "gender": "Female",
         "race": "Liberi",
@@ -3871,7 +3931,9 @@
     },
     "Rosmontis": {
         "charId": "char_391_rosmon",
-        "alias": [],
+        "alias": [
+            "Shiroko"
+        ],
         "gender": "Female",
         "race": "Feline",
         "group": "Elite Operators",
@@ -3892,7 +3954,8 @@
             "Waifu",
             "Lung Wrath",
             "Female Tourist C",
-            "Balans"
+            "Balans",
+            "You aint seen nothing like this"
         ],
         "gender": "Female",
         "race": "Lung",
@@ -4005,7 +4068,12 @@
     },
     "Vigil": {
         "charId": "char_427_vigil",
-        "alias": [],
+        "alias": [
+            "You drive me insane",
+            "Hit hard a broken wall",
+            "Hit hard I gave it all",
+            "Hit hard a family tie"
+        ],
         "gender": "Male",
         "race": "Lupo",
         "group": "",
@@ -4060,7 +4128,8 @@
     "Ifrit": {
         "charId": "char_134_ifrit",
         "alias": [
-            "Tile"
+            "Tile",
+            "Child"
         ],
         "gender": "Female",
         "race": "Sarkaz",
@@ -4123,7 +4192,9 @@
         "charId": "char_2013_cerber",
         "alias": [
             "Doggo",
-            "Kay"
+            "Kay",
+            "Shrooms",
+            "Mushrooms"
         ],
         "gender": "Female",
         "race": "Perro",
@@ -4163,7 +4234,9 @@
     "Dusk": {
         "charId": "char_2015_dusk",
         "alias": [
-            "Bean"
+            "Bean",
+            "I've seen the highest high",
+            "When Im down in the lowest low"
         ],
         "gender": "Female",
         "race": "Unknown/Undisclosed",
@@ -4220,7 +4293,8 @@
         "charId": "char_4080_lin",
         "alias": [
             "Lung Wrath",
-            "Rat"
+            "Rat",
+            "You aint seen nothing like this"
         ],
         "gender": "Female",
         "race": "Zalak",
@@ -4294,7 +4368,9 @@
     },
     "Angelina": {
         "charId": "char_291_aglina",
-        "alias": [],
+        "alias": [
+            "Burn me to the ground"
+        ],
         "gender": "Female",
         "race": "Vulpo",
         "group": "",
@@ -4369,7 +4445,10 @@
     },
     "Silence the Paradigmatic": {
         "charId": "char_1031_slent2",
-        "alias": [],
+        "alias": [
+            "Mum",
+            "Mom"
+        ],
         "gender": "Female",
         "race": "Liberi",
         "group": "Rhine Lab",
@@ -4440,7 +4519,10 @@
     },
     "Phantom": {
         "charId": "char_250_phatom",
-        "alias": [],
+        "alias": [
+            "UTAE UTAE UTAE",
+            "Sing for me Sing for me"
+        ],
         "gender": "Male",
         "race": "Feline",
         "group": "",
@@ -4459,7 +4541,11 @@
         "charId": "char_1028_texas2",
         "alias": [
             "Delete",
-            "Taxes"
+            "Taxes",
+            "You drive me insane",
+            "Hit hard a broken wall",
+            "Hit hard I gave it all",
+            "Hit hard a family tie"
         ],
         "gender": "Female",
         "race": "Lupo",
@@ -4552,7 +4638,10 @@
     "Aak": {
         "charId": "char_225_haak",
         "alias": [
-            "Harmacist"
+            "Harmacist",
+            "Arknights",
+            "I've seen the highest high",
+            "When Im down in the lowest low"
         ],
         "gender": "Male",
         "race": "Feline",
@@ -4685,7 +4774,8 @@
             "Ex wife",
             "Hag",
             "Fossil",
-            "Harmacist"
+            "Harmacist",
+            "Yeah I can feel you but I cannot see you"
         ],
         "gender": "Female",
         "race": "Feline",
@@ -4763,7 +4853,8 @@
         "alias": [
             "Yes Im on fire",
             "Ignited by a burning desire",
-            "Bass"
+            "Bass",
+            "Spin"
         ],
         "gender": "Female",
         "race": "Oni",
@@ -4839,7 +4930,10 @@
     "Mudrock": {
         "charId": "char_311_mudrok",
         "alias": [
-            "Bonk"
+            "Bonk",
+            "Spin",
+            "The regret in my head got me taken over",
+            "Whistles"
         ],
         "gender": "Female",
         "race": "Sarkaz",
@@ -4858,7 +4952,11 @@
     "Penance": {
         "charId": "char_4065_judge",
         "alias": [
-            "Lavinia"
+            "Lavinia",
+            "You drive me insane",
+            "Hit hard a broken wall",
+            "Hit hard I gave it all",
+            "Hit hard a family tie"
         ],
         "gender": "Female",
         "race": "Lupo",
@@ -4993,7 +5091,8 @@
     "Thorns": {
         "charId": "char_293_thorns",
         "alias": [
-            "Destreza"
+            "Destreza",
+            "Karin"
         ],
         "gender": "Male",
         "race": "Ægir",
@@ -5048,7 +5147,8 @@
         "alias": [
             "Waifu",
             "Lung Wrath",
-            "Female Tourist C"
+            "Female Tourist C",
+            "Im looking everywhere but I cant find you"
         ],
         "gender": "Female",
         "race": "Lung",
@@ -5144,7 +5244,9 @@
     "Viviana": {
         "charId": "char_4098_vvana",
         "alias": [
-            "Candle Knight"
+            "Candle Knight",
+            "Electricity is running through my veins our history wont be written in chains",
+            "Though I lost myself through what Ive done the price wont be in vain"
         ],
         "gender": "Female",
         "race": "Elafia",
@@ -5198,7 +5300,10 @@
         "charId": "char_1014_nearl2",
         "alias": [
             "NTR",
-            "Netorare"
+            "Netorare",
+            "Cause you thought Id disappear for good now",
+            "You thought you left me here for dead dead dead dead",
+            "Full speed ahead"
         ],
         "gender": "Female",
         "race": "Kuranta",
@@ -5390,7 +5495,8 @@
     "Skadi": {
         "charId": "char_263_skadi",
         "alias": [
-            "Kyaa"
+            "Kyaa",
+            "Come close to me come close to me"
         ],
         "gender": "Female",
         "race": "Unknown/Undisclosed",
