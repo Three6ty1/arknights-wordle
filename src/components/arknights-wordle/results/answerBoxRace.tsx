@@ -25,7 +25,7 @@ export default function AnswerBoxRace({
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}
     >
-      <span>{guess}</span>
+      <span className="whitespace-pre-line">{guess === "Unknown/Undisclosed" ? "Unknown/\nUndisclosed" : guess}</span>
     </div>
   );
 }
