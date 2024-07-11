@@ -28,7 +28,6 @@ const config = {
     ],
     unoptimized: true,
   },
-  output: "standalone",
 };
 
 export default config;
