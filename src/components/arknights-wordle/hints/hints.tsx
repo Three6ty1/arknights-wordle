@@ -3,6 +3,7 @@ import HintHelp from "./hintHelp";
 import HintOperatorList from "./hintOperatorList";
 import HintWorldMap from "./hintWorldMap";
 import EndlessSwitch from "./endlessSwitch";
+import Statistics from "./statistics";
 
 export enum HintBreakpoints {
   "one" = 5,
@@ -19,10 +20,11 @@ export default function Hints() {
   return (
     <div className="my-2 flex w-full justify-center align-middle md:w-96">
       <div className="flex w-3/4 flex-row justify-center">
-        <HintOperatorList />
         <HintHelp />
+        <HintOperatorList />
         <HintWorldMap />
         <EndlessSwitch />
+        <Statistics />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ export default function HintHelp() {
   return (
     <>
       <button
-        className="btn indicator-item tooltip m-2 flex w-1/3 items-center"
+        className="btn indicator-item tooltip m-2 flex w-1/5 items-center"
         data-tip="Help and Info"
         onClick={() =>
           (
