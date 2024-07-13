@@ -26,7 +26,7 @@ export default function Info() {
           <VersionLog />
         </div>
         
-        <p>{`${stats?.timesGuessed === 0 ? "No Dokutah's have" : stats?.timesGuessed + " " + (stats?.timesGuessed && stats.timesGuessed > 1 ? "Dokutah's have" : "Dokutah has")} guessed the operator.`}</p>
+        <p>{`${stats?.timesGuessed === 0 ? "No Dokutahs have" : stats?.timesGuessed + " " + (stats?.timesGuessed && stats.timesGuessed > 1 ? "Dokutahs have" : "Dokutah has")} guessed the operator.`}</p>
       </div>
     </>
   );
