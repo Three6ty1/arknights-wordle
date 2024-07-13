@@ -18,7 +18,7 @@ export default function HintHelp() {
       </button>
       <dialog id="help_modal" className="modal">
         <div className="modal-box h-2/3 md:h-auto">
-          <h1 className="mb-2 text-xl font-bold">
+          <h1 className="mb-2 text-xl custom-bold">
             How to play Arknights Wordle
           </h1>
           <p>Each operator has 7 categories each.</p>
@@ -27,13 +27,13 @@ export default function HintHelp() {
             chosen operator.
           </p>
           <p>
-            <span className="font-bold">
+            <span className="custom-bold">
               After {HintBreakpoints.one} guesses
             </span>{" "}
             the operator list will be sorted by Rarity.
           </p>
           <p>
-            <span className="font-bold">
+            <span className="custom-bold">
               After {HintBreakpoints.two} guesses
             </span>{" "}
             the operator list will be sorted by Class.
@@ -44,33 +44,33 @@ export default function HintHelp() {
           </p>
           <ul className="whitespace-pre-line text-center">
             <li>
-              <p className="bg-incorrect text-white">Grey</p>
+              <p className="bg-incorrect text-white custom-bold">Grey</p>
               <p>Incorrect.</p>
             </li>
             <li>
-              <p className="bg-higher text-white">Blue</p>
+              <p className="bg-higher text-white custom-bold">Blue</p>
               <p>
                 The E2 cost of the chosen operator is{" "}
-                <span className="font-bold">HIGHER</span>
+                <span className="custom-bold">HIGHER</span>
                 <br />
                 than your guessed operators E2 cost.
               </p>
             </li>
             <li>
-              <p className="bg-lower text-white">Red</p>
+              <p className="bg-lower text-white custom-bold">Red</p>
               <p>
                 The E2 cost of the chosen operator is{" "}
-                <span className="font-bold">LOWER</span>
+                <span className="custom-bold">LOWER</span>
                 <br />
                 than your guessed operators E2 cost.
               </p>
             </li>
             <li>
-              <p className="bg-half text-white">Orange</p>
+              <p className="bg-half text-white custom-bold">Orange</p>
               <p>
-                The <span className="font-bold">allegiance</span> of your
+                The <span className="custom-bold">allegiance</span> of your
                 guessed operator is{" "}
-                <span className="font-bold">partially correct</span>
+                <span className="custom-bold">partially correct</span>
               </p>
               <p>
                 E.g. If the character is under Elite Ops and you guess a
@@ -79,7 +79,7 @@ export default function HintHelp() {
               </p>
             </li>
             <li>
-              <p className="bg-correct text-white">Green</p>
+              <p className="bg-correct text-white custom-bold">Green</p>
               <p>Correct.</p>
             </li>
           </ul>

@@ -108,7 +108,7 @@ export default function VersionLog() {
         <div className="modal-box flex flex-col space-y-2 md:space-y-6 no-scrollbar no-scrollbar::-webkit-scrollbar overflow-y-scroll h-2/3">
           {versions.map((currentVersion) => (
             <div className="flex flex-col" key={`${currentVersion.version} key`}>
-              <h3 className="font-bold text-lg">Version {currentVersion.version}{currentVersion.date? " - " + currentVersion.date : ""}</h3>
+              <h3 className="custom-bold text-lg">Version {currentVersion.version}{currentVersion.date? " - " + currentVersion.date : ""}</h3>
               <p className="whitespace-pre-line float-left text-left">{currentVersion.content}</p>
               {currentVersion.added &&
                 <div className="flex flex-wrap">

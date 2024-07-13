@@ -23,7 +23,7 @@ export default function HistoryGraph() {
               <div className="w-2 text-center mr-2">{k}</div>
               {playHistory[k]! > 0 && 
                 <div className="tooltip flex w-full flex-row items-center bg-current justify-end" data-tip={`${Math.floor((playHistory[k]!/total) *100)}%`} style={{width: ((playHistory[k]!/maxi) *100) + "%"}}>
-                  <p className="text-base-100 font-bold mr-1 md:mr-2">{playHistory[k]}</p>
+                  <p className="text-base-100 custom-bold mr-1 md:mr-2">{playHistory[k]}</p>
                 </div>
               }
             </div>

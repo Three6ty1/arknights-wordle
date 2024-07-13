@@ -10,7 +10,7 @@ export default function PastGuesses() {
   return (
     <>
       {/** Needs margin top or else it overlaps with search bar due to the grid formatting. */}
-      <div className="relative top-[55px] col-start-1 row-start-1 flex flex-col overflow-y-clip overflow-x-scroll pb-10 md:overflow-x-visible md:overflow-y-visible">
+      <div className="relative top-[55px] col-start-1 row-start-1 flex flex-col overflow-y-clip overflow-x-scroll pb-10 md:overflow-x-visible md:overflow-y-visible z-10">
         {/** Wrapper for div to expand into scrollable area in mobile */}
         <div className="flex w-fit flex-col">
           {isNormalMode ? 

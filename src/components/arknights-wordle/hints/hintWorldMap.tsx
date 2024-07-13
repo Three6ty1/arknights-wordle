@@ -15,7 +15,7 @@ const regions = {
   "Rhodes Island":
     "Varied.\nGroups: Elite Ops, Followers, Op-teams, S.W.E.E.P.",
   "Rim Billiton": "Mainly Cautus: Rabbits and Hares.",
-  Sami: "Mainly Elafia: Deer",
+  Sami: "Mainly Elafia: Deer.",
   Sargon: "Mainly Archosauria: Crocodilians and Pythia: Serpents.",
   Siracusa: "Mainly Lupo: Wolves and Vulpo: Foxes.\nGroups: Chiave's Gang.",
   Ursus: "Mainly Ursus: Bears.\nGroups: Ursus Student Self-Governing Group.",
@@ -44,15 +44,16 @@ export default function HintWorldMap() {
         </button>
       </div>
       <dialog id="world_map_modal" className="modal overflow-visible">
-        <div className="no-scrollbar no-scrollbar::-webkit-scrollbar modal-box h-2/3 md:h-auto max-w-[95vw] md:w-3/5 mt-5 p-2 md:p-6 flex flex-row flex-wrap justify-start">
+        <div className="modal-box flex flex-col justify-start max-w-[95vw] md:w-3/5 h-2/3 mt-5 p-2 md:p-6 no-scrollbar no-scrollbar::-webkit-scrollbar ">
+          <div className="text-lg custom-bold">Regions and Races</div>
+          <div className="flex flex-row flex-wrap w-full justify-start">
           {Object.entries(regions).map(region => (
-            <div tabIndex={0} className="collapse w-1/2 md:w-1/4 text-left md:p-2" key={region[0]}>
-              <div className="collapse-title text-xl font-bold">{region[0]}</div>
-              <div className="collapse-content">
-                <p className="whitespace-pre-line">{region[1]}</p>
-              </div>
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-2 h-fit" key={region[0]}>
+              <div className="text-lg custom-bold">{region[0]}</div>
+              <p className="whitespace-pre-line text-left p-2 border-[1px] border-incorrect rounded-sm">{region[1]}</p>
             </div>
           ))}
+          </div>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>

@@ -32,7 +32,7 @@ export default function AnswerBoxCost({
       }}
     >
       <span>{`E0: ${guess[0]}`}</span>
-      <span className="underline">{`E2: ${guess[1]}`}</span>
+      <span className="custom-bold">{`E2: ${guess[1]}`}</span>
       <span>{result}</span>
     </div>
   );

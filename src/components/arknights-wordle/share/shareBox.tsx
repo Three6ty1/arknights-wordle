@@ -105,7 +105,7 @@ export default function ShareBox({ gameId }: Props) {
       </div>
       <dialog id="share-modal" className="modal">
       <div className="modal-box">
-        <h1 className="font-bold text-xl">Copied to clipboard!</h1>
+        <h1 className="custom-bold text-xl">Copied to clipboard!</h1>
         <p>Here are your stats. Thanks for playing :)</p>
         <div className="m-3 mb-0">
           <HistoryGraph />

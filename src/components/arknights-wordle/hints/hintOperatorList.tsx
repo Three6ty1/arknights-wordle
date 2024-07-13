@@ -88,8 +88,8 @@ export default function HintOperatorList() {
         </button>
       </div>
       <dialog id="operator_list_modal" className="modal">
-        <div className="no-scrollbar no-scrollbar::-webkit-scrollbar modal-box flex h-2/3 md:h-auto max-w-[3/5vh] flex-col justify-items-center overflow-x-clip overflow-y-scroll">
-          <h1 className="mb-2 w-full text-xl font-bold">
+        <div className="no-scrollbar no-scrollbar::-webkit-scrollbar modal-box flex h-4/5 max-w-[3/5vh] flex-col justify-items-center overflow-x-clip overflow-y-scroll">
+          <h1 className="mb-2 w-full text-xl custom-bold">
             Operator List (Up to Viviana)
           </h1>
           <div className="flex w-full flex-row flex-wrap justify-center">

@@ -19,7 +19,7 @@ export default function Info() {
         alt="Logo"
         priority={true}
       />
-      <h1 className="text-4xl font-bold">{stats?.gameId % 13 == 0 ? "WORLDE :)" : "WORDLE"}</h1>
+      <h1 className="text-4xl custom-bold">{stats?.gameId % 13 == 0 ? "WORLDE :)" : "WORDLE"}</h1>
       <div className="mt-2">
         <div className="flex flex-row justify-center">
           <p className="px-2">{`#${stats?.gameId}, ${stats?.date}`}</p>
