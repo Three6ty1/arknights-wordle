@@ -27,7 +27,7 @@ export default function AnswerBoxAllegiance({
 
   // Students of Ursus edge case
   if (guess.split(" ").length > 3) {
-    divStyle += " text-xs"
+    divStyle += " text-sm"
   }
 
   return (

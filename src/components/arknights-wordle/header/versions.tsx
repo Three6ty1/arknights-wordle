@@ -13,6 +13,7 @@ const versions = [
     - Font is now local to the site, therefore there shouldn't be any missing fonts going forward
     - Started tracking stats for play history from game #163 (coincidentally 361 backwards). I do not plan on tracking global stats for each day since this game is supposed to be casual. You can compare among people on social media platforms if you'd like
     - Re-enabled tooltips for mobile after tweaking the positioning
+    - Made the letter tracking (spacing) bigger for all bold fonts. I hope this makes readability (especially in dark mode) better 
     - Minor changes including font-weight, sizes and text breaking for answer rows
     - Ops up to Degenbrecher banner will be added as soon as Aceship translates their profiles. This means CN ops will never be added early`,
     other:
