@@ -40,9 +40,8 @@ export default function AnswerRow({ guess, index }: Props) {
         } else if (key === "name") {
           return (
             // Need this here to make the tooltip for Answer box name overlap the next category
-            <div className="z-10 before:z-10">
+            <div className="z-10 before:z-10" key={key}>
               <AnswerBoxName
-                key={key}
                 op={op}
                 name={guess[key as keyof typeof guess] as string}
                 divStyle={divStyle}

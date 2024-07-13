@@ -30,6 +30,7 @@
   "include": [
     ".eslintrc.cjs",
     "next-env.d.ts",
+    "svg.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",

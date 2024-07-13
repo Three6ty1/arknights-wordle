@@ -1,8 +1,9 @@
-type Props = {
-  handleThemeChange: (e: HTMLInputElement) => void;
-};
+import React from "react";
+import { ThemeContext } from "~/pages";
 
-export default function Theme({ handleThemeChange }: Props) {
+export default function Theme() {
+  const { handleThemeChange } = React.useContext(ThemeContext)
+  
   return (
     <label className="swap swap-rotate fixed bottom-1 right-1 z-10 md:bottom-auto md:right-3 md:top-3 ">
       {/* this hidden checkbox controls the state */}

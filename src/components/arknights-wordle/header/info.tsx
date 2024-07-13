@@ -1,20 +1,21 @@
-import type { Stats } from "~/server/api/routers/wordle";
 import LogoBlack from "../../../../public/logo_black.svg";
 import LogoWhite from "../../../../public/logo_white.svg";
 import Image from "next/image";
 import VersionLog from "./versions";
+import React from "react";
+import { GameModeContext, ThemeContext } from "~/pages";
 
-type Props = {
-  darkMode: boolean;
-  stats: Stats;
-};
-export default function Info({ darkMode, stats }: Props) {
+export default function Info() {
+  const { stats } = React.useContext(GameModeContext)
+  const { darkMode } = React.useContext(ThemeContext)
+  
   return (
     <>
+      {/* The preload issue does not go away... Fix later??? */}
       <Image
         width={416}
         height={72}
-        src={`${darkMode ? LogoWhite.src : LogoBlack.src}`} // eslint-disable-line
+        src={`${darkMode ? LogoWhite.src : LogoBlack.src}`}
         alt="Logo"
         priority={true}
       />

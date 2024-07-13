@@ -4,8 +4,7 @@
 
 @font-face {
     font-family: "Azbuka W01 Condensed";
-    src: local("Azbuka-W01-Condensed"),
-        url("~/src/fonts/Azbuka-W01-Condensed/Azbuka-W01-Condensed.ttf") format("truetype");
+    src: url("~/src/fonts/Azbuka-W01-Condensed/Azbuka-W01-Condensed.ttf") format("truetype");
 }
 
 @layer utilities {

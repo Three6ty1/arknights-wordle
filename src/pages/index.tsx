@@ -35,8 +35,14 @@ interface PlayHistoryContextValue {
   playHistory: Record<string, number>,
 }
 
-export const GameModeContext = React.createContext<GameModeContextValue>(undefined as unknown as GameModeContextValue);
+interface ThemeContextValue {
+  handleThemeChange: (e: HTMLInputElement) => void,
+  darkMode: boolean,
+}
+
+export const GameModeContext = React.createContext(undefined as unknown as GameModeContextValue);
 export const PlayHistoryContext = React.createContext<PlayHistoryContextValue>({playHistory: {}});
+export const ThemeContext = React.createContext(undefined as unknown as ThemeContextValue);
 
 export default function ArknightsWordle({
   stats,
@@ -233,10 +239,12 @@ export default function ArknightsWordle({
         id="ak-wordle-root"
         className="justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans"
       >
-        <Theme handleThemeChange={(e) => handleThemeChange(e)} />
-        <Info darkMode={darkMode} stats={stats} />
-
         <GameModeContext.Provider value={{allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
+          <ThemeContext.Provider value={{darkMode, handleThemeChange}}>
+            <Theme />
+            <Info />
+          </ThemeContext.Provider>
+
           <Hints />
           <SearchError error={error} endlessError={endlessError} />
       
