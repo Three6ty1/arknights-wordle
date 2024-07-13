@@ -1,6 +1,7 @@
 import { Range, Correctness } from "~/helper/helper";
 import React from "react";
 import { GameModeContext } from "~/pages/index";
+import HistoryGraph from "./historyGraph";
 
 type Props = {
   gameId: number;
@@ -8,7 +9,6 @@ type Props = {
 
 export default function ShareBox({ gameId }: Props) {
   const [shareString, setShareString] = React.useState("");
-  const [isVisible, setIsVisible] = React.useState(false);
 
   const {guesses} = React.useContext(GameModeContext)
 
@@ -60,30 +60,23 @@ export default function ShareBox({ gameId }: Props) {
     };
 
     generateshareString();
-  });
+  }, [guesses]);
 
-  const handleShare = () => {
-    const newString = `Arknights Wordle #${gameId}\nOperator guessed in ` + shareString + "https://three6ty1.vercel.app/arknights-wordle";
+  const handleShare = (newString: string) => {
     navigator.clipboard.writeText(newString).catch(() => {
       console.log("Cannot add to clipboard");
     });
-    if (isVisible) {
-      return;
-    }
-    setIsVisible(true);
-    setTimeout(() => setIsVisible(false), 3000);
+    (document.getElementById('share-modal') as HTMLDialogElement).showModal()
+  }
+
+  const handleOtherShare = () => {
+    const newString = `Arknights Wordle #${gameId}\nOperator guessed in ` + shareString + "https://ak-wordle.three6ty1.dev/";
+    handleShare(newString)
   };
 
   const handleMarkdownShare = () => {
-    const newString = `[Arknights Wordle](<https://three6ty1.vercel.app/arknights-wordle>) #${gameId}\nOperator guessed in ` + shareString;
-    navigator.clipboard.writeText(newString).catch(() => {
-      console.log("Cannot add to clipboard");
-    });
-    if (isVisible) {
-      return;
-    }
-    setIsVisible(true);
-    setTimeout(() => setIsVisible(false), 3000);
+    const newString = `[Arknights Wordle](<https://ak-wordle.three6ty1.dev/>) #${gameId}\nOperator guessed in ` + shareString;
+    handleShare(newString)
   }
 
   return (
@@ -98,18 +91,23 @@ export default function ShareBox({ gameId }: Props) {
         </button>
         <button
           className="btn btn-success w-fit text-white"
-          onClick={() => handleShare()}
+          onClick={() => handleOtherShare()}
         >
           On other sites
         </button>
       </div>
-      {isVisible && (
-        <div className="toast toast-start md:toast-end text-center z-[999]">
-          <div className="flex alert alert-success text-center">
-            <span>Copied to clipboard.</span>
-          </div>
+      <dialog id="share-modal" className="modal">
+      <div className="modal-box">
+        <h1 className="font-bold text-xl">Copied to clipboard!</h1>
+        <p>Here are your stats. Thanks for playing :)</p>
+        <div className="m-3 mb-0">
+          <HistoryGraph />
         </div>
-      )}
+      </div>
+      <form method="dialog" className="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
     </div>
   );
 }

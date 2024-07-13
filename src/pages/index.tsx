@@ -31,7 +31,12 @@ interface GameModeContextValue {
   handleEndlessReset: () => void,
 }
 
+interface PlayHistoryContextValue {
+  playHistory: Record<string, number>,
+}
+
 export const GameModeContext = React.createContext<GameModeContextValue>(undefined as unknown as GameModeContextValue);
+export const PlayHistoryContext = React.createContext<PlayHistoryContextValue>({playHistory: {}});
 
 export default function ArknightsWordle({
   stats,
@@ -52,6 +57,8 @@ export default function ArknightsWordle({
   const [darkMode, setDarkMode] = React.useState(false);
   const [error, setError] = React.useState("");
   const [endlessError, setEndlessError] = React.useState("");
+
+  const [playHistory, setPlayHistory] = React.useState<Record<string, number>>({});
 
   const winMutation = api.wordle.updateWins.useMutation();
 
@@ -127,10 +134,17 @@ export default function ArknightsWordle({
       setEndlessGuesses(guesses);
     }
 
+    const initPlayHistory = () => {
+      const ls = localStorage.getItem("playHistory");
+      const ph = ls ? (JSON.parse(ls) as unknown as Record<string, number>) : {"1":0, "2":0, "3":0, "4":0, "5":0, "6":0, "7+":0};
+      setPlayHistory(ph);
+    }
+
+    initPlayHistory();
     initEndless();
     initGuesses();
     initTheme();
-  });
+  }, [allOperators]);
 
   const handleSubmit = (
     guess: Operator,
@@ -163,6 +177,11 @@ export default function ArknightsWordle({
           localStorage.setItem("playing", "false");
           setPlaying(false);
           winMutation.mutate();
+
+          // Set stats
+          newGuesses.length < 7 ? playHistory[newGuesses.length]! += 1 : playHistory["7+"]! += 1
+          setPlayHistory(playHistory)
+          localStorage.setItem("playHistory", JSON.stringify(playHistory))
         } else {
           localStorage.setItem("endlessPlaying", "false");
           setEndlessPlaying(false);
@@ -220,11 +239,12 @@ export default function ArknightsWordle({
         <GameModeContext.Provider value={{allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
           <Hints />
           <SearchError error={error} endlessError={endlessError} />
-
+      
           <div className="grid w-full justify-center">
-            <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
+            <PlayHistoryContext.Provider value={{playHistory}}>
+              <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
+            </PlayHistoryContext.Provider>
             <PastGuesses />
-            
           </div>
         </GameModeContext.Provider>
       </main>
