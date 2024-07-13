@@ -29,8 +29,8 @@ export default function AnswerBoxRarity({
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}
     >
-      <span className="font-bold">{guess}</span>
-      <span className="font-bold">{result}</span>
+      <span>{guess}</span>
+      <span>{result}</span>
     </div>
   );
 }

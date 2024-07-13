@@ -13,7 +13,7 @@ export default function AnswerBoxName({ op, name, divStyle }: Props) {
 
   return (
     <div
-      className={`${divStyle} tooltip-answer-row bg-base-200`}
+      className={`${divStyle} tooltip-answer-row-name bg-base-200`}
       data-tip={name}
       style={{ animationDelay: "200ms" }}
     >

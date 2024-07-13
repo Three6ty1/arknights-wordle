@@ -21,8 +21,21 @@
 }
 
 @layer components {
+    /* Custom tooltips needed for making sure tooltips are nicely formatted in mobile*/
     .tooltip-answer-row {
-        @apply lg:tooltip lg:tooltip-top before:lg:w-max before:whitespace-pre-line lg:before:content-[attr(data-tip)]
+        @apply tooltip before:w-max before:whitespace-pre-line before:content-[attr(data-tip)]
+    }
+
+    .tooltip-answer-row-name {
+        @apply tooltip tooltip-right lg:tooltip-top before:w-max before:whitespace-pre-line before:content-[attr(data-tip)]
+    }
+
+    .tooltip-answer-row-cost {
+        @apply tooltip tooltip-left lg:tooltip-top before:w-max before:whitespace-pre-line before:content-[attr(data-tip)]
+    }
+
+    .tooltip-answer-category {
+        @apply tooltip tooltip-bottom lg:tooltip-top before:w-max before:whitespace-pre-line before:content-[attr(data-tip)]
     }
 
     .answer-row {
@@ -32,23 +45,24 @@
 
 @keyframes flip {
     0% {
-        transform: rotateX(90deg);
+        transform: rotateY(-90deg);
         opacity: 0;
+        z-index: 0;
     }
     100% {
-        transform: rotateX(0);
-        opacity: 1;
+        transform: rotateY(0);
         z-index: 0;
+        opacity: 1;
     }
 }
 
 @keyframes win {
     0% {
-        transform: rotateX(90deg);
+        transform: rotateY(-90deg);
         opacity: 0
     }
     25% {
-        transform: rotateX(0);
+        transform: rotateY(0);
         opacity: 1
     }
     65% {

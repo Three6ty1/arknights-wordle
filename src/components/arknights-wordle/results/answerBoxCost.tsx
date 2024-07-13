@@ -24,7 +24,7 @@ export default function AnswerBoxCost({
 
   return (
     <div
-      className={`${divStyle} tooltip-answer-row`}
+      className={`${divStyle} tooltip-answer-row-cost`}
       data-tip={costToolTips[result as keyof typeof costToolTips]}
       style={{
         backgroundColor: bg,
@@ -32,8 +32,8 @@ export default function AnswerBoxCost({
       }}
     >
       <span>{`E0: ${guess[0]}`}</span>
-      <span>{`E2: ${guess[1]}`}</span>
-      <span className="font-bold">{result}</span>
+      <span className="underline">{`E2: ${guess[1]}`}</span>
+      <span>{result}</span>
     </div>
   );
 }

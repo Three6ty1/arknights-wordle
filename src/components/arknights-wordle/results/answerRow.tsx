@@ -20,7 +20,7 @@ export default function AnswerRow({ guess, index }: Props) {
 
   const {guesses, endlessGuesses, isNormalMode} = React.useContext(GameModeContext)
 
-  let divStyle = "answer-row flex flex-col p-1 leading-2 break-all text-white";
+  let divStyle = "answer-row flex flex-col p-1 leading-5 text-white";
 
   const op = isNormalMode ? guesses[index] : endlessGuesses[index];
   if (!op) {
@@ -39,12 +39,15 @@ export default function AnswerRow({ guess, index }: Props) {
           return null;
         } else if (key === "name") {
           return (
-            <AnswerBoxName
-              key={key}
-              op={op}
-              name={guess[key as keyof typeof guess] as string}
-              divStyle={divStyle}
-            />
+            // Need this here to make the tooltip for Answer box name overlap the next category
+            <div className="z-10 before:z-10">
+              <AnswerBoxName
+                key={key}
+                op={op}
+                name={guess[key as keyof typeof guess] as string}
+                divStyle={divStyle}
+              />
+            </div>
           );
         } else if (key === "race") {
           return (

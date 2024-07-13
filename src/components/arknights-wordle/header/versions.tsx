@@ -11,19 +11,26 @@ const versions = [
     - New domain name (yay), paying money to host now (noo). Learning experience and increased employability? (copium)
     - Added more operator nicknames and a fully matched ultra-super \"nickname\". The hint is \"CC\"
     - Font is now local to the site, therefore there shouldn't be any missing fonts going forward
-    - Stats for play history. I do not plan on tracking global stats for each day since this game is supposed to be casual.`
+    - Stats for play history. I do not plan on tracking global stats for each day since this game is supposed to be casual
+    - Re-enabled tooltips for mobile after tweaking the positioning
+    - Minor changes including font-weight, sizes and text breaking for answer rows
+    - Ops up to Degenbrecher banner will be added as soon as Aceship translates their profiles. This means CN ops will never be added early
+    - If this site ever gets super popular in the far future I may need to implement ads. I promise they will be non-intrusive and you will not need to disable your adblocker.
+    - I've been job hunting even before this popped off, therefore from now I will only maintain operator updates and bug fixes until I have the time. I also have other projects I want to get started on.
+    
+    Thanks for playing!`
   },
   {
     version: "1.4",
     date: "6th July 2024",
     content: 
     `- Fixed bug where recent chosen operators are chosen again
-    - Keep in mind that the database did get nuked so there will be overlaps with the previous month of operators.
-    - I manually reset the operator, so reset your cache for the operator today if you've already guessed.
-    - Added Endless mode. I did not add the share functionality as I didn't find a reason as to why you'll share endless. It's easy enough to add it in the future though.
-    - Code base refactoring and cleaning up. Me from 6 months ago would be proud.
-    - This will be the last update ON THIS DOMAIN. I will start porting over this project off of Vercel.
-    - No promises as to when it will happen but everyone will have a weeks notice and I'll have a popup when you visit the site.`
+    - Keep in mind that the database did get nuked so there will be overlaps with the previous month of operators
+    - I manually reset the operator, so reset your cache for the operator today if you've already guessed
+    - Added Endless mode. I did not add the share functionality as I didn't find a reason as to why you'll share endless. It's easy enough to add it in the future though
+    - Code base refactoring and cleaning up. Me from 6 months ago would be proud
+    - This will be the last update ON THIS DOMAIN. I will start porting over this project off of Vercel
+    - No promises as to when it will happen but everyone will have a weeks notice and I'll have a popup when you visit the site`
   },
   {
     version: "1.3.1",
@@ -35,7 +42,7 @@ const versions = [
     content: 
     `- Had to reset the database
     - Added share with markdown feature to reduce text length by hyperlinking url (Mainly for Discord)
-    - Added metadata and icon to the site. Wordle and Arknights Rhodes Island icons were used and edited.
+    - Added metadata and icon to the site. Wordle and Arknights Rhodes Island icons were used and edited
     - Added alias searching for cases such as Kirin Yato and Rathalos Noir Corne
     - Added a bunch of joke aliases/nicknames. I hope everyone has as much fun discovering them as I did adding them
     - For example, try searching for \"Doggo\" (sorry namie) :^)

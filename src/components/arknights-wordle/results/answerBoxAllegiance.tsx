@@ -25,6 +25,11 @@ export default function AnswerBoxAllegiance({
     bg = wordleColors.incorrect;
   }
 
+  // Students of Ursus edge case
+  if (guess.split(" ").length > 3) {
+    divStyle += " text-xs"
+  }
+
   return (
     <>
       {tooltip ? (
