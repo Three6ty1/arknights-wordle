@@ -1,5 +1,5 @@
-import {SvgComponent as LogoBlack} from "../../../../public/logo_black.svg";
-import {SvgComponent as LogoWhite} from "../../../../public/logo_white.svg";
+import LogoBlack from "../../../../public/logo_black.svg";
+import LogoWhite from "../../../../public/logo_white.svg";
 import Image from "next/image";
 import VersionLog from "./versions";
 import React from "react";
@@ -15,8 +15,7 @@ export default function Info() {
       <Image
         width={416}
         height={72}
-        // @ts-expect-error wont shut up about src even though linting is happy
-        src={`${darkMode ? LogoWhite.src : LogoBlack.src}`}
+        src={`${darkMode ? LogoWhite.src : LogoBlack.src}`} // eslint-disable-line
         alt="Logo"
         priority={true}
       />
