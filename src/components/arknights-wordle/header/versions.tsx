@@ -132,7 +132,7 @@ export default function VersionLog() {
               }
               {currentVersion.other &&
                 <div tabIndex={0} className="collapse bg-none rounded-none mt-2 p-0 h-5 focus:h-full">
-                  <div className="collapse-title underline min-h-0 h-5 p-0 text-left">Off topic</div>
+                  <div className="collapse-title underline min-h-0 h-5 p-0 text-left">Yapping (Off topic)</div>
                   <div className="collapse-content m-0 p-0 mt-2">
                     <p className="whitespace-pre-line float-left text-left">{currentVersion.other}</p>
                   </div>
