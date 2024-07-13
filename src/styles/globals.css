@@ -34,7 +34,7 @@
     }
 
     .tooltip-answer-category {
-        @apply tooltip tooltip-bottom lg:tooltip-top before:w-max before:whitespace-pre-line before:content-[attr(data-tip)]
+        @apply tooltip tooltip-bottom before:w-max before:whitespace-pre-line before:content-[attr(data-tip)]
     }
 
     .answer-row {

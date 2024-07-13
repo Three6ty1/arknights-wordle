@@ -13,7 +13,7 @@ export default function SearchAndShare({isInputDelay, playing} : Props) {
   const {isNormalMode, endlessPlaying, stats, endlessGuesses, handleEndlessReset} = React.useContext(GameModeContext)
 
   return (
-    <div className="z-10 col-start-1 row-start-1 flex h-fit w-full flex-col align-middle">
+    <div className="z-50 col-start-1 row-start-1 flex h-fit w-full flex-col align-middle">
       {/**
       * Using grid and col-start to force these elements to overlap one another
       * This is so the search bar appears ontop of the answer row instead of pushing it down.
