@@ -47,6 +47,5 @@ export default {
   },
   plugins: [
     require('daisyui'),
-    require('react-chartkick')
   ],
 } satisfies Config;
