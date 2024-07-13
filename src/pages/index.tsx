@@ -244,16 +244,15 @@ export default function ArknightsWordle({
             <Theme />
             <Info />
           </ThemeContext.Provider>
-
-          <Hints />
-          <SearchError error={error} endlessError={endlessError} />
-      
-          <div className="grid w-full justify-center">
-            <PlayHistoryContext.Provider value={{playHistory}}>
+          <PlayHistoryContext.Provider value={{playHistory}}>
+            <Hints />
+            <SearchError error={error} endlessError={endlessError} />
+        
+            <div className="grid w-full justify-center">
               <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
-            </PlayHistoryContext.Provider>
-            <PastGuesses />
-          </div>
+              <PastGuesses />
+            </div>
+          </PlayHistoryContext.Provider>
         </GameModeContext.Provider>
       </main>
     </>
