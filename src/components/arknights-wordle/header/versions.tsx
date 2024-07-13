@@ -13,7 +13,7 @@ const versions = [
     - Font is now local to the site, therefore there shouldn't be any missing fonts going forward
     - Started tracking stats for play history from game #163 (coincidentally 361 backwards). I do not plan on tracking global stats for each day since this game is supposed to be casual. You can compare among people on social media platforms if you'd like
     - Re-enabled tooltips for mobile after tweaking the positioning
-    - Made the letter tracking (spacing) bigger for all bold fonts. I hope this makes readability (especially in dark mode) better 
+    - Made the letter tracking (spacing) bigger for all bold text. IMO the readability is so much better
     - Minor changes including font-weight, sizes and text breaking for answer rows
     - Ops up to Degenbrecher banner will be added as soon as Aceship translates their profiles. This means CN ops will never be added early`,
     other:
@@ -104,12 +104,12 @@ export default function VersionLog() {
 
   return (
     <>
-      <button className="underline" onClick={()=>(document.getElementById('version_modal') as HTMLDialogElement).showModal()}>v{versions[0]?.version}</button>
+      <button className="underline" onClick={()=> (document.getElementById('version_modal') as HTMLDialogElement).showModal()}>v{versions[0]?.version}</button>
       <dialog id="version_modal" className="modal">
         <div className="modal-box flex flex-col space-y-2 md:space-y-6 no-scrollbar no-scrollbar::-webkit-scrollbar overflow-y-scroll h-2/3">
           {versions.map((currentVersion) => (
             <div className="flex flex-col" key={`${currentVersion.version} key`}>
-              <h3 className="custom-bold text-lg">Version {currentVersion.version}{currentVersion.date? " - " + currentVersion.date : ""}</h3>
+              <h3 className="custom-bold text-lg" tabIndex={0}>Version {currentVersion.version}{currentVersion.date? " - " + currentVersion.date : ""}</h3>
               <p className="whitespace-pre-line float-left text-left">{currentVersion.content}</p>
               {currentVersion.added &&
                 <div className="flex flex-wrap">
@@ -132,7 +132,7 @@ export default function VersionLog() {
                 </div>
               }
               {currentVersion.other &&
-                <div tabIndex={0} className="collapse bg-none rounded-none mt-2 p-0 h-5 focus:h-full">
+                <div tabIndex={1} className="collapse bg-none rounded-none mt-2 p-0 h-5 focus:h-full">
                   <div className="collapse-title underline min-h-0 h-5 p-0 text-left">Yapping (Off topic)</div>
                   <div className="collapse-content m-0 p-0 mt-2">
                     <p className="whitespace-pre-line float-left text-left">{currentVersion.other}</p>
