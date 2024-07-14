@@ -8,14 +8,17 @@ const versions = [
     date: "14th July 2024",
     content: 
     `- This pop up on a new version
+    - Bug submission button at top right of Help section
     - New domain name (yay, shouldn't need to change again). Paying money to host (noo). Learning experience and increased employability? (copium)
     - Added more operator nicknames and a fully matched ultra-super \"nickname\". The hint is \"CC\"
     - Font is now local to the site, therefore there shouldn't be any missing fonts going forward
-    - Started tracking stats for play history from game #163 (coincidentally 361 backwards). I do not plan on tracking global stats for each day since this game is supposed to be casual. You can compare among people on social media platforms if you'd like
+    - Started tracking stats for play history from game #163 (coincidentally 361 backwards)
     - Re-enabled tooltips for mobile after tweaking the positioning
-    - Made the letter tracking (spacing) bigger for all bold text. IMO the readability is so much better
+    - Made the letter tracking (spacing) bigger for all bold text to improve readability (especially in dark mode)
     - Minor changes including font-weight, sizes and text breaking for answer rows
-    - Ops up to Degenbrecher banner will be added as soon as Aceship translates their profiles. This means CN ops will never be added early`,
+    - Ops up to Degenbrecher banner will be added as soon as Aceship translates their profiles. This means CN ops will never be added early
+    - If you have a bit of free time feel free to fill out this short survey with 9 questions, 3 required (all multiple choice)`,
+    link: {href: "https://forms.gle/cweyGtFiTQEn5DHd8", text:"Player satisfaction survey ( 0 (zero) Orundums will be mailed to your inbox after completion )"},
     other:
     `If this site ever gets super popular in the far future I may need to implement ads. My goal is to cover server costs, not to make a profit.
 
@@ -130,6 +133,9 @@ export default function VersionLog() {
                     return <></>
                   })}
                 </div>
+              }
+              {currentVersion.link && 
+                <a className="text-left underline text-blue-500" href={currentVersion.link.href} target="_blank">{currentVersion.link.text}</a>
               }
               {currentVersion.other &&
                 <div tabIndex={1} className="collapse bg-none rounded-none mt-2 p-0 h-5 focus:h-full">
