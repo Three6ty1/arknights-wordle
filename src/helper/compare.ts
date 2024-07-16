@@ -65,7 +65,7 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
         charId: guess.charId,
         name: guess.name,
         ...res,
-        correct: correct && guess.charId == answer.charId,
+        correct: correct,
     }
 }
 

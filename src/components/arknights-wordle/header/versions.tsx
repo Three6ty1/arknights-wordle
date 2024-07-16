@@ -4,6 +4,42 @@ import React from "react";
 
 const versions = [
   {
+    version: "2.0.1",
+    date: "16th July 2024",
+    content:
+    `- Thank you everyone who responded on the survey and thank you for the kind words, feedback and suggestions. I had a fun time reading all of the responses
+
+    *** IMPORTANT ***
+    There was confusion over a recent game where Suzuran was picked as the answer. However, Angelina completely overlaps with her in EVERY category, leading to players thinking that the game was bugged.
+
+    For now, I have removed the morsel of code that prevents both operators for being correct. But until I figure out an elegant solution to prevent overlapping operators from being chosen, Angelina might be chosen again.
+    
+    - Forgot to add the new nicknames to the database, they are ACTUALLY added now (sorry)
+    - Fixed refresh button formatting for endless mode
+
+    I will need some time to decide on, research and implement certain feedback, thanks for being patient!
+    - Changed and fixed the bug report/suggestions button. It's very ironic that the bug report button was bugged i cant believe i forgot to put the link
+    - Changed wording from Cost (E2) -> DP Cost (E2) due to ambiguity
+    - Slightly increased guess reveal speed
+    - More in Yapping`,
+    link: {href: "https://forms.gle/uYKsrUcXH6yErWUL6", text: "Please let me know your opinions if you have a minute or two to spare <3"},
+    other:
+    `- I do have this guilty concience and so with a heavy heart, I have to self report that I haven't actually opened up Arknights ever since Typhon banner (insert skull emoji) I will come back for Ascalon tho
+    - Initially I had added in the overlapping operator edge case as I thought that it wouldn't make sense to be correct as you didn't guess *the* operator.
+    However, it is definitely unfair to think of a matching operator, guess it and then be wrong based on a coinflip as a player.
+
+    In rough priority and with no forecasted date:
+    - I will add hints for Endless mode
+    - I will research and implement a high contrast mode
+    - I will implement light mode specific and general UI changes/improvements
+    - I will think of a way to hint/reveal easter eggs or have a global list
+    - I will look into an alternative to Aceship, preferably one I can download/scrape from. Though it seems like some of the CN files have all the necessary stuff translated
+    - I will tentatively research how to do localisation (to CN (default lang) and then JP) but I have 0 experience in this field
+    
+    - As this is just *supposed* to be a smaller personal project, I'm not sure if I can follow through with a group commitment at the time of writing
+    - However, if you reached out to me thank you, I really appreciate it and I still may reach out in the future`
+  },
+  {
     version: "2.0",
     date: "14th July 2024",
     content: 
@@ -139,7 +175,7 @@ export default function VersionLog() {
               }
               {currentVersion.other &&
                 <div tabIndex={1} className="collapse bg-none rounded-none mt-2 p-0 h-5 focus:h-full">
-                  <div className="collapse-title underline min-h-0 h-5 p-0 text-left">Yapping (Off topic)</div>
+                  <div className="collapse-title underline min-h-0 h-5 p-0 text-left">Yapping (Comments)</div>
                   <div className="collapse-content m-0 p-0 mt-2">
                     <p className="whitespace-pre-line float-left text-left">{currentVersion.other}</p>
                   </div>
