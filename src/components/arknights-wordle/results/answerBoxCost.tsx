@@ -22,6 +22,8 @@ export default function AnswerBoxCost({
     bg = wordleColors.higher;
   }
 
+  // Guess[0] == E0, Guess[1] == E2
+
   return (
     <div
       className={`${divStyle} tooltip-answer-row-cost`}
@@ -31,8 +33,8 @@ export default function AnswerBoxCost({
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}
     >
-      <span>{`E0: ${guess[0]}`}</span>
-      <span className="custom-bold">{`E2: ${guess[1]}`}</span>
+      <span>E0: {guess[0]}</span>
+      <span className="custom-bold">E2: {guess[1]}</span>
       <span>{result}</span>
     </div>
   );

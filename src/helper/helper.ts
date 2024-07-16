@@ -101,12 +101,12 @@ export const guessCategoryToolTips = {
   Infected: "Yes/No/Undisclosed",
   Profession: null,
   Rarity: "1/2/3/4/5/6 star",
-  "Cost (E2)": "Cost is compared at E2 Pot0.",
+  "DP Cost\n(E2)": "DP Cost is compared at E2 Pot0.",
 };
 
 export const costToolTips = {
   Higher:
-    "The E2 cost of the correct operator is HIGHER\nthan this operators E2 cost.",
+    "The E2 DP cost of the correct operator is HIGHER\nthan this operators E2 DP cost.",
   Lower:
-    "The E2 cost of the correct operator is LOWER\nthan this operators E2 cost.",
+    "The E2 DP cost of the correct operator is LOWER\nthan this operators E2 DP cost.",
 };
