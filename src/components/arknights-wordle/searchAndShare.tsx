@@ -24,7 +24,7 @@ export default function SearchAndShare({isInputDelay, playing} : Props) {
             <Search />
           )}
           {!playing && !isInputDelay && (
-              <ShareBox gameId={stats.gameId} />
+            <ShareBox gameId={stats.gameId} />
           )}
         </>
         :
@@ -33,8 +33,8 @@ export default function SearchAndShare({isInputDelay, playing} : Props) {
             <Search />
           )}
           {!endlessPlaying && !isInputDelay && (
-            <div className="flex flex-col w-1/2 self-center items-center">
-              <p>Congratulations! You guessed the operator in {endlessGuesses.length} tries!</p>
+            <div className="flex flex-row w-1/2 self-center items-center space-x-2 justify-center">
+              <p>Congratulations! You guessed<br />the operator in {endlessGuesses.length} tries!</p>
               <button className="btn btn-success text-white w-fit" onClick={() => handleEndlessReset()}>Refresh Endless</button>
             </div>
           )}
