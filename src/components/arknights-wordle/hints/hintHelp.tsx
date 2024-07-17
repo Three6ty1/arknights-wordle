@@ -18,7 +18,7 @@ export default function HintHelp() {
       </button>
       <dialog id="help_modal" className="modal">
         <div className="modal-box h-2/3 md:h-auto">
-          <a href="https://forms.gle/2xgktzjNFAm1PWT29" className="underline text-blue-600 text-sm absolute top-2 left-2 whitespace-pre-line" target="_blank">{"Bug report or\nFeedback"}</a>
+          <a href="https://forms.gle/2xgktzjNFAm1PWT29" className="underline text-blue-600 text-xs sm:text-sm absolute top-2 left-2 sm:whitespace-pre-line" target="_blank">{"Bug report or\nFeedback"}</a>
           <h1 className="mb-2 text-xl custom-bold">How to play Arknights Wordle</h1>
           <p>Each operator has 7 categories each.</p>
           <p>You must enter an operator and compare its traits to the currently chosen operator.</p>
