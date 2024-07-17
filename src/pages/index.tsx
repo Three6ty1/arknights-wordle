@@ -119,14 +119,6 @@ export default function ArknightsWordle({
         ? (JSON.parse(ls) as unknown as Operator)
         : null;
 
-      if (chosenEndlessOp == null) {
-        const newEndlessOp = allOperators[randomInteger(0, allOperators.length)]!
-        setEndlessOp(newEndlessOp)
-        localStorage.setItem("endlessOp", JSON.stringify(newEndlessOp))
-      } else {
-        setEndlessOp(chosenEndlessOp)
-      }
-
       // Init endless guesses
       const isGuesses = localStorage.getItem("endlessGuesses");
       const guesses = isGuesses
@@ -138,6 +130,24 @@ export default function ArknightsWordle({
         : true;
       setEndlessPlaying(playing);
       setEndlessGuesses(guesses);
+
+      // So we can reset endless op if EXISTING angelina/suzuran bug
+      if (chosenEndlessOp == null) {
+        const newEndlessOp = allOperators[randomInteger(0, allOperators.length)]!
+        setEndlessOp(newEndlessOp)
+        localStorage.setItem("endlessOp", JSON.stringify(newEndlessOp))
+      } else {
+        setEndlessOp(chosenEndlessOp)
+        if (chosenEndlessOp.name == "Angelina" || chosenEndlessOp.name == "Suzuran") { // Edge case for old bug
+          console.log(chosenEndlessOp.name)
+          console.log(guesses)
+          if (guesses.filter(g => g.name == "Angelina" || g.name == "Suzuran").length > 0) {
+            console.log("what")
+            localStorage.setItem("endlessPlaying", "false");
+            setEndlessPlaying(false);
+          }
+        }
+      }
     }
 
     const initPlayHistory = () => {
