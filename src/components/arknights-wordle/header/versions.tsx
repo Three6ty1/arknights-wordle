@@ -4,6 +4,17 @@ import React from "react";
 
 const versions = [
   {
+    version: "2.0.2",
+    date: "17th July 2024",
+    content: 
+    `- Fixed edge case where operators without a nation would have their groups be half correct if the correct operator also didn't belong to a nation
+    - *This does not retroactively fix guesses
+    - Fixed endless mode being softlocked due to Angelina/Suzuran bug
+    
+    Thanks for reporting the bugs, you know who you are :))
+    `
+  },
+  {
     version: "2.0.1",
     date: "16th July 2024",
     content:

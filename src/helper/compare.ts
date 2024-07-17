@@ -35,12 +35,13 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
         if (answer.group == guess.group) {
             allegiance_res = Correctness.Correct;
         } else { // Wrong group but same nation (Like Rhodes Island)
-            allegiance_res = (answer.nation == guess.nation) ? Correctness.Half : Correctness.Wrong;
+            // Edge case of Rainbow 6 and Followers and Babel
+            allegiance_res = (answer.nation == guess.nation && answer.nation !== "None") ? Correctness.Half : Correctness.Wrong;
         }
     } else if (!answer.group && !guess.group) { // AN, GN
-        allegiance_res = (answer.nation == guess.nation) ? Correctness.Correct : Correctness.Wrong;
+        allegiance_res = (answer.nation == guess.nation && answer.nation !== "None") ? Correctness.Correct : Correctness.Wrong;
     } else { // AG, GN || AN, GG Can't compare the groups to nations as their scope is different, can only compare nations and be half correct.
-        allegiance_res = (answer.nation == guess.nation) ? Correctness.Half : Correctness.Wrong;
+        allegiance_res = (answer.nation == guess.nation && answer.nation !== "None") ? Correctness.Half : Correctness.Wrong;
     }
 
     const res = {
