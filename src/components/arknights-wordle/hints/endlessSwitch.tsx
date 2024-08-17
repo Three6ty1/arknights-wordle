@@ -1,12 +1,13 @@
 import React from "react";
-import { GameModeContext } from "~/pages/index";
+import { GameModeContext, ThemeContext } from "~/pages/index";
 
 export default function EndlessSwitch() {
   const {isNormalMode, setIsNormalMode} = React.useContext(GameModeContext)
+  const {highContrast} = React.useContext(ThemeContext)
 
   return (
     <button 
-      className={"btn indicator-item tooltip m-2 flex items-center " + (!isNormalMode && "btn-success")}
+      className={`btn indicator-item tooltip m-2 flex items-center btn-${highContrast && !isNormalMode && "info"}`}
       data-tip="Endless Mode"
       onClick={() => setIsNormalMode(!isNormalMode)}
     >

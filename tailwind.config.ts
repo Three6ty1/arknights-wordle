@@ -26,7 +26,9 @@ export default {
     themes: [{
       "light": {
         ...require("daisyui/src/theming/themes")["light"],
-        "base-200": "#edeeee"
+        "base-200": "#edeeee",
+        "success": "#6BBF59",
+        "info": "#009E73",
       }},
       {'dark': {
         ...require("daisyui/src/theming/themes")["dark"],
@@ -36,6 +38,8 @@ export default {
         "secondary-content": "white",
         "base-100": "#15191e",
         "base-200": "black",
+        "success": "#6BBF59",
+        "info": "#009E73",
       }}
     ]
     

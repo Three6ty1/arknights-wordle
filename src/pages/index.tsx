@@ -38,6 +38,8 @@ interface PlayHistoryContextValue {
 interface ThemeContextValue {
   handleThemeChange: (e: HTMLInputElement) => void,
   darkMode: boolean,
+  handleContrastChange: (e: HTMLInputElement) => void,
+  highContrast: boolean,
 }
 
 export const GameModeContext = React.createContext(undefined as unknown as GameModeContextValue);
@@ -60,7 +62,10 @@ export default function ArknightsWordle({
   const [endlessOp, setEndlessOp] = React.useState<Operator>(undefined as unknown as Operator)
 
   const [isInputDelay, setIsInputDelay] = React.useState(false);
+
   const [darkMode, setDarkMode] = React.useState(false);
+  const [highContrast, setHighContrast] = React.useState(false);
+
   const [error, setError] = React.useState("");
   const [endlessError, setEndlessError] = React.useState("");
 
@@ -150,6 +155,15 @@ export default function ArknightsWordle({
       }
     }
 
+    const initHighContrast = () => {
+      if (localStorage["highContrast"] === "true") {
+        document.getElementById("contrast-checkbox")?.setAttribute("checked", "");
+        setHighContrast(true);
+      } else if (!("highContrast" in localStorage)) {
+        localStorage.setItem("highContrast", "false");
+      }
+    }
+
     const initPlayHistory = () => {
       const ls = localStorage.getItem("playHistory");
       const ph = ls ? (JSON.parse(ls) as unknown as Record<string, number>) : {"1":0, "2":0, "3":0, "4":0, "5":0, "6":0, "7+":0};
@@ -160,6 +174,8 @@ export default function ArknightsWordle({
     initEndless();
     initGuesses();
     initTheme();
+    initHighContrast();
+
   }, [allOperators]);
 
   const handleSubmit = (
@@ -237,6 +253,11 @@ export default function ArknightsWordle({
     setDarkMode(theme === "dark");
   };
 
+  const handleContrastChange = (e: HTMLInputElement) => {
+    localStorage.setItem("highContrast", JSON.stringify(e.checked));
+    setHighContrast(e.checked)
+  }
+
   return (
     <>
       <Head>
@@ -248,22 +269,22 @@ export default function ArknightsWordle({
       </Head>
       <main
         id="ak-wordle-root"
-        className="justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans"
+        className={`justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
       >
         <GameModeContext.Provider value={{allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
-          <ThemeContext.Provider value={{darkMode, handleThemeChange}}>
+          <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
             <Theme />
-            <Info />
+            <Info /> {/** Info needs theme context due tom darkmode */}
+            <PlayHistoryContext.Provider value={{playHistory}}>
+              <Hints />
+              <SearchError error={error} endlessError={endlessError} />
+          
+              <div className="grid w-full justify-center">
+                <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
+                <PastGuesses />
+              </div>
+            </PlayHistoryContext.Provider>
           </ThemeContext.Provider>
-          <PlayHistoryContext.Provider value={{playHistory}}>
-            <Hints />
-            <SearchError error={error} endlessError={endlessError} />
-        
-            <div className="grid w-full justify-center theme-high-contrast">
-              <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
-              <PastGuesses />
-            </div>
-          </PlayHistoryContext.Provider>
         </GameModeContext.Provider>
       </main>
     </>

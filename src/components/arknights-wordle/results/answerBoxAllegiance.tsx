@@ -1,4 +1,4 @@
-import { Correctness, wordleColors } from "~/helper/helper";
+import { Correctness } from "~/helper/helper";
 import { animationDelay } from "./answerRow";
 
 type Props = {
@@ -17,12 +17,12 @@ export default function AnswerBoxAllegiance({
   const allegianceTooltip = "Correct Allegiance but wrong subdivision";
 
   let tooltip = false;
-  let bg = wordleColors.correct;
+  let color = "correct";
   if (result === Correctness.Half) {
-    bg = wordleColors.half;
+    color = "half";
     tooltip = true;
   } else if (result === Correctness.Wrong) {
-    bg = wordleColors.incorrect;
+    color = "incorrect";
   }
 
   // Students of Ursus edge case
@@ -34,10 +34,9 @@ export default function AnswerBoxAllegiance({
     <>
       {tooltip ? (
         <div
-          className={`${divStyle} tooltip-answer-row`}
+          className={`${divStyle} tooltip-answer-row bg-${color}`}
           data-tip={allegianceTooltip}
           style={{
-            backgroundColor: bg,
             animationDelay: `${boxIndex * animationDelay}ms`,
           }}
         >
@@ -45,9 +44,8 @@ export default function AnswerBoxAllegiance({
         </div>
       ) : (
         <div
-          className={`${divStyle}`}
+          className={`${divStyle} bg-${color}`}
           style={{
-            backgroundColor: bg,
             animationDelay: `${boxIndex * animationDelay}ms`,
           }}
         >

@@ -30,10 +30,10 @@
 
     .theme-high-contrast {
         --color-incorrect: #919090;
-        --color-higher: #88CCEE;
-        --color-lower: #AA4499;
-        --color-half: #DDCC77;
-        --color-correct: #117733;
+        --color-higher: #56B4E9;
+        --color-lower: #CC79A7;
+        --color-half: #E69F00;
+        --color-correct: #009E73;
     }
 }
 

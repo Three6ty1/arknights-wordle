@@ -13,10 +13,11 @@ export default function AnswerBoxBasic({
   boxIndex,
   divStyle,
 }: Props) {
-  
+  const color = result ? "correct" : "incorrect";
+
   return (
     <div
-      className={`${divStyle} ` + result ? "bg-correct" : "bg-incorrect"}
+      className={`${divStyle} bg-${color}`}
       style={{
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}

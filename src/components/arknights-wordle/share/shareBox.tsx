@@ -1,6 +1,6 @@
 import { Range, Correctness } from "~/helper/helper";
 import React from "react";
-import { GameModeContext } from "~/pages/index";
+import { GameModeContext, ThemeContext } from "~/pages/index";
 import HistoryGraph from "./historyGraph";
 
 type Props = {
@@ -17,6 +17,7 @@ export default function ShareBox({ gameId }: Props) {
   const [shareString, setShareString] = React.useState("");
 
   const {guesses} = React.useContext(GameModeContext)
+  const {highContrast} = React.useContext(ThemeContext)
 
   React.useEffect(() => {
     const generateshareString = () => {
@@ -89,14 +90,14 @@ export default function ShareBox({ gameId }: Props) {
     <div className="flex flex-col items-center justify-center align-middle">
       <div className="flex flex-row items-center justify-evenly space-x-3">
         <button
-          className="btn btn-success w-fit text-white"
+          className={`btn w-fit text-white btn-${highContrast ? "info" : "success"}`}
           onClick={() => handleMarkdownShare()}
         >
           {shareIcon()}
           For Discord
         </button>
         <button
-          className="btn btn-success w-fit text-white"
+          className={`btn w-fit text-white btn-${highContrast ? "info" : "success"}`}
           onClick={() => handleOtherShare()}
         >
           {shareIcon()}

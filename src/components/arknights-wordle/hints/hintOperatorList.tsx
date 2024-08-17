@@ -1,6 +1,6 @@
 import HintListIcon from "./hintListIcon";
 import React from "react";
-import { getProfessionIconUrl, wordleColors } from "~/helper/helper";
+import { getProfessionIconUrl } from "~/helper/helper";
 import { HintBreakpoints } from "./hints";
 import Image from "next/image";
 import type { Operator } from "@prisma/client";
@@ -120,15 +120,9 @@ export default function HintOperatorList() {
                   {amtGuesses >= HintBreakpoints.two.valueOf() &&
                     Professsions.map((p) => (
                       <button
-                        className="tooltip p-[0.2rem]"
+                        className={`tooltip p-[0.2rem] bg-${selectedProfession === p ? "higher" : "white"}`}
                         data-tip={p}
                         key={`${p} icon`}
-                        style={{
-                          backgroundColor:
-                            selectedProfession === p
-                              ? wordleColors.higher
-                              : "white",
-                        }}
                       >
                         <Image
                           src={getProfessionIconUrl(p)}

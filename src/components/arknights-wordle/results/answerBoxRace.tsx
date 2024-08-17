@@ -1,4 +1,4 @@
-import { raceToolTips, wordleColors } from "~/helper/helper";
+import { raceToolTips } from "~/helper/helper";
 import { animationDelay } from "./answerRow";
 
 type Props = {
@@ -14,14 +14,13 @@ export default function AnswerBoxRace({
   boxIndex,
   divStyle,
 }: Props) {
-  const bg = result ? wordleColors.correct : wordleColors.incorrect;
+  const color = result ? "correct" : "incorrect";
 
   return (
     <div
-      className={`${divStyle} tooltip-answer-row`}
+      className={`${divStyle} tooltip-answer-row bg-${color}`}
       data-tip={raceToolTips[guess as keyof typeof raceToolTips]}
       style={{
-        backgroundColor: bg,
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}
     >
