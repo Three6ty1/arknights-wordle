@@ -243,6 +243,8 @@ export default function ArknightsWordle({
       <Head>
         <title>Arknights Wordle</title>
         <meta name="description" content="An Arknights Wordle parody as a personal/passion project. Type in an operators name and try to guess the correct operator using 7 different categories. Created by Three6ty1" />
+        <meta name="keywords" content="Arknights, Wordle, Arknights Wordle, Operators, Operator Wordle, Worlde, AK Wordle, Arknights Word Game, Arknights Parody, Arknights Game" /> 
+        <meta name="author" content="Three6ty1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
