@@ -273,7 +273,7 @@ export default function ArknightsWordle({
       >
         <GameModeContext.Provider value={{allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
           <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
-            <Info /> {/** Info needs theme context due tom darkmode */}
+            <Info /> {/** Info needs theme context due to darkmode logo */}
             <PlayHistoryContext.Provider value={{playHistory}}>
               <Hints />
               <SearchError error={error} endlessError={endlessError} />

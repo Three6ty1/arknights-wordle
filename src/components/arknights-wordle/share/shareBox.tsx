@@ -86,18 +86,20 @@ export default function ShareBox({ gameId }: Props) {
     handleShare(newString)
   }
 
+  const buttonClass = highContrast ? "btn w-fit text-white btn-info" : "btn w-fit text-white btn-success"
+
   return (
     <div className="flex flex-col items-center justify-center align-middle">
       <div className="flex flex-row items-center justify-evenly space-x-3">
         <button
-          className={`btn w-fit text-white btn-${highContrast ? "info" : "success"}`}
+          className={buttonClass}
           onClick={() => handleMarkdownShare()}
         >
           {shareIcon()}
           For Discord
         </button>
         <button
-          className={`btn w-fit text-white btn-${highContrast ? "info" : "success"}`}
+          className={buttonClass}
           onClick={() => handleOtherShare()}
         >
           {shareIcon()}
