@@ -103,31 +103,20 @@ export default function HintOperatorList() {
              *      Else
              *          List all operators sorted in rarity
              */}
-            {amtGuesses < HintBreakpoints.one.valueOf() ? (
+            {amtGuesses < HintBreakpoints.one.valueOf() ?
               <>
-                {allOperators.map((operator) => {
-                  return (
-                    <HintListIcon
-                      key={`${operator.name} list icon`}
-                      operator={operator}
-                    />
-                  );
-                })}
+                {allOperators.map((operator) => (<HintListIcon key={`${operator.name} list icon`} operator={operator} />))}
               </>
-            ) : (
+            : 
               <>
-                <div>
+                <div className="flex flex-row flex-wrap justify-center">
                   {amtGuesses >= HintBreakpoints.two.valueOf() &&
                     Professsions.map((p) => (
-                      <button
-                        className={`tooltip p-[0.2rem] bg-${selectedProfession === p ? "higher" : "white"}`}
-                        data-tip={p}
-                        key={`${p} icon`}
-                      >
+                      <button className={`tooltip p-[0.2rem] bg-${selectedProfession === p ? "higher" : "white"}`} data-tip={p} key={`${p} icon`}>
                         <Image
                           src={getProfessionIconUrl(p)}
-                          width={40}
-                          height={40}
+                          width={45}
+                          height={45}
                           id={p}
                           onClick={(e) => handleProfession(e)}
                           alt={`${p} operator icon image`}
@@ -138,42 +127,23 @@ export default function HintOperatorList() {
                 {Object.entries(sortedRarityOperators)
                   .reverse()
                   .map((rarity) => (
-                    <div
-                      key={`${rarity[0]} rarity operators`}
-                      className="w-full"
-                    >
-                      <h2>{rarity[0]} star Operators</h2>
-                      {rarity[1].map((operator) => {
-                        if (amtGuesses >= HintBreakpoints.two.valueOf()) {
-                          if (selectedProfession === "") {
-                            return (
-                              <HintListIcon
-                                key={`${operator.name} list icon`}
-                                operator={operator}
-                              />
-                            );
+                    <div key={`${rarity[0]} rarity operators`} className="w-full">
+                      <h2 className="custom-bold text-lg">{rarity[0]} star Operators</h2>
+                      <div className="flex flex-row flex-wrap justify-center">
+                        {rarity[1].map((operator) => {
+                          if (amtGuesses >= HintBreakpoints.two.valueOf()) {
+                            if (selectedProfession === "" || operator.profession === selectedProfession) {
+                              return <HintListIcon key={`${operator.name} list icon`} operator={operator} />
+                            }
+                            return null;
                           }
-                          if (operator.profession === selectedProfession) {
-                            return (
-                              <HintListIcon
-                                key={`${operator.name} list icon`}
-                                operator={operator}
-                              />
-                            );
-                          }
-                          return null;
-                        }
-                        return (
-                          <HintListIcon
-                            key={`${operator.name} list icon`}
-                            operator={operator}
-                          />
-                        );
-                      })}
+                          return <HintListIcon key={`${operator.name} list icon`} operator={operator} />
+                        })}
+                      </div>
                     </div>
-                  ))}
+                ))}
               </>
-            )}
+            }
           </div>
         </div>
         <form method="dialog" className="modal-backdrop">
