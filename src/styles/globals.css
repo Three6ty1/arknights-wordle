@@ -19,6 +19,24 @@
   }
 }
 
+@layer base {
+    .theme-default {
+        --color-incorrect: #919090;
+        --color-higher: #08aadd;
+        --color-lower: #c80000;
+        --color-half: #FFAC1C;
+        --color-correct: #6BBF59;
+    }
+
+    .theme-high-contrast {
+        --color-incorrect: #919090;
+        --color-higher: #88CCEE;
+        --color-lower: #AA4499;
+        --color-half: #DDCC77;
+        --color-correct: #117733;
+    }
+}
+
 @layer components {
     /* Custom tooltips needed for making sure tooltips are nicely formatted in mobile*/
     .tooltip-answer-row {

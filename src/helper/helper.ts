@@ -20,14 +20,6 @@ export enum Correctness {
   Correct = "Correct",
 }
 
-export const wordleColors = {
-  incorrect: "#919090",
-  higher: "#08aadd",
-  lower: "#c80000",
-  half: "#FFAC1C",
-  correct: "#6BBF59",
-};
-
 export function getOperatorIconUrl(charId: string, rarity: number) {
   let url;
   if (rarity > 3) {

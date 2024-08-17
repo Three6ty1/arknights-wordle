@@ -259,7 +259,7 @@ export default function ArknightsWordle({
             <Hints />
             <SearchError error={error} endlessError={endlessError} />
         
-            <div className="grid w-full justify-center">
+            <div className="grid w-full justify-center theme-high-contrast">
               <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
               <PastGuesses />
             </div>
