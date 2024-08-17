@@ -186,7 +186,6 @@ export default function ArknightsWordle({
       // Prevent the user from being able to input new guesses with an input delay, and to let the winning animation play fully
       // state change while this animation is occuring will stop the animation entirely.
       if (res.guessResult?.correct) {
-        setTimeout(() => setPlaying(false), 4000);
         setTimeout(() => setIsInputDelay(false), 4000);
 
         if (isNormalMode) {
