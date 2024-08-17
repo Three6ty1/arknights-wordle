@@ -67,7 +67,7 @@ export default function ShareBox({ gameId }: Props) {
             newString += "🟨";
           }
         }
-        if (sharePreference["markdown"] && sharePreference["guesses"]) {
+        if (sharePreference.markdown && sharePreference.guesses) {
           newString += " ||" + guess.name + "||"
         }
 
@@ -91,8 +91,8 @@ export default function ShareBox({ gameId }: Props) {
 
   const handleShare = () => {
     let newString = ""
-    if (sharePreference["markdown"]) {
-      if (sharePreference["hyperlink"]) {
+    if (sharePreference.markdown) {
+      if (sharePreference.hyperlink) {
         newString = `[Arknights Wordle](<https://ak-wordle.three6ty1.dev/>) #${gameId}\nOperator guessed in ` + shareString;
       } else {
         newString = `Arknights Wordle #${gameId}\nOperator guessed in ` + shareString + "<https://ak-wordle.three6ty1.dev/>";
@@ -123,23 +123,23 @@ export default function ShareBox({ gameId }: Props) {
           <div className="text-nowrap flex flex-row flex-nowrap justify-start items-center space-x-2">
             <span>Share on</span>
             <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("markdown")}>
-              <span className="font-medium">{sharePreference["markdown"] ? "Discord (Markdown)" : "Other platforms"}</span>
+              <span className="font-medium">{sharePreference.markdown ? "Discord (Markdown)" : "Other platforms"}</span>
               {switchIcon()}
             </button>
           </div>
 
-          {sharePreference["markdown"] &&
+          {sharePreference.markdown &&
             <>
               <div className="text-nowrap flex flex-row justify-start items-center space-x-2">
                 <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("guesses")}>
-                  <span className="font-medium">{sharePreference["guesses"] ? "with" : "without"}</span>
+                  <span className="font-medium">{sharePreference.guesses ? "with" : "without"}</span>
                   {switchIcon()}
                 </button>
                 <span>the guesses and</span>
               </div>
               <div className="text-nowrap flex flex-row justify-start items-center space-x-2">
                 <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("hyperlink")}>
-                  <span className="font-medium">{sharePreference["hyperlink"] ? "with" : "without"}</span>
+                  <span className="font-medium">{sharePreference.hyperlink ? "with" : "without"}</span>
                   {switchIcon()}
                 </button>
                 <span>the hyperlink</span>

@@ -152,10 +152,7 @@ export default function ArknightsWordle({
       } else {
         setEndlessOp(chosenEndlessOp)
         if (chosenEndlessOp.name == "Angelina" || chosenEndlessOp.name == "Suzuran") { // Edge case for old bug
-          console.log(chosenEndlessOp.name)
-          console.log(guesses)
           if (guesses.filter(g => g.name == "Angelina" || g.name == "Suzuran").length > 0) {
-            console.log("what")
             localStorage.setItem("endlessPlaying", "false");
             setEndlessPlaying(false);
           }
@@ -164,7 +161,7 @@ export default function ArknightsWordle({
     }
 
     const initHighContrast = () => {
-      if (localStorage["highContrast"] === "true") {
+      if (localStorage.highContrast === "true") {
         document.getElementById("contrast-checkbox")?.setAttribute("checked", "");
         setHighContrast(true);
       } else if (!("highContrast" in localStorage)) {
@@ -181,7 +178,6 @@ export default function ArknightsWordle({
     const initSharePreference = () => {
       const ls = localStorage.getItem("sharePreference");
       const sp = ls ? (JSON.parse(ls) as unknown as Record<string, boolean>) : {markdown: true, guesses: true, hyperlink: true}
-      console.log(sp)
       setSharePreference(sp)
     }
 
@@ -277,15 +273,15 @@ export default function ArknightsWordle({
   const handleSharePreferenceUpdate = (category: string) => {
     let n: boolean;
     if (category === "markdown") {
-      n = !sharePreference["markdown"]
+      n = !sharePreference.markdown
       localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, markdown: n}))
       setSharePreference({...sharePreference, markdown: n})
     } else if (category === "guesses") {
-      n = !sharePreference["guesses"]
+      n = !sharePreference.guesses
       localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, guesses: n}))
       setSharePreference({...sharePreference, guesses: n})
     } else {
-      n = !sharePreference["hyperlink"]
+      n = !sharePreference.hyperlink
       localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, hyperlink: n}))
       setSharePreference({...sharePreference, hyperlink: n})
     }
