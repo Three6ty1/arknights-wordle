@@ -7,7 +7,7 @@ export default function EndlessSwitch() {
 
   return (
     <button 
-      className={`btn indicator-item tooltip m-2 flex items-center btn-${highContrast && !isNormalMode && "info"}`}
+      className={`btn indicator-item tooltip m-2 flex items-center btn-${!isNormalMode && (highContrast ? "info" : "success")}`}
       data-tip="Endless Mode"
       onClick={() => setIsNormalMode(!isNormalMode)}
     >

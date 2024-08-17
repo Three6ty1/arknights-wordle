@@ -63,6 +63,10 @@
     .custom-bold {
         @apply font-bold tracking-wider
     }
+
+    .custom-dropdown-items {
+        @apply flex flex-row w-full hover:bg-base-200 transition duration-200 p-1 rounded-md
+    }
 }
 
 @keyframes flip {

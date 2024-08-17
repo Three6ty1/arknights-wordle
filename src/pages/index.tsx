@@ -7,7 +7,7 @@ import type { Operator } from "@prisma/client";
 import type { GetServerSideProps } from "next";
 
 // Components
-import Theme from "~/components/arknights-wordle/header/theme";
+import Theme from "~/components/arknights-wordle/hints/theme";
 import Info from "~/components/arknights-wordle/header/info";
 import Hints from "~/components/arknights-wordle/hints/hints";
 import { getAllOperators, getStats } from "~/server/api/routers/wordle";
@@ -273,7 +273,6 @@ export default function ArknightsWordle({
       >
         <GameModeContext.Provider value={{allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
           <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
-            <Theme />
             <Info /> {/** Info needs theme context due tom darkmode */}
             <PlayHistoryContext.Provider value={{playHistory}}>
               <Hints />
