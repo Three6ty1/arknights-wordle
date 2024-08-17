@@ -7,7 +7,6 @@ import type { Operator } from "@prisma/client";
 import type { GetServerSideProps } from "next";
 
 // Components
-import Theme from "~/components/arknights-wordle/hints/theme";
 import Info from "~/components/arknights-wordle/header/info";
 import Hints from "~/components/arknights-wordle/hints/hints";
 import { getAllOperators, getStats } from "~/server/api/routers/wordle";
@@ -42,9 +41,16 @@ interface ThemeContextValue {
   highContrast: boolean,
 }
 
+interface SharePreferenceContext {
+  sharePreference: Record<string, boolean>,
+  handleSharePreferenceUpdate: (s: string) => void,
+}
+
 export const GameModeContext = React.createContext(undefined as unknown as GameModeContextValue);
 export const PlayHistoryContext = React.createContext<PlayHistoryContextValue>({playHistory: {}});
 export const ThemeContext = React.createContext(undefined as unknown as ThemeContextValue);
+
+export const SharePreferenceContext = React.createContext(undefined as unknown as SharePreferenceContext);
 
 export default function ArknightsWordle({
   stats,
@@ -72,6 +78,8 @@ export default function ArknightsWordle({
   const [playHistory, setPlayHistory] = React.useState<Record<string, number>>({});
 
   const winMutation = api.wordle.updateWins.useMutation();
+
+  const [sharePreference, setSharePreference] = React.useState<Record<string, boolean>>({})
 
   React.useEffect(() => {
     const initGuesses = () => {
@@ -170,11 +178,19 @@ export default function ArknightsWordle({
       setPlayHistory(ph);
     }
 
+    const initSharePreference = () => {
+      const ls = localStorage.getItem("sharePreference");
+      const sp = ls ? (JSON.parse(ls) as unknown as Record<string, boolean>) : {markdown: true, guesses: true, hyperlink: true}
+      console.log(sp)
+      setSharePreference(sp)
+    }
+
     initPlayHistory();
     initEndless();
     initGuesses();
     initTheme();
     initHighContrast();
+    initSharePreference();
 
   }, [allOperators]);
 
@@ -258,6 +274,23 @@ export default function ArknightsWordle({
     setHighContrast(e.checked)
   }
 
+  const handleSharePreferenceUpdate = (category: string) => {
+    let n: boolean;
+    if (category === "markdown") {
+      n = !sharePreference["markdown"]
+      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, markdown: n}))
+      setSharePreference({...sharePreference, markdown: n})
+    } else if (category === "guesses") {
+      n = !sharePreference["guesses"]
+      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, guesses: n}))
+      setSharePreference({...sharePreference, guesses: n})
+    } else {
+      n = !sharePreference["hyperlink"]
+      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, hyperlink: n}))
+      setSharePreference({...sharePreference, hyperlink: n})
+    }
+  }
+
   return (
     <>
       <Head>
@@ -279,7 +312,9 @@ export default function ArknightsWordle({
               <SearchError error={error} endlessError={endlessError} />
           
               <div className="grid w-full justify-center">
-                <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
+                <SharePreferenceContext.Provider value ={{sharePreference, handleSharePreferenceUpdate}}>
+                  <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
+                </SharePreferenceContext.Provider>
                 <PastGuesses />
               </div>
             </PlayHistoryContext.Provider>
