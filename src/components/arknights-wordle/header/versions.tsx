@@ -10,7 +10,7 @@ const versions = [
     `- Added high contrast mode
     - Added customisable share formats for Discord and Reddit. These preferences will save on browser cache
     - Changed UI to move non-game elements into a dropdown menu
-    - Added hints for Endless Mode. You could cheat the hints by switching to endless while playing the daily, but you could also just use the game client too. Play how you want!
+    - Added hints for Endless Mode. You could cheat the hints by switching to endless while playing the daily, but you could also just use the game client too. Play however you want!
     - Changed operator list UI to make it less visually cramped. This is unchanged in mobile since the icons are relatively larger anyways
     - Added Next Wordle timer. Placement to be changed
     - (Bug Report) Fixed a bug where sharing a result would cause the guesses to reverse
