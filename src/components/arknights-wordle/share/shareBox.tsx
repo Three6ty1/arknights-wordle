@@ -28,9 +28,8 @@ export default function ShareBox({ gameId }: Props) {
 
   React.useEffect(() => {
     const generateshareString = () => {
-      let newString = String(guesses.length);
-      guesses.length > 1 ? newString += " tries." : newString += " try!";
-      newString += "\n";
+      let newString = ""
+      const discord = sharePreference.platform === "discord"
 
       for (const guess of guesses.slice().reverse()) {
         for (const category in guess) {
@@ -67,11 +66,27 @@ export default function ShareBox({ gameId }: Props) {
             newString += "🟨";
           }
         }
-        if (sharePreference.markdown && sharePreference.guesses) {
-          newString += " ||" + guess.name + "||"
-        }
 
-        newString += "\n";
+        // Normalising the length of guesses.
+        if (sharePreference.platform !== "other" && sharePreference.guesses) {
+          let name = guess.name
+          let normLength = name.length
+          newString += discord ? ` ||` : ` >!`
+
+          if (normLength >= 15) {
+            name = name.slice(0, 10) + "..."
+            normLength = 12
+          }
+
+          newString += name
+          for (let i = normLength; i <= 15; i++) {
+            newString += discord ? `  ` : `_`
+          }
+
+          newString += discord ? `||` : `!<  `
+        }
+        
+        newString += discord ? "\n" : "  \n";
       }
 
       setShareString(newString);
@@ -91,24 +106,31 @@ export default function ShareBox({ gameId }: Props) {
 
   const handleShare = () => {
     let newString = ""
-    if (sharePreference.markdown) {
+    const amtGuesses = guesses.length
+    if (sharePreference.platform === "discord") {
       if (sharePreference.hyperlink) {
-        newString = `[Arknights Wordle](<https://ak-wordle.three6ty1.dev/>) #${gameId}\nOperator guessed in ` + shareString;
+        newString = `[Arknights Wordle](<https://ak-wordle.three6ty1.dev/>) #${gameId}\nOperator guessed in ${amtGuesses}\n` + shareString;
       } else {
-        newString = `Arknights Wordle #${gameId}\nOperator guessed in ` + shareString + "<https://ak-wordle.three6ty1.dev/>";
+        newString = `Arknights Wordle #${gameId}\nOperator guessed in ${amtGuesses}\n` + shareString + "<https://ak-wordle.three6ty1.dev/>";
+      }
+    } else if (sharePreference.platform === "reddit") {
+      if (sharePreference.hyperlink) {
+        newString = `[Arknights Wordle](<https://ak-wordle.three6ty1.dev/>) #${gameId}  \nOperator guessed in ${amtGuesses}  \n` + shareString;
+      } else {
+        newString = `Arknights Wordle #${gameId}  \nOperator guessed in ${amtGuesses}  \n` + shareString + "<https://ak-wordle.three6ty1.dev/>";
       }
     } else {
-        newString = `Arknights Wordle #${gameId}\nOperator guessed in ` + shareString + "https://ak-wordle.three6ty1.dev/";
+        newString = `Arknights Wordle #${gameId}\nOperator guessed in ${amtGuesses}\n` + shareString + "https://ak-wordle.three6ty1.dev/";
     }
     
     handleClipboard(newString)
   }
 
-  const buttonClass = highContrast ? "btn-info" : "btn-success"
-  const buttonStyle = "btn btn-ghost border-2 p-2 h-fit hover:bg-transparent " + (highContrast ? "border-info hover:border-info" : "border-success hover:border-success")
+  const inputStyle = "custom-bold border-2 p-2 h-fit " + (highContrast ? "border-info hover:border-info" : "border-success hover:border-success")
+
   return (
     <div className="flex flex-row justify-center space-x-2">
-      <button className={buttonClass + " custom-bold btn text-white w-fit"} onClick={() => {(document.getElementById("share-modal") as HTMLDialogElement).showModal(); handleShare()}}>
+      <button className={`${highContrast ? "btn-info" : "btn-success"} custom-bold btn text-white w-fit`} onClick={() => {(document.getElementById("share-modal") as HTMLDialogElement).showModal(); handleShare()}}>
           {shareIcon()}
           Share
       </button>
@@ -122,24 +144,25 @@ export default function ShareBox({ gameId }: Props) {
         <div tabIndex={0} className="flex flex-col dropdown-content w-[245px] z-[100] mt-1 p-3 space-y-2 bg-base-100 shadow-sm shadow-neutral-content rounded-md ">
           <div className="text-nowrap flex flex-row flex-nowrap justify-start items-center space-x-2">
             <span>Share on</span>
-            <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("markdown")}>
-              <span className="custom-bold">{sharePreference.markdown ? "Discord (Markdown)" : "Other platforms"}</span>
-              {switchIcon()}
-            </button>
+            <select id="share-preference-select" className={`select select-ghost focus:outline-none ${inputStyle}`} value={sharePreference.platform} onChange={(e) => handleSharePreferenceUpdate("platform", e.target.value)}>
+              <option value="other">Other platforms</option>
+              <option value="discord">Discord</option>
+              <option value="reddit">Reddit</option>
+            </select>
           </div>
 
-          {sharePreference.markdown &&
+          {sharePreference.platform !== "other" &&
             <>
               <div className="text-nowrap flex flex-row justify-start items-center space-x-2">
-                <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("guesses")}>
-                  <span className="custom-bold">{sharePreference.guesses ? "with" : "without"}</span>
+                <button className={`btn btn-ghost hover:bg-transparent ${inputStyle}`} onClick={() => handleSharePreferenceUpdate("guesses")}>
+                  <span>{sharePreference.guesses ? "with" : "without"}</span>
                   {switchIcon()}
                 </button>
                 <span>the guesses and</span>
               </div>
               <div className="text-nowrap flex flex-row justify-start items-center space-x-2">
-                <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("hyperlink")}>
-                  <span className="custom-bold">{sharePreference.hyperlink ? "with" : "without"}</span>
+                <button className={`btn btn-ghost hover:bg-transparent ${inputStyle}`} onClick={() => handleSharePreferenceUpdate("hyperlink")}>
+                  <span>{sharePreference.hyperlink ? "with" : "without"}</span>
                   {switchIcon()}
                 </button>
                 <span>the hyperlink</span>

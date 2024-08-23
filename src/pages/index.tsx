@@ -43,8 +43,14 @@ interface ThemeContextValue {
 }
 
 interface SharePreferenceContext {
-  sharePreference: Record<string, boolean>,
-  handleSharePreferenceUpdate: (s: string) => void,
+  sharePreference: SharePreferenceType,
+  handleSharePreferenceUpdate: (category: string , value?: string) => void,
+}
+
+type SharePreferenceType = {
+  platform: string,
+  guesses: boolean,
+  hyperlink: boolean
 }
 
 export const GameModeContext = React.createContext(undefined as unknown as GameModeContextValue);
@@ -80,7 +86,7 @@ export default function ArknightsWordle({
 
   const winMutation = api.wordle.updateWins.useMutation();
 
-  const [sharePreference, setSharePreference] = React.useState<Record<string, boolean>>({})
+  const [sharePreference, setSharePreference] = React.useState<SharePreferenceType>({} as SharePreferenceType)
 
   React.useEffect(() => {
     const initGuesses = () => {
@@ -178,7 +184,7 @@ export default function ArknightsWordle({
 
     const initSharePreference = () => {
       const ls = localStorage.getItem("sharePreference");
-      const sp = ls ? (JSON.parse(ls) as unknown as Record<string, boolean>) : {markdown: true, guesses: true, hyperlink: true}
+      const sp = ls ? (JSON.parse(ls) as unknown as SharePreferenceType) : {platform: "other", guesses: false, hyperlink: false}
       setSharePreference(sp)
     }
 
@@ -271,12 +277,15 @@ export default function ArknightsWordle({
     setHighContrast(e.checked)
   }
 
-  const handleSharePreferenceUpdate = (category: string) => {
+  const handleSharePreferenceUpdate = (category: string, value?: string) => {
     let n: boolean;
-    if (category === "markdown") {
-      n = !sharePreference.markdown
-      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, markdown: n}))
-      setSharePreference({...sharePreference, markdown: n})
+    if (category === "platform") {
+      if (value == undefined) {
+        alert("Uh oh... This should not happen when changing shares")
+        return
+      }
+      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, platform: value}))
+      setSharePreference({...sharePreference, platform: value})
     } else if (category === "guesses") {
       n = !sharePreference.guesses
       localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, guesses: n}))
