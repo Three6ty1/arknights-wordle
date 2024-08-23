@@ -13,8 +13,7 @@ export default function Info() {
   const [seconds, setSeconds] = React.useState(999)
 
   React.useEffect(() => {
-    const timeNow = new Date()
-    timeNow.setTime(timeNow.getTime() + 10)
+    const timeNow = new Date(new Date().toLocaleString('en', {timeZone: "Australia/Sydney"}))
     setSeconds(new Date(timeNow.getFullYear(), timeNow.getMonth(), timeNow.getDate() + 1,).getTime())
   }, [])
 

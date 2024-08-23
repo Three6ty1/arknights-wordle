@@ -16,6 +16,8 @@ const versions = [
     - (Bug Report) Fixed a bug where sharing a result would cause the guesses to reverse
     - (Bug Report) Added Siesta to subregion list. The subregion list, operator list and pop-up text is actually done manually, I plan on reworking all this in the future
     - Please continue to submit bugs and suggestions! More improvements are incoming. Thank you for playing
+
+    - Fixed the next wordle thing because I forgot to set the timezone...
     `,
     other:
     `The job grind is a pain`
