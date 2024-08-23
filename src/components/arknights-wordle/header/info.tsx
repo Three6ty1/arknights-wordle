@@ -4,7 +4,7 @@ import Image from "next/image";
 import VersionLog from "./versions";
 import React from "react";
 import { GameModeContext, ThemeContext } from "~/pages";
-import Countdown, { CountdownRenderProps } from "react-countdown";
+import Countdown, { type CountdownRenderProps } from "react-countdown";
 
 export default function Info() {
   const { stats } = React.useContext(GameModeContext)
@@ -22,7 +22,7 @@ export default function Info() {
 
   setTimeout(() => (countdownRef.current as unknown as Countdown)?.start(), 1000)
 
-  const redererProp = ({days, hours, minutes, seconds, completed} : CountdownRenderProps) => {
+  const redererProp = ({hours, minutes, seconds} : CountdownRenderProps) => {
     const hrs = String(hours).padStart(2, '0')
     const mins = String(minutes).padStart(2, '0')
     const secs = String(seconds).padStart(2, '0')

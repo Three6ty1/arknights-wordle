@@ -2,7 +2,8 @@ import React from "react";
 import { GameModeContext, ThemeContext } from "~/pages/index";
 
 export default function EndlessSwitch() {
-  const {isNormalMode, setIsNormalMode, playing} = React.useContext(GameModeContext)
+  // const {isNormalMode, setIsNormalMode, playing} = React.useContext(GameModeContext)
+  const {isNormalMode, setIsNormalMode} = React.useContext(GameModeContext)
   const {highContrast} = React.useContext(ThemeContext)
   // const [animate, setAnimate] = React.useState(false)
 
