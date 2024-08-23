@@ -18,6 +18,7 @@ import SearchAndShare from "~/components/arknights-wordle/searchAndShare";
 import SearchError from "~/components/arknights-wordle/search/searchError";
 
 interface GameModeContextValue {
+  playing: boolean,
   allOperators: Operator[],
   stats: Stats,
   guesses: GuessResult[],
@@ -300,7 +301,7 @@ export default function ArknightsWordle({
         id="ak-wordle-root"
         className={`justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
       >
-        <GameModeContext.Provider value={{allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
+        <GameModeContext.Provider value={{playing, allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
           <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
             <Info /> {/** Info needs theme context due to darkmode logo */}
             <PlayHistoryContext.Provider value={{playHistory}}>

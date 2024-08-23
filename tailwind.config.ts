@@ -8,7 +8,8 @@ export default {
       animation: {
         flip: 'flip 0.75s ease-out forwards',
         win: 'win 2.5s linear forwards',
-        'slow-spin': 'spin 4s linear infinite'
+        'slow-spin': 'spin 4s linear infinite',
+        shake: 'shake 0.2s ease-out forwards',
       },
       fontFamily: {
         sans: ['Azbuka W01 Condensed', ...fontFamily.sans],

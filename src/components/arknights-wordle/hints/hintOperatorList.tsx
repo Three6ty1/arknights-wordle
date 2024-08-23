@@ -19,9 +19,9 @@ const Professsions = [
 
 export default function HintOperatorList() {
 
-  const {allOperators, guesses} = React.useContext(GameModeContext)
+  const {allOperators, guesses, isNormalMode, endlessGuesses} = React.useContext(GameModeContext)
 
-  const amtGuesses = guesses.length
+  const amtGuesses = isNormalMode ? guesses.length : endlessGuesses.length
 
   const [showAlert, setShowAlert] = React.useState(false);
   const [selectedProfession, setSelectedProfession] =
