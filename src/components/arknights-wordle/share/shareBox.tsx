@@ -68,7 +68,7 @@ export default function ShareBox({ gameId }: Props) {
         }
 
         // Normalising the length of guesses.
-        if (sharePreference.platform !== "other" && sharePreference.guesses) {
+        if (sharePreference.platform !== "other" && sharePreference.guesses && !guess.correct) {
           let name = guess.name
           let normLength = name.length
           newString += discord ? ` ||` : ` >!`
@@ -141,13 +141,13 @@ export default function ShareBox({ gameId }: Props) {
           </svg>
           <span>Edit format</span>
         </div>
-        <div tabIndex={0} className="flex flex-col dropdown-content w-[245px] z-[100] mt-1 p-3 space-y-2 bg-base-100 shadow-sm shadow-neutral-content rounded-md ">
+        <div tabIndex={0} className="flex flex-col dropdown-content w-[220px] z-[100] mt-1 p-3 space-y-2 bg-base-100 shadow-sm shadow-neutral-content rounded-md ">
           <div className="text-nowrap flex flex-row flex-nowrap justify-start items-center space-x-2">
             <span>Share on</span>
-            <select id="share-preference-select" className={`select select-ghost focus:outline-none ${inputStyle}`} value={sharePreference.platform} onChange={(e) => handleSharePreferenceUpdate("platform", e.target.value)}>
-              <option value="other">Other platforms</option>
-              <option value="discord">Discord</option>
-              <option value="reddit">Reddit</option>
+            <select id="share-preference-select" className={`select select-ghost focus:outline-none w-[200px] ${inputStyle}`} value={sharePreference.platform} onChange={(e) => handleSharePreferenceUpdate("platform", e.target.value)}>
+              <option value="other" className="text-base">Other platforms</option>
+              <option value="discord" className="text-base">Discord</option>
+              <option value="reddit" className="text-base">Reddit</option>
             </select>
           </div>
 
