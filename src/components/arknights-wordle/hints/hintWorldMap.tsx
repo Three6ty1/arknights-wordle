@@ -3,7 +3,7 @@ import React from "react";
 const regions = {
   Ægir: "Aquatic animals and Seaborn.\nGroups: Abyssal Hunters.",
   Bolivar: "Mainly Perros: Dogs.",
-  Columbia: "Varied.\nGroups: Blacksteel, Rhine Lab.",
+  Columbia: "Varied.\nGroups: Blacksteel, Rhine Lab, Siesta.",
   Higashi: "Oni and some Ægir.",
   Iberia: "Mainly Liberi: Birds.",
   Kazimierz: "Mainly Kuranta: Horses and Zebras.\nGroups: Pinus Sylvestris.",

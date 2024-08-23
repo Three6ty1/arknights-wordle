@@ -4,6 +4,23 @@ import React from "react";
 
 const versions = [
   {
+    version: "2.1.0",
+    date: "24th August 2024",
+    content:
+    `- Added high contrast mode
+    - Added customisable share formats for Discord and Reddit. These preferences will save on browser cache
+    - Changed UI to move non-game elements into a dropdown menu
+    - Added hints for Endless Mode. You could cheat the hints by switching to endless while playing the daily, but you could also just use the game client too. Play however you want!
+    - Changed operator list UI to make it less visually cramped. This is unchanged in mobile since the icons are relatively larger anyways
+    - Added Next Wordle timer. Placement to be changed
+    - (Bug Report) Fixed a bug where sharing a result would cause the guesses to reverse
+    - (Bug Report) Added Siesta to subregion list. The subregion list, operator list and pop-up text is actually done manually, I plan on reworking all this in the future
+    - Please continue to submit bugs and suggestions! More improvements are incoming. Thank you for playing
+    `,
+    other:
+    `The job grind is a pain`
+  },
+  {
     version: "2.0.2",
     date: "17th July 2024",
     content: 

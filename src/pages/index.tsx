@@ -7,7 +7,6 @@ import type { Operator } from "@prisma/client";
 import type { GetServerSideProps } from "next";
 
 // Components
-import Theme from "~/components/arknights-wordle/header/theme";
 import Info from "~/components/arknights-wordle/header/info";
 import Hints from "~/components/arknights-wordle/hints/hints";
 import { getAllOperators, getStats } from "~/server/api/routers/wordle";
@@ -19,6 +18,7 @@ import SearchAndShare from "~/components/arknights-wordle/searchAndShare";
 import SearchError from "~/components/arknights-wordle/search/searchError";
 
 interface GameModeContextValue {
+  playing: boolean,
   allOperators: Operator[],
   stats: Stats,
   guesses: GuessResult[],
@@ -38,11 +38,26 @@ interface PlayHistoryContextValue {
 interface ThemeContextValue {
   handleThemeChange: (e: HTMLInputElement) => void,
   darkMode: boolean,
+  handleContrastChange: (e: HTMLInputElement) => void,
+  highContrast: boolean,
+}
+
+interface SharePreferenceContext {
+  sharePreference: SharePreferenceType,
+  handleSharePreferenceUpdate: (category: string , value?: string) => void,
+}
+
+type SharePreferenceType = {
+  platform: string,
+  guesses: boolean,
+  hyperlink: boolean
 }
 
 export const GameModeContext = React.createContext(undefined as unknown as GameModeContextValue);
 export const PlayHistoryContext = React.createContext<PlayHistoryContextValue>({playHistory: {}});
 export const ThemeContext = React.createContext(undefined as unknown as ThemeContextValue);
+
+export const SharePreferenceContext = React.createContext(undefined as unknown as SharePreferenceContext);
 
 export default function ArknightsWordle({
   stats,
@@ -60,13 +75,18 @@ export default function ArknightsWordle({
   const [endlessOp, setEndlessOp] = React.useState<Operator>(undefined as unknown as Operator)
 
   const [isInputDelay, setIsInputDelay] = React.useState(false);
+
   const [darkMode, setDarkMode] = React.useState(false);
+  const [highContrast, setHighContrast] = React.useState(false);
+
   const [error, setError] = React.useState("");
   const [endlessError, setEndlessError] = React.useState("");
 
   const [playHistory, setPlayHistory] = React.useState<Record<string, number>>({});
 
   const winMutation = api.wordle.updateWins.useMutation();
+
+  const [sharePreference, setSharePreference] = React.useState<SharePreferenceType>({} as SharePreferenceType)
 
   React.useEffect(() => {
     const initGuesses = () => {
@@ -139,14 +159,20 @@ export default function ArknightsWordle({
       } else {
         setEndlessOp(chosenEndlessOp)
         if (chosenEndlessOp.name == "Angelina" || chosenEndlessOp.name == "Suzuran") { // Edge case for old bug
-          console.log(chosenEndlessOp.name)
-          console.log(guesses)
           if (guesses.filter(g => g.name == "Angelina" || g.name == "Suzuran").length > 0) {
-            console.log("what")
             localStorage.setItem("endlessPlaying", "false");
             setEndlessPlaying(false);
           }
         }
+      }
+    }
+
+    const initHighContrast = () => {
+      if (localStorage.highContrast === "true") {
+        document.getElementById("contrast-checkbox")?.setAttribute("checked", "");
+        setHighContrast(true);
+      } else if (!("highContrast" in localStorage)) {
+        localStorage.setItem("highContrast", "false");
       }
     }
 
@@ -156,10 +182,19 @@ export default function ArknightsWordle({
       setPlayHistory(ph);
     }
 
+    const initSharePreference = () => {
+      const ls = localStorage.getItem("sharePreference");
+      const sp = ls ? (JSON.parse(ls) as unknown as SharePreferenceType) : {platform: "other", guesses: false, hyperlink: false}
+      setSharePreference(sp)
+    }
+
     initPlayHistory();
     initEndless();
     initGuesses();
     initTheme();
+    initHighContrast();
+    initSharePreference();
+
   }, [allOperators]);
 
   const handleSubmit = (
@@ -186,7 +221,6 @@ export default function ArknightsWordle({
       // Prevent the user from being able to input new guesses with an input delay, and to let the winning animation play fully
       // state change while this animation is occuring will stop the animation entirely.
       if (res.guessResult?.correct) {
-        setTimeout(() => setPlaying(false), 4000);
         setTimeout(() => setIsInputDelay(false), 4000);
 
         if (isNormalMode) {
@@ -238,31 +272,59 @@ export default function ArknightsWordle({
     setDarkMode(theme === "dark");
   };
 
+  const handleContrastChange = (e: HTMLInputElement) => {
+    localStorage.setItem("highContrast", JSON.stringify(e.checked));
+    setHighContrast(e.checked)
+  }
+
+  const handleSharePreferenceUpdate = (category: string, value?: string) => {
+    let n: boolean;
+    if (category === "platform") {
+      if (value == undefined) {
+        alert("Uh oh... This should not happen when changing shares")
+        return
+      }
+      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, platform: value}))
+      setSharePreference({...sharePreference, platform: value})
+    } else if (category === "guesses") {
+      n = !sharePreference.guesses
+      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, guesses: n}))
+      setSharePreference({...sharePreference, guesses: n})
+    } else {
+      n = !sharePreference.hyperlink
+      localStorage.setItem("sharePreference", JSON.stringify({...sharePreference, hyperlink: n}))
+      setSharePreference({...sharePreference, hyperlink: n})
+    }
+  }
+
   return (
     <>
       <Head>
         <title>Arknights Wordle</title>
         <meta name="description" content="An Arknights Wordle parody as a personal/passion project. Type in an operators name and try to guess the correct operator using 7 different categories. Created by Three6ty1" />
+        <meta name="keywords" content="Arknights, Wordle, Arknights Wordle, Operators, Operator Wordle, Worlde, AK Wordle, Arknights Word Game, Arknights Parody, Arknights Game" /> 
+        <meta name="author" content="Three6ty1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
         id="ak-wordle-root"
-        className="justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans"
+        className={`justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
       >
-        <GameModeContext.Provider value={{allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
-          <ThemeContext.Provider value={{darkMode, handleThemeChange}}>
-            <Theme />
-            <Info />
+        <GameModeContext.Provider value={{playing, allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
+          <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
+            <Info /> {/** Info needs theme context due to darkmode logo */}
+            <PlayHistoryContext.Provider value={{playHistory}}>
+              <Hints />
+              <SearchError error={error} endlessError={endlessError} />
+          
+              <div className="grid w-full justify-center">
+                <SharePreferenceContext.Provider value ={{sharePreference, handleSharePreferenceUpdate}}>
+                  <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
+                </SharePreferenceContext.Provider>
+                <PastGuesses />
+              </div>
+            </PlayHistoryContext.Provider>
           </ThemeContext.Provider>
-          <PlayHistoryContext.Provider value={{playHistory}}>
-            <Hints />
-            <SearchError error={error} endlessError={endlessError} />
-        
-            <div className="grid w-full justify-center">
-              <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
-              <PastGuesses />
-            </div>
-          </PlayHistoryContext.Provider>
         </GameModeContext.Provider>
       </main>
     </>

@@ -8,17 +8,18 @@ export default {
       animation: {
         flip: 'flip 0.75s ease-out forwards',
         win: 'win 2.5s linear forwards',
-        'slow-spin': 'spin 4s linear infinite'
+        'slow-spin': 'spin 4s linear infinite',
+        shake: 'shake 0.2s ease-out forwards',
       },
       fontFamily: {
         sans: ['Azbuka W01 Condensed', ...fontFamily.sans],
       },
       colors: {
-        incorrect: '#919090',
-        higher: '#08aadd',
-        lower: '#c80000',
-        half: '#FFAC1C',
-        correct: '#6BBF59',
+        incorrect: 'var(--color-incorrect)',
+        higher: 'var(--color-higher)',
+        lower: 'var(--color-lower)',
+        half: 'var(--color-half)',
+        correct: 'var(--color-correct)',
       },
     },
   },
@@ -26,7 +27,9 @@ export default {
     themes: [{
       "light": {
         ...require("daisyui/src/theming/themes")["light"],
-        "base-200": "#edeeee"
+        "base-200": "#edeeee",
+        "success": "#6BBF59",
+        "info": "#009E73",
       }},
       {'dark': {
         ...require("daisyui/src/theming/themes")["dark"],
@@ -36,6 +39,8 @@ export default {
         "secondary-content": "white",
         "base-100": "#15191e",
         "base-200": "black",
+        "success": "#6BBF59",
+        "info": "#009E73",
       }}
     ]
     

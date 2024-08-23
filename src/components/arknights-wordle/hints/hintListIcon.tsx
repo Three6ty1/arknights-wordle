@@ -10,11 +10,11 @@ export default function HintListIcon({ operator }: Props) {
   return (
     <div className="tooltip" data-tip={operator.name}>
       <Image
-        className="m-[0.5px] rounded-md border-[0.1px] border-solid border-incorrect"
+        className={"m-[1px] sm:m-[5px] border-[1px] sm:border-base-content/50"}
         src={url}
         alt={`${operator.name} operator icon`}
-        width={50}
-        height={50}
+        width={55}
+        height={55}
       />
     </div>
   );

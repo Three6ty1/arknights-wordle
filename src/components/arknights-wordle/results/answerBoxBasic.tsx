@@ -1,4 +1,3 @@
-import { wordleColors } from "~/helper/helper";
 import { animationDelay } from "./answerRow";
 
 type Props = {
@@ -14,13 +13,12 @@ export default function AnswerBoxBasic({
   boxIndex,
   divStyle,
 }: Props) {
-  const bg = result ? wordleColors.correct : wordleColors.incorrect;
+  const color = result ? "correct" : "incorrect";
 
   return (
     <div
-      className={`${divStyle}`}
+      className={`${divStyle} bg-${color}`}
       style={{
-        backgroundColor: bg,
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}
     >

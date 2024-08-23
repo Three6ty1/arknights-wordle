@@ -1,4 +1,4 @@
-import { wordleColors, Range, costToolTips } from "~/helper/helper";
+import { Range, costToolTips } from "~/helper/helper";
 
 type Props = {
   guess: number[];
@@ -15,21 +15,20 @@ export default function AnswerBoxCost({
   boxIndex,
   divStyle,
 }: Props) {
-  let bg = wordleColors.correct;
+  let color = "correct";
   if (result === Range.Lower) {
-    bg = wordleColors.lower;
+    color = "lower";
   } else if (result === Range.Higher) {
-    bg = wordleColors.higher;
+    color = "higher";
   }
 
   // Guess[0] == E0, Guess[1] == E2
 
   return (
     <div
-      className={`${divStyle} tooltip-answer-row-cost`}
+      className={`${divStyle} tooltip-answer-row-cost bg-${color}`}
       data-tip={costToolTips[result as keyof typeof costToolTips]}
       style={{
-        backgroundColor: bg,
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}
     >

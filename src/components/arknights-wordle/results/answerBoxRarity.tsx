@@ -1,4 +1,4 @@
-import { wordleColors, Range } from "~/helper/helper";
+import { Range } from "~/helper/helper";
 import { animationDelay } from "./answerRow";
 
 type Props = {
@@ -14,18 +14,17 @@ export default function AnswerBoxRarity({
   boxIndex,
   divStyle,
 }: Props) {
-  let bg = wordleColors.correct;
+  let color = "correct";
   if (result === Range.Lower) {
-    bg = wordleColors.lower;
+    color = "lower";
   } else if (result === Range.Higher) {
-    bg = wordleColors.higher;
+    color = "higher";
   }
 
   return (
     <div
-      className={`${divStyle}`}
+      className={`${divStyle} bg-${color}`}
       style={{
-        backgroundColor: bg,
         animationDelay: `${boxIndex * animationDelay}ms`,
       }}
     >
