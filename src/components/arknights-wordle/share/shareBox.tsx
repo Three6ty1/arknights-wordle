@@ -119,11 +119,11 @@ export default function ShareBox({ gameId }: Props) {
           </svg>
           <span>Edit format</span>
         </div>
-        <div tabIndex={0} className="flex flex-col dropdown-content w-[232px] z-[100] mt-1 p-3 space-y-2 bg-base-100 shadow-sm shadow-neutral-content rounded-md ">
+        <div tabIndex={0} className="flex flex-col dropdown-content w-[245px] z-[100] mt-1 p-3 space-y-2 bg-base-100 shadow-sm shadow-neutral-content rounded-md ">
           <div className="text-nowrap flex flex-row flex-nowrap justify-start items-center space-x-2">
             <span>Share on</span>
             <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("markdown")}>
-              <span className="font-medium">{sharePreference.markdown ? "Discord (Markdown)" : "Other platforms"}</span>
+              <span className="custom-bold">{sharePreference.markdown ? "Discord (Markdown)" : "Other platforms"}</span>
               {switchIcon()}
             </button>
           </div>
@@ -132,14 +132,14 @@ export default function ShareBox({ gameId }: Props) {
             <>
               <div className="text-nowrap flex flex-row justify-start items-center space-x-2">
                 <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("guesses")}>
-                  <span className="font-medium">{sharePreference.guesses ? "with" : "without"}</span>
+                  <span className="custom-bold">{sharePreference.guesses ? "with" : "without"}</span>
                   {switchIcon()}
                 </button>
                 <span>the guesses and</span>
               </div>
               <div className="text-nowrap flex flex-row justify-start items-center space-x-2">
                 <button className={buttonStyle} onClick={() => handleSharePreferenceUpdate("hyperlink")}>
-                  <span className="font-medium">{sharePreference.hyperlink ? "with" : "without"}</span>
+                  <span className="custom-bold">{sharePreference.hyperlink ? "with" : "without"}</span>
                   {switchIcon()}
                 </button>
                 <span>the hyperlink</span>
