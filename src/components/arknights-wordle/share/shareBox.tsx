@@ -126,7 +126,7 @@ export default function ShareBox({ gameId }: Props) {
     handleClipboard(newString)
   }
 
-  const inputStyle = "custom-bold border-2 p-2 h-fit " + (highContrast ? "border-info hover:border-info" : "border-success hover:border-success")
+  const inputStyle = "custom-bold border-2 p-2 h-fit " + (highContrast ? "border-info hover:border-info focus:border-info" : "border-success hover:border-success focus:border-success")
 
   return (
     <div className="flex flex-row justify-center space-x-2">
