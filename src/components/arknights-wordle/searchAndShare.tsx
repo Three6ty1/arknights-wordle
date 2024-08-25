@@ -18,7 +18,7 @@ export default function SearchAndShare() {
       */}
       {isNormalMode ? 
         <>
-          {playing && (
+          {(playing || isInputDelay) && (
             <Search />
           )}
           {!playing && !isInputDelay && (
@@ -27,12 +27,12 @@ export default function SearchAndShare() {
         </>
         :
         <>
-          {endlessPlaying && (
+          {(endlessPlaying || isInputDelay) && (
             <Search />
           )}
           {!endlessPlaying && !isInputDelay && (
-            <div className="flex flex-row w-1/2 self-center items-center space-x-2 justify-center">
-              <p>Congratulations! You guessed<br />the operator in {endlessGuesses.length} tries!</p>
+            <div className="flex flex-col w-1/2 self-center items-center space-x-2 justify-center">
+              <p>Congratulations! You guessed the operator in {endlessGuesses.length} tries!</p>
               <button className={buttonClass} onClick={() => handleEndlessReset()}>Refresh Endless</button>
             </div>
           )}
