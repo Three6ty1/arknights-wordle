@@ -19,7 +19,7 @@ export default function EndlessSwitch() {
     </div>
     */
     <button 
-      className={"btn indicator-item tooltip flex items-center m-2 " + (!isNormalMode ? buttonClass : "")}
+      className={"btn indicator-item tooltip flex items-center " + (!isNormalMode ? buttonClass : "")}
       data-tip="Endless Mode"
       // disabled={playing}
       onClick={() => setIsNormalMode(!isNormalMode)}

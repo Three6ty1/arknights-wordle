@@ -4,10 +4,8 @@ import { SearchContext } from "./search";
 import { GameModeContext } from "~/pages/index";
 
 export default function SearchBar() {
-  const [input, setInput] = React.useState("");
-  
-  const {results, setResults} = React.useContext(SearchContext)
-  const {allOperators, handleSubmit} = React.useContext(GameModeContext)
+  const {results, setResults, setSearchFocused, input, setInput} = React.useContext(SearchContext)
+  const {allOperators, handleSubmit, isInputDelay} = React.useContext(GameModeContext)
 
   const handleChange = (value: string) => {
     setInput(value);
@@ -77,20 +75,16 @@ export default function SearchBar() {
       }
       
       setResults([]);
-      
-      const callback = () => {
-        setInput("");
-      };
 
       handleSubmit(
         guess,
-        callback,
+        () => setInput("")
       );
     }
   };
 
   return (
-    <div className="flex w-full flex-row items-center justify-center">
+    <div className="flex w-full flex-row items-center justify-center" onFocus={() => setSearchFocused(true)} onBlur={() => setTimeout(() => setSearchFocused(false), 100)}>
       <input
         name="operator-guess"
         value={input}
@@ -99,6 +93,7 @@ export default function SearchBar() {
         placeholder="Start typing an operator name"
         className="input input-bordered w-[80vw] text-center md:w-[30vw]"
         type="text"
+        disabled={isInputDelay}
       />
     </div>
   );

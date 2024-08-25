@@ -29,6 +29,7 @@ interface GameModeContextValue {
   handleSubmit: (guess: Operator, callback: (success: boolean) => void) => void, 
   endlessOp: Operator,
   handleEndlessReset: () => void,
+  isInputDelay: boolean,
 }
 
 interface PlayHistoryContextValue {
@@ -310,19 +311,16 @@ export default function ArknightsWordle({
         id="ak-wordle-root"
         className={`justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
       >
-        <GameModeContext.Provider value={{playing, allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset}}>
+        <GameModeContext.Provider value={{playing, allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset, isInputDelay}}>
           <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
             <Info /> {/** Info needs theme context due to darkmode logo */}
             <PlayHistoryContext.Provider value={{playHistory}}>
               <Hints />
               <SearchError error={error} endlessError={endlessError} />
-          
-              <div className="grid w-full justify-center">
-                <SharePreferenceContext.Provider value ={{sharePreference, handleSharePreferenceUpdate}}>
-                  <SearchAndShare isInputDelay={isInputDelay} playing={playing}/>
-                </SharePreferenceContext.Provider>
-                <PastGuesses />
-              </div>
+              <SharePreferenceContext.Provider value ={{sharePreference, handleSharePreferenceUpdate}}>
+                <SearchAndShare />
+              </SharePreferenceContext.Provider>
+              <PastGuesses />
             </PlayHistoryContext.Provider>
           </ThemeContext.Provider>
         </GameModeContext.Provider>

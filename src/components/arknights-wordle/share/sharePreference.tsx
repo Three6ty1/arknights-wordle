@@ -24,8 +24,8 @@ export default function SharePreference({handleShare} : Props) {
   const inputStyle = "custom-bold border-2 p-2 h-fit " + (highContrast ? "border-info hover:border-info focus:border-info" : "border-success hover:border-success focus:border-success")
 
   return (
-    <div tabIndex={0} className="flex flex-row flex-wrap justify-center">
-      <div className="text-nowrap flex flex-row flex-nowrap justify-start items-center space-x-2 mr-2">
+    <div tabIndex={0} className="flex flex-row flex-wrap justify-start md:justify-center">
+      <div className="text-nowrap flex flex-row flex-nowrap justify-start items-center space-x-2 mr-2 mt-2">
         <span>Share on</span>
         <select id="share-preference-select" className={`select focus:outline-none w-[140px] ${inputStyle}`} value={sharePreference.platform} onChange={(e) => handleSharePreferenceUpdate("platform", e.target.value)}>
           <option value="other" className="text-base">Other platforms</option>
@@ -34,7 +34,7 @@ export default function SharePreference({handleShare} : Props) {
         </select>
       </div>
 
-      <div className="text-nowrap flex flex-row justify-start items-center space-x-2 mr-2">
+      <div className="text-nowrap flex flex-row justify-start items-center space-x-2 mt-2 mr-2">
         <button className={`btn btn-ghost hover:bg-transparent ${inputStyle}`} disabled={sharePreference.platform === "other"} onClick={() => handleSharePreferenceUpdate("guesses")}>
           <span>{sharePreference.guesses ? "with" : "without"}</span>
           {switchIcon()}

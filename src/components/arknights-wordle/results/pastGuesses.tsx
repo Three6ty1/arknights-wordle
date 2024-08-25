@@ -8,11 +8,10 @@ export default function PastGuesses() {
   const {isNormalMode, guesses, endlessGuesses} = React.useContext(GameModeContext)
 
   return (
-    <>
-      {/** Needs margin top or else it overlaps with search bar due to the grid formatting. */}
-      <div className="relative top-[55px] col-start-1 row-start-1 flex flex-col overflow-y-clip overflow-x-scroll pb-10 md:overflow-x-visible md:overflow-y-visible z-10">
+    <div className="w-full">
+      <div className="flex items-center justify-start md:justify-center align-middle pb-10 z-10 mt-3 overflow-x-scroll md:overflow-visible">
         {/** Wrapper for div to expand into scrollable area in mobile */}
-        <div className="flex w-fit flex-col">
+        <div className="flex flex-col w-fit">
           {isNormalMode ? 
             <>
               {guesses && guesses.length > 0 && (
@@ -46,6 +45,6 @@ export default function PastGuesses() {
           }
         </div>
       </div>
-    </>
+    </div>
   )
 }

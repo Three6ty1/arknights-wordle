@@ -4,7 +4,7 @@ import { getProfessionIconUrl } from "~/helper/helper";
 import { HintBreakpoints } from "./hints";
 import Image from "next/image";
 import type { Operator } from "@prisma/client";
-import { GameModeContext } from "~/pages/index";
+import { GameModeContext, ThemeContext } from "~/pages/index";
 
 const Professsions = [
   "Vanguard",
@@ -20,6 +20,7 @@ const Professsions = [
 export default function HintOperatorList() {
 
   const {allOperators, guesses, isNormalMode, endlessGuesses} = React.useContext(GameModeContext)
+  const {highContrast} = React.useContext(ThemeContext)
 
   const amtGuesses = isNormalMode ? guesses.length : endlessGuesses.length
 
@@ -75,11 +76,11 @@ export default function HintOperatorList() {
 
   return (
     <>
-      <div className="indicator m-2">
+      <div className="indicator">
         {showAlert && <span className="badge indicator-item bg-higher" />}
         <button
-          className="btn tooltip flex w-full items-center"
-          data-tip="Operator List"
+          className={`btn tooltip flex w-full items-center ${!isNormalMode && (highContrast ? "btn-info text-white" : "btn-success text-white")}`}
+          data-tip={!isNormalMode && "'Endless' " + "Operator List"}
           onClick={() => handleClick()}
         >
           <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -90,7 +91,7 @@ export default function HintOperatorList() {
       <dialog id="operator_list_modal" className="modal">
         <div className="no-scrollbar no-scrollbar::-webkit-scrollbar modal-box flex h-4/5 max-w-[3/5vh] flex-col justify-items-center overflow-x-clip overflow-y-scroll">
           <h1 className="mb-2 w-full text-xl custom-bold">
-            Operator List (Up to Viviana)
+            {!isNormalMode && "'Endless' "}Operator List (Up to Viviana)
           </h1>
           <div className="flex w-full flex-row flex-wrap justify-center">
             {/**

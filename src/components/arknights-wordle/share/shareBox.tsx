@@ -3,7 +3,6 @@ import React from "react";
 import { GameModeContext, SharePreferenceContext, ThemeContext } from "~/pages/index";
 import HistoryGraph from "./historyGraph";
 import SharePreference from "./sharePreference";
-import NextCountdown from "../header/nextCountdown";
 
 type Props = {
   gameId: number;
@@ -18,7 +17,7 @@ const shareIcon = () => (
 export default function ShareBox({ gameId }: Props) {
   const [shareString, setShareString] = React.useState("");
 
-  const {guesses, playing} = React.useContext(GameModeContext)
+  const {guesses} = React.useContext(GameModeContext)
   const {highContrast} = React.useContext(ThemeContext)
   const {sharePreference } = React.useContext(SharePreferenceContext)
 
@@ -89,7 +88,7 @@ export default function ShareBox({ gameId }: Props) {
     };
 
     generateshareString();
-  }, [playing, sharePreference]);
+  }, [guesses, sharePreference]);
 
   const handleClipboard = (newString: string) => {
     navigator.clipboard.writeText(newString).catch(() => {
@@ -124,16 +123,13 @@ export default function ShareBox({ gameId }: Props) {
 
   return (
     <>
-      <div className="flex flex-col justify-center space-y-2 items-center">
-        <NextCountdown />
-        <button className={`${highContrast ? "btn-info" : "btn-success"} custom-bold btn text-white w-fit`} onClick={() => {(document.getElementById("share-modal") as HTMLDialogElement).showModal(); handleShare()}}>
-            {shareIcon()}
-            Share
-        </button>
-      </div>
+      <button className={`${highContrast ? "btn-info" : "btn-success"} custom-bold btn text-white w-64`} onClick={() => {(document.getElementById("share-modal") as HTMLDialogElement).showModal(); handleShare()}}>
+          {shareIcon()}
+          Share
+      </button>
       <dialog id="share-modal" className="modal">
         <div className="modal-box">
-          <h1 className="custom-bold text-xl mb-4">Copied to clipboard!</h1>
+          <h1 className="custom-bold text-xl mb-2">Copied to clipboard!</h1>
           <SharePreference handleShare={() => handleShare()} />
           <p className="mt-4">Here are your stats. Thanks for playing :)</p>
           <div className="mx-3 mb-0">
