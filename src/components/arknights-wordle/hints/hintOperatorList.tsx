@@ -17,10 +17,16 @@ const Professsions = [
   "Specialist",
 ];
 
+const operatorListIcon = () => (
+  <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 9h3m-3 3h3m-3 3h3m-6 1c-.306-.613-.933-1-1.618-1H7.618c-.685 0-1.312.387-1.618 1M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm7 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+  </svg>
+)
+
 export default function HintOperatorList() {
 
   const {allOperators, guesses, isNormalMode, endlessGuesses} = React.useContext(GameModeContext)
-  const {highContrast} = React.useContext(ThemeContext)
+  const {highContrast, darkMode} = React.useContext(ThemeContext)
 
   const amtGuesses = isNormalMode ? guesses.length : endlessGuesses.length
 
@@ -80,18 +86,16 @@ export default function HintOperatorList() {
         {showAlert && <span className="badge indicator-item bg-higher" />}
         <button
           className={`btn tooltip flex w-full items-center ${!isNormalMode && (highContrast ? "btn-info text-white" : "btn-success text-white")}`}
-          data-tip={!isNormalMode && "'Endless' " + "Operator List"}
+          data-tip={(!isNormalMode ? "'Endless' " : "") + "Operator List"}
           onClick={() => handleClick()}
         >
-          <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 9h3m-3 3h3m-3 3h3m-6 1c-.306-.613-.933-1-1.618-1H7.618c-.685 0-1.312.387-1.618 1M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm7 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
-          </svg>
+          {operatorListIcon()}
         </button>
       </div>
       <dialog id="operator_list_modal" className="modal">
         <div className="no-scrollbar no-scrollbar::-webkit-scrollbar modal-box flex h-4/5 max-w-[3/5vh] flex-col justify-items-center overflow-x-clip overflow-y-scroll">
           <h1 className="mb-2 w-full text-xl custom-bold">
-            {!isNormalMode && "'Endless' "}Operator List (Up to Viviana)
+            {!isNormalMode ? "'Endless' " : ""}Operator List (Up to Viviana)
           </h1>
           <div className="flex w-full flex-row flex-wrap justify-center">
             {/**
@@ -116,6 +120,7 @@ export default function HintOperatorList() {
                       <button className={`tooltip p-[0.2rem] bg-${selectedProfession === p ? "higher" : "white"}`} data-tip={p} key={`${p} icon`}>
                         <Image
                           src={getProfessionIconUrl(p)}
+                          style={{filter: darkMode ? "invert(97%)" : ""}}
                           width={45}
                           height={45}
                           id={p}
