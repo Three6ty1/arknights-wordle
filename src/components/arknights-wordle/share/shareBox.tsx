@@ -3,6 +3,7 @@ import React from "react";
 import { GameModeContext, SharePreferenceContext, ThemeContext } from "~/pages/index";
 import HistoryGraph from "./historyGraph";
 import SharePreference from "./sharePreference";
+import NextCountdown from "../header/nextCountdown";
 
 type Props = {
   gameId: number;
@@ -123,7 +124,8 @@ export default function ShareBox({ gameId }: Props) {
 
   return (
     <>
-      <div className="flex flex-row justify-center space-x-2">
+      <div className="flex flex-col justify-center space-y-2 items-center">
+        <NextCountdown />
         <button className={`${highContrast ? "btn-info" : "btn-success"} custom-bold btn text-white w-fit`} onClick={() => {(document.getElementById("share-modal") as HTMLDialogElement).showModal(); handleShare()}}>
             {shareIcon()}
             Share
@@ -131,9 +133,10 @@ export default function ShareBox({ gameId }: Props) {
       </div>
       <dialog id="share-modal" className="modal">
         <div className="modal-box">
-          <h1 className="custom-bold text-xl">Copied to clipboard!</h1>
-          <SharePreference />
-          <div className="m-3 mb-0">
+          <h1 className="custom-bold text-xl mb-4">Copied to clipboard!</h1>
+          <SharePreference handleShare={() => handleShare()} />
+          <p className="mt-4">Here are your stats. Thanks for playing :)</p>
+          <div className="mx-3 mb-0">
             <HistoryGraph />
           </div>
         </div>

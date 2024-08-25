@@ -32,7 +32,7 @@ export default function HintWorldMap() {
 
   return (
     <>
-      <div className="indicator m-2 flex w-1/3">
+      <div className="indicator m-2 flex">
         <button
           className="btn tooltip flex w-full items-center"
           data-tip="Regions and Races"

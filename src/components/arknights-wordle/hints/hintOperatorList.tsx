@@ -75,7 +75,7 @@ export default function HintOperatorList() {
 
   return (
     <>
-      <div className="indicator m-2 w-1/3">
+      <div className="indicator m-2">
         {showAlert && <span className="badge indicator-item bg-higher" />}
         <button
           className="btn tooltip flex w-full items-center"
