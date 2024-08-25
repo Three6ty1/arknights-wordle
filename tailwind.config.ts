@@ -10,7 +10,7 @@ export default {
         win: 'win 2.5s linear forwards',
         'slow-spin': 'spin 4s linear infinite',
         shake: 'shake 0.2s ease-out forwards',
-        appear: 'appear 3s linear forwards'
+        appear: 'appear 1s linear forwards'
       },
       fontFamily: {
         sans: ['Azbuka W01 Condensed', ...fontFamily.sans],

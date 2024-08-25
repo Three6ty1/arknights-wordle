@@ -1,12 +1,12 @@
 import VersionLog from "./versions";
 import React from "react";
-import { GameModeContext} from "~/pages";
+import { GameModeContext } from "~/pages";
 import NextCountdown from "./nextCountdown";
-import LogoBlack from "./logo";
+import { LogoBlack } from "./logo";
 
 export default function Info() {
   const { stats } = React.useContext(GameModeContext)
-  
+
   return (
     <>
       {/* The preload issue does not go away... Fix later??? */}

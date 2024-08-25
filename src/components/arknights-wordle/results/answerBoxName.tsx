@@ -14,7 +14,7 @@ export default function AnswerBoxName({ op, name, divStyle }: Props) {
   return (
     <>
       <div
-        className={`${divStyle} bg-transparent absolute animate-appear`}
+        className={`answer-row flex flex-col p-1 leading-5 text-white bg-transparent absolute animate-appear sm:hidden`}
         style={{ animationDelay: "200ms" }}
       >
         <Image width={80} height={80} src={url} alt={`${name} operator icon`} />
