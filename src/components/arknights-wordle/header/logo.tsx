@@ -7,7 +7,7 @@ export function LogoBlack() {
   // 416px by 72px
 
   return (
-    <div className="w-screen flex justify-center px-5">
+    <div className="w-fit flex justify-center px-5">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
         width="416px" height="72px" viewBox="0 0 416.000000 72.000000"
         preserveAspectRatio="xMidYMid meet">
