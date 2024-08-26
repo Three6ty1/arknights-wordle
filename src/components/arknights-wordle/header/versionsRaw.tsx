@@ -1,17 +1,19 @@
 export const versions = [
   {
     version: "2.2.0",
-    date: "26th August 2024",
+    date: "27th August 2024",
     content:
     `- There is now a ghost icon of the operators on mobile to make it easier for users to keep track of the rows and attributes
     - UI changes to make it clearer that the share string can be changed
     - Reduced the hint breakpoints to 4 (Sort by rarity) and 6 (Sort by class)
-    - Further smaller changes in UI. I refactored some old code, please report any visual bugs you come across.
+    - Further smaller changes in UI. I refactored some old code, please report any visual bugs you come across in the dropdown menu
     - I've found a new repo for operator information. 
     - Thank you to NikitaZero and the resources at the Arknights Terra Wiki.gg Discord server
+    - Since I haven't been caught up in the story past the Reunion/Talulah arc, please submit some suggestions for nicknames/easter eggs you'd like to see
     - Added operators up to and including Shu's banner (+10)
     `,
     added: [["char_4114_harold", 5], ["char_194_leto", 5], ["char_4116_blkkgt", 6], ["char_4081_warmy", 5], ["char_4117_ray", 6], ["char_4119_wanqin", 5], ["char_4122_grabds", 5], ["char_4121_zuole", 6], ["char_2025_shu", 6], ["char_4023_rfalcn", 5]],
+    link: { href: "https://forms.gle/AA8HpWwMxZEjE7ut8", text: "Nicknames suggestion form"}
   },
   {
     version: "2.1.0",
