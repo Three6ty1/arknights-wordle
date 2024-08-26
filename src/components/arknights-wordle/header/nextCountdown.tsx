@@ -5,8 +5,20 @@ export default function NextCountdown() {
   const [seconds, setSeconds] = React.useState(999)
 
   React.useEffect(() => {
-    const timeNow = new Date(new Date().toLocaleString('en', {timeZone: "Australia/Sydney"}))
-    setSeconds(new Date(timeNow.getFullYear(), timeNow.getMonth(), timeNow.getDate() + 1,).getTime())
+    // get time from australia 
+    // calculate time to midnight in australia
+    const timeString = new Date().toLocaleTimeString('en', {timeZone: 'Australia/Sydney', hour12: false})
+
+    const time: string[] = timeString.split(":")
+
+    if (time.length === 3) {
+      // Need exclamation because split could be undefined even with the > 3 check
+      const seconds = 86400 - (parseInt(time[0]!) * 60 * 60 + parseInt(time[1]!) * 60 + parseInt(time[2]!)) 
+      setSeconds(new Date().getTime() + seconds * 1000)
+    } else {
+      setSeconds(-1)
+      alert("Timer has gone haywire, please submit a bug report")
+    }
   }, [])
 
   const countdownRef = React.useRef(null)

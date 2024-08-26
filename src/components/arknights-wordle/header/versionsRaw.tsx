@@ -10,6 +10,10 @@ export const versions = [
     - I've found a new repo for operator information. 
     - Thank you to NikitaZero and the resources at the Arknights Terra Wiki.gg Discord server
     - Since I haven't been caught up in the story past the Reunion/Talulah arc, please submit some suggestions for nicknames/easter eggs you'd like to see
+
+    - (Bug Report) Fixed logo being wonky on mobile
+    - (Bug Report) Fixed countdown timezone issues. (Sorry timezones suck to deal with and are confusing)
+
     - Added operators up to and including Shu's banner (+10)
     `,
     added: [["char_4114_harold", 5], ["char_194_leto", 5], ["char_4116_blkkgt", 6], ["char_4081_warmy", 5], ["char_4117_ray", 6], ["char_4119_wanqin", 5], ["char_4122_grabds", 5], ["char_4121_zuole", 6], ["char_2025_shu", 6], ["char_4023_rfalcn", 5]],
