@@ -9,8 +9,8 @@ import Theme from "./theme";
 import HighContrast from "./highContrast";
 
 export enum HintBreakpoints {
-  "one" = 5,
-  "two" = 8,
+  "one" = 4,
+  "two" = 6,
 }
 
 export default function Hints() {
@@ -21,9 +21,9 @@ export default function Hints() {
   //      operator list sorted by class and rarity
 
   return (
-    <div className="my-2 flex w-full justify-center align-middle md:w-96">
-      <div className="flex w-3/4 flex-row justify-center">
-        <div className="dropdown m-2">
+    <div className="flex w-full justify-center align-middle md:w-96 mt-3">
+      <div className="flex w-3/4 flex-row justify-center space-x-3">
+        <div className="dropdown">
           <div tabIndex={0} role="button" className="btn">
             <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14"/>

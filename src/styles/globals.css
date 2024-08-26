@@ -125,3 +125,15 @@
         transform: rotateZ(0deg);
     }
 }
+
+@keyframes appear {
+    0% {
+        opacity: 0
+    }
+    90% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0.7
+    }
+}

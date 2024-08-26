@@ -3,11 +3,15 @@ export function randomInteger(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export const ICON_DIR =
-  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons/main/avatars/";
-export const PROFESSION_ICON_DIR =
-  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons/main/classes/black/";
+const E2_ICON_DIR =
+  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2/icons/assets/torappu/dynamicassets/arts/charavatars/elite/";
+  
+const ICON_DIR =
+  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2/icons/assets/torappu/dynamicassets/arts/charavatars/"
 
+const PROFESSION_ICON_DIR =
+  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2/icons/classes/";
+  
 export enum Range {
   Lower = "Lower",
   Correct = "Correct",
@@ -23,7 +27,7 @@ export enum Correctness {
 export function getOperatorIconUrl(charId: string, rarity: number) {
   let url;
   if (rarity > 3) {
-    url = ICON_DIR + charId + "_2.webp";
+    url = E2_ICON_DIR + charId + "_2.webp";
   } else {
     url = ICON_DIR + charId + ".webp";
   }
@@ -33,10 +37,7 @@ export function getOperatorIconUrl(charId: string, rarity: number) {
 
 export function getProfessionIconUrl(profession: string) {
   return (
-    PROFESSION_ICON_DIR +
-    "icon_profession_" +
-    profession.toLowerCase() +
-    "_large.png"
+    PROFESSION_ICON_DIR + "class_" + profession.toLowerCase() + "_black.webp"
   );
 }
 

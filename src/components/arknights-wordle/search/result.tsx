@@ -13,7 +13,7 @@ export default function Result({ operator }: Props) {
   const [pastGuesses, setPastGuesses] = React.useState<string[]>([]);
 
   const {guesses, endlessGuesses, isNormalMode, handleSubmit} = React.useContext(GameModeContext)
-  const {setResults} = React.useContext(SearchContext)
+  const {setResults, setInput} = React.useContext(SearchContext)
 
   // Past guesses here to make the text of a previously guessed operator blue
   React.useEffect(() => {
@@ -35,7 +35,7 @@ export default function Result({ operator }: Props) {
     handleSubmit(
       operator,
       () => {
-        return;
+        setInput("")
       },
     );
   };
