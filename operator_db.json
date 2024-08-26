@@ -225,7 +225,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Vouivre",
-        "group": "Blacksteel",
+        "group": "Blacksteel Worldwide",
         "nation": "Columbia",
         "position": "Melee",
         "profession": "Vanguard",
@@ -331,7 +331,7 @@
         "charId": "char_284_spot",
         "alias": [],
         "gender": "Male",
-        "race": "Rebbah",
+        "race": "Reproba",
         "group": "Reserve 6",
         "nation": "Rhodes Island",
         "position": "Melee",
@@ -507,7 +507,7 @@
         "gender": "Male",
         "race": "Perro",
         "group": "",
-        "nation": "Bolivar",
+        "nation": "Bolívar",
         "position": "Ranged",
         "profession": "Caster",
         "archetype": "Splashcaster",
@@ -539,7 +539,7 @@
         "charId": "char_469_indigo",
         "alias": [],
         "gender": "Female",
-        "race": "Pythia",
+        "race": "Phidia",
         "group": "",
         "nation": "Iberia",
         "position": "Ranged",
@@ -578,7 +578,7 @@
         ],
         "gender": "Female",
         "race": "Feline",
-        "group": "Blacksteel",
+        "group": "Blacksteel Worldwide",
         "nation": "Columbia",
         "position": "Ranged",
         "profession": "Sniper",
@@ -735,7 +735,7 @@
         "gender": "Female",
         "race": "Cautus",
         "group": "",
-        "nation": "Bolivar",
+        "nation": "Bolívar",
         "position": "Ranged",
         "profession": "Sniper",
         "archetype": "Loopshooter",
@@ -828,7 +828,7 @@
             "Breeder"
         ],
         "gender": "Female",
-        "race": "Rebbah",
+        "race": "Reproba",
         "group": "",
         "nation": "Columbia",
         "position": "Ranged",
@@ -1401,7 +1401,7 @@
         "charId": "char_4107_vrdant",
         "alias": [],
         "gender": "Male",
-        "race": "Pythia",
+        "race": "Phidia",
         "group": "",
         "nation": "Victoria",
         "position": "Melee",
@@ -1522,6 +1522,23 @@
         ],
         "infected": "Yes"
     },
+    "Kestrel": {
+        "charId": "char_4023_rfalcn",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Sargon",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Pioneer",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "Yes"
+    },
     "Reed": {
         "charId": "char_261_sddrag",
         "alias": [],
@@ -1572,6 +1589,23 @@
             11
         ],
         "infected": "Yes"
+    },
+    "Wanqing": {
+        "charId": "char_4119_wanqin",
+        "alias": [],
+        "gender": "Male",
+        "race": "Forte",
+        "group": "",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Bearer",
+        "rarity": 5,
+        "cost": [
+            11,
+            13
+        ],
+        "infected": "No"
     },
     "Blacknight": {
         "charId": "char_476_blkngt",
@@ -1685,7 +1719,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Vulpo",
-        "group": "Blacksteel",
+        "group": "Blacksteel Worldwide",
         "nation": "Columbia",
         "position": "Melee",
         "profession": "Guard",
@@ -1822,6 +1856,23 @@
         ],
         "infected": "No"
     },
+    "Leto": {
+        "charId": "char_194_leto",
+        "alias": [],
+        "gender": "Female",
+        "race": "Ursus",
+        "group": "Ursus Student Self-Governing Group",
+        "nation": "Ursus",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Lord",
+        "rarity": 5,
+        "cost": [
+            17,
+            19
+        ],
+        "infected": "No"
+    },
     "Wind Chimes": {
         "charId": "char_4083_chimes",
         "alias": [],
@@ -1864,7 +1915,7 @@
         "alias": [],
         "gender": "Male",
         "race": "Unknown/Undisclosed",
-        "group": "Rainbow 6",
+        "group": "Team Rainbow",
         "nation": "None",
         "position": "Melee",
         "profession": "Guard",
@@ -1881,7 +1932,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Unknown/Undisclosed",
-        "group": "Abyssal Hunter",
+        "group": "Abyssal Hunters",
         "nation": "Ægir",
         "position": "Melee",
         "profession": "Guard",
@@ -1989,7 +2040,7 @@
         "gender": "Female",
         "race": "Liberi",
         "group": "",
-        "nation": "Bolivar",
+        "nation": "Bolívar",
         "position": "Melee",
         "profession": "Guard",
         "archetype": "Reaper",
@@ -2025,7 +2076,7 @@
         "gender": "Male",
         "race": "Perro",
         "group": "",
-        "nation": "Bolivar",
+        "nation": "Bolívar",
         "position": "Melee",
         "profession": "Guard",
         "archetype": "Librator",
@@ -2501,7 +2552,7 @@
         "charId": "char_489_serum",
         "alias": [],
         "gender": "Male",
-        "race": "Pythia",
+        "race": "Phidia",
         "group": "",
         "nation": "Columbia",
         "position": "Ranged",
@@ -2572,6 +2623,23 @@
         "race": "Caprinae",
         "group": "",
         "nation": "Leithanien",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Primcaster",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "Yes"
+    },
+    "Warmy": {
+        "charId": "char_4081_warmy",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Rim Billiton",
         "position": "Ranged",
         "profession": "Caster",
         "archetype": "Primcaster",
@@ -2765,6 +2833,23 @@
         ],
         "infected": "No"
     },
+    "Harold": {
+        "charId": "char_4114_harold",
+        "alias": [],
+        "gender": "Male",
+        "race": "Feline",
+        "group": "",
+        "nation": "Victoria",
+        "position": "Ranged",
+        "profession": "Medic",
+        "archetype": "Wandermedic",
+        "rarity": 5,
+        "cost": [
+            15,
+            17
+        ],
+        "infected": "No"
+    },
     "Hibiscus the Purifier": {
         "charId": "char_1024_hbisc2",
         "alias": [
@@ -2946,7 +3031,7 @@
         ],
         "gender": "Female",
         "race": "Vouivre",
-        "group": "Blacksteel",
+        "group": "Blacksteel Worldwide",
         "nation": "Columbia",
         "position": "Melee",
         "profession": "Defender",
@@ -3033,7 +3118,7 @@
         "charId": "char_4025_aprot2",
         "alias": [],
         "gender": "Male",
-        "race": "Pythia",
+        "race": "Phidia",
         "group": "",
         "nation": "Victoria",
         "position": "Melee",
@@ -3068,7 +3153,7 @@
         "alias": [],
         "gender": "Male",
         "race": "Unknown/Undisclosed",
-        "group": "Rainbow 6",
+        "group": "Team Rainbow",
         "nation": "None",
         "position": "Melee",
         "profession": "Defender",
@@ -3186,7 +3271,7 @@
         "charId": "char_4006_melnte",
         "alias": [],
         "gender": "Female",
-        "race": "Pythia",
+        "race": "Phidia",
         "group": "",
         "nation": "Columbia",
         "position": "Ranged",
@@ -3225,7 +3310,7 @@
         ],
         "gender": "Female",
         "race": "Ægir",
-        "group": "Abyssal Hunter",
+        "group": "Abyssal Hunters",
         "nation": "Ægir",
         "position": "Ranged",
         "profession": "Sniper",
@@ -3380,7 +3465,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Perro",
-        "group": "Blacksteel",
+        "group": "Blacksteel Worldwide",
         "nation": "Columbia",
         "position": "Melee",
         "profession": "Specialist",
@@ -3467,6 +3552,23 @@
         "race": "Kuranta",
         "group": "",
         "nation": "Kazimierz",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Slower",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
+    },
+    "Grain Buds": {
+        "charId": "char_4122_grabds",
+        "alias": [],
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "",
+        "nation": "Yan",
         "position": "Ranged",
         "profession": "Supporter",
         "archetype": "Slower",
@@ -3690,7 +3792,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Unknown/Undisclosed",
-        "group": "Rainbow 6",
+        "group": "Team Rainbow",
         "nation": "None",
         "position": "Ranged",
         "profession": "Specialist",
@@ -3783,7 +3885,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Unknown/Undisclosed",
-        "group": "Rainbow 6",
+        "group": "Team Rainbow",
         "nation": "None",
         "position": "Ranged",
         "profession": "Sniper",
@@ -3968,6 +4070,23 @@
         "cost": [
             29,
             32
+        ],
+        "infected": "Yes"
+    },
+    "Ray": {
+        "charId": "char_4117_ray",
+        "alias": [],
+        "gender": "Female",
+        "race": "Cautus",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Hunter",
+        "rarity": 6,
+        "cost": [
+            17,
+            21
         ],
         "infected": "Yes"
     },
@@ -4662,7 +4781,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Unknown/Undisclosed",
-        "group": "Abyssal Hunter",
+        "group": "Abyssal Hunters",
         "nation": "Ægir",
         "position": "Melee",
         "profession": "Specialist",
@@ -4699,7 +4818,7 @@
         "alias": [],
         "gender": "Female",
         "race": "Ægir",
-        "group": "Abyssal Hunter",
+        "group": "Abyssal Hunters",
         "nation": "Ægir",
         "position": "Melee",
         "profession": "Specialist",
@@ -4908,6 +5027,25 @@
         ],
         "infected": "No"
     },
+    "Shu": {
+        "charId": "char_2025_shu",
+        "alias": [
+            "Bean"
+        ],
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "Sui",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Guardian",
+        "rarity": 6,
+        "cost": [
+            18,
+            22
+        ],
+        "infected": "No"
+    },
     "Nian": {
         "charId": "char_2014_nian",
         "alias": [
@@ -4976,7 +5114,7 @@
         "charId": "char_416_zumama",
         "alias": [],
         "gender": "Female",
-        "race": "Pythia",
+        "race": "Phidia",
         "group": "",
         "nation": "Sargon",
         "position": "Melee",
@@ -5015,7 +5153,7 @@
         ],
         "gender": "Female",
         "race": "Feline",
-        "group": "Blacksteel",
+        "group": "Blacksteel Worldwide",
         "nation": "Columbia",
         "position": "Melee",
         "profession": "Defender",
@@ -5186,6 +5324,23 @@
         ],
         "infected": "No"
     },
+    "Degenbrecher": {
+        "charId": "char_4116_blkkgt",
+        "alias": [],
+        "gender": "Female",
+        "race": "Caprinae",
+        "group": "Karlan Trade",
+        "nation": "Kjerag",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Sword",
+        "rarity": 6,
+        "cost": [
+            19,
+            23
+        ],
+        "infected": "No"
+    },
     "Blaze": {
         "charId": "char_017_huang",
         "alias": [],
@@ -5278,6 +5433,23 @@
             26
         ],
         "infected": "Yes"
+    },
+    "Zuo Le": {
+        "charId": "char_4121_zuole",
+        "alias": [],
+        "gender": "Male",
+        "race": "Phidia",
+        "group": "",
+        "nation": "Yan",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Musha",
+        "rarity": 6,
+        "cost": [
+            22,
+            26
+        ],
+        "infected": "No"
     },
     "Pallas": {
         "charId": "char_485_pallas",
@@ -5500,7 +5672,7 @@
         ],
         "gender": "Female",
         "race": "Unknown/Undisclosed",
-        "group": "Abyssal Hunter",
+        "group": "Abyssal Hunters",
         "nation": "Ægir",
         "position": "Melee",
         "profession": "Guard",
