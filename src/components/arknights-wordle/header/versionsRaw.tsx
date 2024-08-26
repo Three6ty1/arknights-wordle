@@ -5,6 +5,7 @@ export const versions = [
     content:
     `- There is now a ghost icon of the operators on mobile to make it easier for users to keep track of the rows and attributes
     - UI changes to make it clearer that the share string can be changed
+    - Reduced the hint breakpoints to 4 (Sort by rarity) and 6 (Sort by class)
     - Further smaller changes in UI. I refactored some old code, please report any visual bugs you come across.
     - I've found a new repo for operator information. 
     - Thank you to NikitaZero and the resources at the Arknights Terra Wiki.gg Discord server

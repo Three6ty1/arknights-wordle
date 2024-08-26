@@ -114,9 +114,9 @@ export default function HintOperatorList() {
               </>
             : 
               <>
-                <div className="flex flex-row flex-wrap justify-center">
-                  {amtGuesses >= HintBreakpoints.two.valueOf() &&
-                    Professsions.map((p) => (
+                {amtGuesses >= HintBreakpoints.two.valueOf() &&
+                  <div className="flex flex-row flex-wrap justify-center mb-2">
+                    {Professsions.map((p) => (
                       <button className={`tooltip p-[0.2rem] bg-${selectedProfession === p ? "higher" : "white"}`} data-tip={p} key={`${p} icon`}>
                         <Image
                           src={getProfessionIconUrl(p)}
@@ -129,7 +129,8 @@ export default function HintOperatorList() {
                         />
                       </button>
                     ))}
-                </div>
+                  </div>
+                }
                 {Object.entries(sortedRarityOperators)
                   .reverse()
                   .map((rarity) => (

@@ -206,7 +206,6 @@ export default function ArknightsWordle({
     const res = compareGuess(guess, pastGuesses, isNormalMode ? stats.operator : endlessOp)
 
     if (res.valid && res.guessResult != null) {
-      setError("");
       setIsInputDelay(true);
       // Insert the newest guess at the first index of the answer row array
       const newGuesses = [res.guessResult, ...pastGuesses];
@@ -214,9 +213,11 @@ export default function ArknightsWordle({
       if (isNormalMode) {
         localStorage.setItem("guesses", JSON.stringify(newGuesses));
         setGuesses(newGuesses);
+        setError("");
       } else {
         localStorage.setItem("endlessGuesses", JSON.stringify(newGuesses));
         setEndlessGuesses(newGuesses);
+        setEndlessError("")
       }
       
       // Prevent the user from being able to input new guesses with an input delay, and to let the winning animation play fully

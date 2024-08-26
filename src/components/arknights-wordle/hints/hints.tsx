@@ -9,8 +9,8 @@ import Theme from "./theme";
 import HighContrast from "./highContrast";
 
 export enum HintBreakpoints {
-  "one" = 5,
-  "two" = 8,
+  "one" = 4,
+  "two" = 6,
 }
 
 export default function Hints() {
