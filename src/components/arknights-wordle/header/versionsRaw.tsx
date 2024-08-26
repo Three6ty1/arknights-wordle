@@ -12,7 +12,7 @@ export const versions = [
     - Since I haven't been caught up in the story past the Reunion/Talulah arc, please submit some suggestions for nicknames/easter eggs you'd like to see
 
     - (Bug Report) Fixed logo being wonky on mobile
-    - (Bug Report) Fixed countdown timezone issues. (Sorry timezones suck to deal with and are confusing)
+    - (Bug Report) Fixed countdown timezone issues (Sorry, timezones suck to deal with and are confusing)
 
     - Added operators up to and including Shu's banner (+10)
     `,
