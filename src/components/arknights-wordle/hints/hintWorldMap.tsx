@@ -37,7 +37,7 @@ export default function HintWorldMap() {
   };
 
   return (
-    <>
+    <div className="mx-1">
       <div className="indicator flex">
         <button
           className="btn tooltip flex w-full items-center"
@@ -63,6 +63,6 @@ export default function HintWorldMap() {
           <button>close</button>
         </form>
       </dialog>
-    </>
+    </div>
   );
 }

@@ -22,8 +22,9 @@ export default function Hints() {
 
   return (
     <div className="flex w-full justify-center align-middle md:w-96 mt-3">
-      <div className="flex w-3/4 flex-row justify-center space-x-3">
-        <div className="dropdown">
+      {/** Can't have space-x because it will move not only the buttons but the dialog modal */}
+      <div className="flex md:w-3/4 flex-row justify-center">
+        <div className="dropdown mx-1">
           <div tabIndex={0} role="button" className="btn">
             <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14"/>

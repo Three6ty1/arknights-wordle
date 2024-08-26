@@ -24,10 +24,11 @@ export default function Search() {
         <SearchBar />
         {results.length > 0 && (
           <div
-            className={`absolute mt-[52px] py-2 max-h-[35vh] w-[80vw] md:max-h-[50vh] md:w-[30vw] 
+
+          className={`absolute mt-[52px] py-2 max-h-[35vh] md:max-h-[50vh] w-[80vw] sm:w-[475px]
                       flex flex-col overflow-x-hidden overflow-y-scroll no-scrollbar no-scrollbar::-webkit-scrollbar
-                      rounded-md bg-base-100 shadow-sm shadow-base-content
-                       ${searchFocused ? "z-[100]" : "hidden"}`}
+                      rounded-md bg-base-100 shadow-sm shadow-base-content 
+                      ${searchFocused ? "z-[100]" : "hidden"}`}
           >
             {results.map((op, index) => (
               <Result

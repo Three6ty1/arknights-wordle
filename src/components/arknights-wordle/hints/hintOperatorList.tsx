@@ -81,7 +81,7 @@ export default function HintOperatorList() {
   };
 
   return (
-    <>
+    <div className="mx-1">
       <div className="indicator">
         {showAlert && <span className="badge indicator-item bg-higher" />}
         <button
@@ -93,7 +93,7 @@ export default function HintOperatorList() {
         </button>
       </div>
       <dialog id="operator_list_modal" className="modal">
-        <div className="no-scrollbar no-scrollbar::-webkit-scrollbar modal-box flex h-4/5 max-w-[3/5vh] flex-col justify-items-center overflow-x-clip overflow-y-scroll">
+        <div className="no-scrollbar no-scrollbar::-webkit-scrollbar modal-box flex h-2/3 md:h-auto max-w-[3/5vh] flex-col justify-items-center overflow-x-clip overflow-y-scroll">
           <h1 className="mb-2 w-full text-xl custom-bold">
             {!isNormalMode ? "'Endless' " : ""}Operator List (Up to Shu)
           </h1>
@@ -157,6 +157,6 @@ export default function HintOperatorList() {
           <button>close</button>
         </form>
       </dialog>
-    </>
+    </div>
   );
 }
