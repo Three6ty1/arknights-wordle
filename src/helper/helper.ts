@@ -4,13 +4,13 @@ export function randomInteger(min: number, max: number) {
 }
 
 const E2_ICON_DIR =
-  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2/icons/assets/torappu/dynamicassets/arts/charavatars/elite/";
+  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2.1/en/assets/dyn/arts/charavatars/elite/";
   
 const ICON_DIR =
-  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2/icons/assets/torappu/dynamicassets/arts/charavatars/"
+  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2.1/en/assets/dyn/arts/charavatars/"
 
 const PROFESSION_ICON_DIR =
-  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2/icons/classes/";
+  "https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons-2.1/en/assets/class_icons/";
   
 export enum Range {
   Lower = "Lower",
