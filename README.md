@@ -1,23 +1,17 @@
 # Arknights Wordle
+Wordle but for Arknights! Name could be improved but oh well.
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a passion project of mine which initially started as a personal project I did while I was in uni. 
 
-Icons from [Flowbite](https://flowbite.com/icons/)
+#### Tech stack:
+- [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+- Components from DaisyUI with TailwindCSS, Icons from [Flowbite](https://flowbite.com/icons/)
+- SupaBase for DB hosting managed by Prisma
+- Deployed using AWS Amplify
+- DNS with AWS Route53 and Porkbun for custom domain
 
-## What's next? How do I make an app with this?
-
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
-
-Run ```docker compose up --build```
+#### Assets:
+- [Repo that updates the icons and database](https://github.com/Three6ty1/ak-wordle-icons-2.1/tree/master)
+- Datamined source repos
+  - [Icons](https://github.com/ArknightsAssets/ArknightsAssets2)
+  - [Character Info](https://github.com/Kengxxiao/ArknightsGameData_YoStar)

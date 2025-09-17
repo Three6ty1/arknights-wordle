@@ -4,7 +4,7 @@ export const versions = [
     date: "17th September 2025",
     content:
     `- New operator db repo
-    - Refreshed SSL certificate for website for another year (Thank you for letting me know on Github). Will sort out getting this automated.
+    - Refreshed SSL certificate for website for another year (Thank you for letting me know). Will sort out getting this automated.
     - Added functionality to automatically update the database with new operators and icons
     - Monstr banner should automatically update, but we'll see about that
     - Thank you for playing the game! I've become a full-time white collar worker since the last time I updated the game. Hopefully the new improvements means that the game can continue even if I peace out for another year :)
