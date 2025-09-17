@@ -1,5 +1,18 @@
 export const versions = [
   {
+    version: "3.0.0",
+    date: "17th September 2025",
+    content:
+    `- New operator db repo
+    - Added functionality to automatically update the database with new operators and icons
+    - Monstr banner should automatically update, but we'll see about that
+    - Thank you for playing the game! I've become a full-time white collar worker since the last time I updated the game. Hopefully the new improvements means that the game can continue even if I peace out for another year :)
+    
+    - Added operators up to Necrass banner (+58)
+    `,
+    added: [['char_4136_phonor', 1], ['char_4130_luton', 4], ['char_4165_ctrail', 4], ['char_1036_fang2', 5], ['char_194_leto', 5], ['char_4023_rfalcn', 5], ['char_4052_surfer', 5], ['char_4079_haini', 5], ['char_4081_warmy', 5], ['char_4114_harold', 5], ['char_4119_wanqin', 5], ['char_4122_grabds', 5], ['char_4124_iana', 5], ['char_4125_rdoc', 5], ['char_4126_fuze', 5], ['char_4131_odda', 5], ['char_4137_udflow', 5], ['char_4139_papyrs', 5], ['char_4140_lasher', 5], ['char_4142_laios', 5], ['char_4143_sensi', 5], ['char_4144_chilc', 5], ['char_4147_mitm', 5], ['char_4148_philae', 5], ['char_4151_tinman', 5], ['char_4155_talr', 5], ['char_4162_cathy', 5], ['char_4163_rosesa', 5], ['char_4164_tecno', 5], ['char_4171_wulfen', 5], ['char_4172_xingzh', 5], ['char_4173_nowell', 5], ['char_4177_brigid', 5], ['char_446_aroma', 5], ['char_487_bobb', 5], ['char_1019_siege2', 6], ['char_1035_wisdel', 6], ['char_1038_whitw2', 6], ['char_1039_thorn2', 6], ['char_1040_blaze2', 6], ['char_1502_crosly', 6], ['char_2025_shu', 6], ['char_2026_yu', 6], ['char_4010_etlchi', 6], ['char_4026_vulpis', 6], ['char_4058_pepe', 6], ['char_4116_blkkgt', 6], ['char_4117_ray', 6], ['char_4121_zuole', 6], ['char_4123_ela', 6], ['char_4132_ascln', 6], ['char_4133_logos', 6], ['char_4134_cetsyr', 6], ['char_4138_narant', 6], ['char_4141_marcil', 6], ['char_4145_ulpia', 6], ['char_4146_nymph', 6], ['char_450_necras', 6]],
+  },
+  {
     version: "2.2.0",
     date: "27th August 2024",
     content:
