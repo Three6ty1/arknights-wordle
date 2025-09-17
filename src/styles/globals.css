@@ -1,10 +1,55 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  exclude: rootscrollgutter;
+}
+
+@theme {
+    --animate-flip: flip 0.75s ease-out forwards;
+    --animate-win: win 2.5s linear forwards;
+    --animate-slow-spin: spin 4s linear infinite;
+    --animate-shake: shake 0.2s ease-out forwards;
+    --animate-appear: appear 1s linear forwards;
+
+    --font-sans: "Azbuka W01 Condensed", sans;
+
+    --color-incorrect: 'var(--color-incorrect)';
+    --color-higher: 'var(--color-higher)';
+    --color-lower: 'var(--color-lower)';
+    --color-half: 'var(--color-half)';
+    --color-correct: 'var(--color-correct)';
+}
+
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    prefersdark: false;
+    --color-base-200: "#edeeee";
+    --color-success: "#6BBF59";
+    --color-info: "#009E73",
+}
+
+@plugin "daisyui/theme" {
+    name: "dark";
+    default: false;
+    prefersdark: true;
+    --color-base-content: "white";
+    --color-neutral-content: "white";
+    --color-primary-content: "white";
+    --color-secondary-content: "white";
+    --color-base-100: "#15191e";
+    --color-base-200: "black";
+    --color-success: "#6BBF59";
+    --color-info: "#009E73";
+}
 
 @font-face {
     font-family: "Azbuka W01 Condensed";
-    src: url("~/src/fonts/Azbuka-W01-Condensed/Azbuka-W01-Condensed.ttf") format("truetype");
+    src: url("../fonts/Azbuka-W01-Condensed/Azbuka-W01-Condensed.ttf") format("truetype");
 }
 
 @layer utilities {

@@ -1,6 +1,6 @@
 import VersionLog from "./versions";
 import React from "react";
-import { GameModeContext } from "~/pages";
+import { GameModeContext } from "~/pages/";
 import NextCountdown from "./nextCountdown";
 import { LogoBlack } from "./logo";
 

@@ -310,7 +310,7 @@ export default function ArknightsWordle({
       </Head>
       <main
         id="ak-wordle-root"
-        className={`justify-top flex h-full w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
+        className={`justify-top flex h-screen w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
       >
         <GameModeContext.Provider value={{playing, allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset, isInputDelay}}>
           <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>

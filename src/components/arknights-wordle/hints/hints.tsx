@@ -1,5 +1,5 @@
 import React from "react";
-import HintHelp from "./hintHelp";
+import HelpMenu from "./helpMenu";
 import HintOperatorList from "./hintOperatorList";
 import HintWorldMap from "./hintWorldMap";
 import EndlessSwitch from "./endlessSwitch";
@@ -7,6 +7,8 @@ import Statistics from "./statistics";
 import SubmitBug from "./submitBug";
 import Theme from "./theme";
 import HighContrast from "./highContrast";
+import HelpMenuModal from "./helpMenuModal";
+import StatisticsModal from "./statisticsModal";
 
 export enum HintBreakpoints {
   "one" = 4,
@@ -31,13 +33,17 @@ export default function Hints() {
             </svg>
           </div>
           <div tabIndex={0} className="dropdown-content bg-base-100 rounded-md z-[100] w-fit mt-1 p-1 shadow-sm shadow-neutral-content space-y-1">
-            <HintHelp />
+            <HelpMenu />
             <Statistics />
             <Theme />
             <HighContrast />
             <SubmitBug />
           </div>
         </div>
+        {/**If we place modals within the dropdown, the drop down disappearing will cause the modal element to also disappear */}
+        <HelpMenuModal />
+        <StatisticsModal />
+
         <HintOperatorList />
         <HintWorldMap />
         <EndlessSwitch />
