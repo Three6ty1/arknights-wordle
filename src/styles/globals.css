@@ -32,7 +32,7 @@
     --color-correct: 'var(--color-correct)';
 
     /* Hack to make it so that the search bar stays the same colour to the base of the outlines as the theme changes */
-    --color-search-bar: color-mix(in oklab, var(--color-base-content) 20%, #0000)
+    --color-neutral-highlight: color-mix(in oklab, var(--color-base-content) 20%, #0000)
 }
 
 @plugin "daisyui/theme" {

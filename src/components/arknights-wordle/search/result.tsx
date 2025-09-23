@@ -42,7 +42,7 @@ export default function Result({ operator }: Props) {
 
   return (
     <button
-      className="m-1 flex w-full flex-row items-center self-center"
+      className="py-1.5 flex w-full flex-row items-center self-center hover:bg-neutral-highlight hover:cursor-pointer"
       onClick={(e) => handleClick(e)}
       id={String(operator.id)}
     >
