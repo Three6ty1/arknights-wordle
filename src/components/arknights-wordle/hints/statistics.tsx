@@ -1,5 +1,3 @@
-import HistoryGraph from "../share/historyGraph";
-
 export default function Statistics() {
   return (
     <>

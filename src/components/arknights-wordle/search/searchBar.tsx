@@ -91,7 +91,7 @@ export default function SearchBar() {
         onChange={(e) => handleChange(e.target.value)}
         onKeyDown={(e) => handleKey(e)}
         placeholder="Start typing an operator name"
-        className="input input-bordered w-[80vw] sm:w-[475px] text-center"
+        className="input input-lg text-[1rem] input-bordered focus:border-search-bar focus:outline-search-bar w-[80vw] sm:w-[475px] text-center"
         type="text"
         disabled={isInputDelay}
       />
