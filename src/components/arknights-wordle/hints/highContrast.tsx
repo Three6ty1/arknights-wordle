@@ -17,7 +17,7 @@ export default function HighContrast() {
   const {highContrast, handleContrastChange} = React.useContext(ThemeContext)
 
   return (
-    <label className="swap swap-rotate justify-start custom-dropdown-items">
+    <label className="swap swap-rotate justify-start custom-dropdown-items flex">
       {/* this hidden checkbox controls the state */}
       <input
         id="contrast-checkbox"

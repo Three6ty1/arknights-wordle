@@ -47,8 +47,8 @@ export default function SearchBar() {
       if (
         op_lower.startsWith(inputLower) ||
         op_lower.replaceAll("'", "").startsWith(inputLower.replaceAll("'", "")) ||
-        op_lower.replace("ł", "l").startsWith(inputLower) || // special cases for Pozyomka and Mylnar
-        op_lower.replace("ë", "yo").startsWith(inputLower)
+        op_lower.replaceAll(" ", "").startsWith(inputLower) ||
+        op_lower.replace(".", "").startsWith(inputLower)
       ) {
         results.push(op)
       } else {
