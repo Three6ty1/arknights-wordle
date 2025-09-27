@@ -18,7 +18,10 @@ type Props = {
 export default function AnswerRow({ guess, index }: Props) {
   // Get the current guess through local storage to persist animation logic
 
-  const {guesses, endlessGuesses, isNormalMode} = React.useContext(GameModeContext)
+  const {isNormalMode, normalGameModeContext, endlessGameModeContext} = React.useContext(GameModeContext)
+
+  const {guesses} = normalGameModeContext;
+  const {endlessGuesses} = endlessGameModeContext;
 
   let divStyle = "answer-row flex flex-col p-1 leading-5 text-white";
 

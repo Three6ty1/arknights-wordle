@@ -5,7 +5,10 @@ import type { GuessResult } from "~/helper/compare"
 import AnswerRow from "./answerRow"
 
 export default function PastGuesses() {
-  const {isNormalMode, guesses, endlessGuesses} = React.useContext(GameModeContext)
+  const {isNormalMode, normalGameModeContext, endlessGameModeContext} = React.useContext(GameModeContext)
+
+  const {guesses} = normalGameModeContext;
+  const {endlessGuesses} = endlessGameModeContext;
 
   return (
     <div className="w-full">

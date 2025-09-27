@@ -71,7 +71,7 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
 }
 
 // Compare the guess with the operator of the day
-export const compareGuess = (guessOp: Operator, pastGuesses: GuessResult[], correctOp: Operator):CompareResponse => {
+export const compareGuess = (guessOp: Operator, pastGuesses: GuessResult[], correctOp: Operator): CompareResponse => {
     const guesses = pastGuesses.map((guess) => guess.name);
     
     if (guesses.includes(guessOp.name)) {

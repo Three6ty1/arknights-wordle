@@ -25,7 +25,9 @@ const operatorListIcon = () => (
 
 export default function HintOperatorList() {
 
-  const {allOperators, guesses, isNormalMode, endlessGuesses} = React.useContext(GameModeContext)
+  const {allOperators, isNormalMode, normalGameModeContext, endlessGameModeContext} = React.useContext(GameModeContext)
+  const {guesses} = normalGameModeContext;
+  const {endlessGuesses} = endlessGameModeContext;
   const {highContrast, darkMode} = React.useContext(ThemeContext)
 
   const amtGuesses = isNormalMode ? guesses.length : endlessGuesses.length

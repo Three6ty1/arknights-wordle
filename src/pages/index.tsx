@@ -18,18 +18,28 @@ import SearchAndShare from "~/components/arknights-wordle/searchAndShare";
 import SearchError from "~/components/arknights-wordle/search/searchError";
 
 interface GameModeContextValue {
-  playing: boolean,
   allOperators: Operator[],
-  stats: Stats,
-  guesses: GuessResult[],
-  endlessGuesses: GuessResult[],
-  endlessPlaying: boolean,
   isNormalMode: boolean,
   setIsNormalMode: (v: boolean) => void,
+  stats: Stats,
   handleSubmit: (guess: Operator, callback: (success: boolean) => void) => void, 
-  endlessOp: Operator,
-  handleEndlessReset: () => void,
   isInputDelay: boolean,
+  normalGameModeContext: NormalGameModeContextValue,
+  endlessGameModeContext: EndlessGameModeContextValue;
+}
+
+interface NormalGameModeContextValue {
+  guesses: GuessResult[],
+  playing: boolean,
+}
+
+interface EndlessGameModeContextValue {
+  endlessOp: Operator,
+  endlessGuesses: GuessResult[],
+  endlessPlaying: boolean,
+  endlessGaveUp: boolean,
+  handleEndlessReset: () => void,
+  handleEndlessRevealAnswer: () => void,
 }
 
 interface PlayHistoryContextValue {
@@ -57,7 +67,6 @@ type SharePreferenceType = {
 export const GameModeContext = React.createContext(undefined as unknown as GameModeContextValue);
 export const PlayHistoryContext = React.createContext<PlayHistoryContextValue>({playHistory: {}});
 export const ThemeContext = React.createContext(undefined as unknown as ThemeContextValue);
-
 export const SharePreferenceContext = React.createContext(undefined as unknown as SharePreferenceContext);
 
 export default function ArknightsWordle({
@@ -72,6 +81,8 @@ export default function ArknightsWordle({
 
   const [endlessGuesses, setEndlessGuesses] = React.useState<GuessResult[]>([]);
   const [endlessPlaying, setEndlessPlaying] = React.useState(true);
+  const [endlessGaveUp, setEndlessGaveUp] = React.useState(false);
+
   const [isNormalMode, setIsNormalMode] = React.useState(true);
   const [endlessOp, setEndlessOp] = React.useState<Operator>(undefined as unknown as Operator)
 
@@ -263,6 +274,15 @@ export default function ArknightsWordle({
 
     setEndlessGuesses([]);
     localStorage.setItem("endlessGuesses", JSON.stringify([]));
+
+    setEndlessGaveUp(false);
+  }
+
+  const handleEndlessRevealAnswer = () => {
+    if (endlessPlaying) {
+      handleSubmit(endlessOp, () => {});
+      setEndlessGaveUp(true);
+    }
   }
 
   const handleThemeChange = (e: HTMLInputElement) => {
@@ -299,6 +319,31 @@ export default function ArknightsWordle({
     }
   }
 
+  const normalGameModeContext: NormalGameModeContextValue = {
+    guesses,
+    playing
+  }
+
+  const endlessGameModeContext: EndlessGameModeContextValue = {
+    endlessGuesses,
+    endlessPlaying,
+    endlessOp, 
+    endlessGaveUp,
+    handleEndlessReset, 
+    handleEndlessRevealAnswer, 
+  }
+
+  const gameModeContext: GameModeContextValue = {
+    allOperators, 
+    stats,   
+    isNormalMode, 
+    setIsNormalMode, 
+    handleSubmit, 
+    isInputDelay,
+    normalGameModeContext,
+    endlessGameModeContext
+  }
+
   return (
     <>
       <Head>
@@ -312,7 +357,7 @@ export default function ArknightsWordle({
         id="ak-wordle-root"
         className={`justify-top flex h-screen w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
       >
-        <GameModeContext.Provider value={{playing, allOperators, stats, guesses, endlessGuesses, endlessPlaying, isNormalMode, setIsNormalMode, handleSubmit, endlessOp, handleEndlessReset, isInputDelay}}>
+        <GameModeContext.Provider value={gameModeContext}>
           <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
             <Info /> {/** Info needs theme context due to darkmode logo */}
             <PlayHistoryContext.Provider value={{playHistory}}>

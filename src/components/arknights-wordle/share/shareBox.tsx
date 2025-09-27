@@ -17,7 +17,7 @@ const shareIcon = () => (
 export default function ShareBox({ gameId }: Props) {
   const [shareString, setShareString] = React.useState("");
 
-  const {guesses} = React.useContext(GameModeContext)
+  const {guesses} = React.useContext(GameModeContext).normalGameModeContext;
   const {highContrast} = React.useContext(ThemeContext)
   const {sharePreference } = React.useContext(SharePreferenceContext)
 

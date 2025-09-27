@@ -12,8 +12,11 @@ type Props = {
 export default function Result({ operator }: Props) {
   const [pastGuesses, setPastGuesses] = React.useState<string[]>([]);
 
-  const {guesses, endlessGuesses, isNormalMode, handleSubmit} = React.useContext(GameModeContext)
+  const {isNormalMode, handleSubmit, normalGameModeContext, endlessGameModeContext} = React.useContext(GameModeContext)
   const {setResults, setInput} = React.useContext(SearchContext)
+
+  const {guesses} = normalGameModeContext;
+  const {endlessGuesses} = endlessGameModeContext;
 
   // Past guesses here to make the text of a previously guessed operator blue
   React.useEffect(() => {
