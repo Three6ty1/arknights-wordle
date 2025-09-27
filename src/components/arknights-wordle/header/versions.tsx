@@ -49,14 +49,6 @@ export default function VersionLog() {
               {currentVersion.link && 
                 <a className="text-left underline text-blue-500" href={currentVersion.link.href} target="_blank">{currentVersion.link.text}</a>
               }
-              {currentVersion.other &&
-                <div tabIndex={1} className="collapse bg-none rounded-none mt-2 p-0 h-5 focus:h-full">
-                  <div className="collapse-title underline min-h-0 h-5 p-0 text-left">Yapping (Comments)</div>
-                  <div className="collapse-content m-0 p-0 mt-2">
-                    <p className="whitespace-pre-line float-left text-left">{currentVersion.other}</p>
-                  </div>
-                </div>
-              }
             </div>
           ))}
       </div>
