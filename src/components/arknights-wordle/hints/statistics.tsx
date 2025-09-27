@@ -2,7 +2,7 @@ export default function Statistics() {
   return (
     <>
       <button
-        className="indicator-item custom-dropdown-items space-x-2 "
+        className="custom-dropdown-items space-x-2 "
         onClick={() =>
           (
             document.getElementById("stats_modal") as HTMLDialogElement

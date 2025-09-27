@@ -8,7 +8,7 @@ export default function HelpMenu() {
   return (
     <>
       <button
-        className="indicator-item custom-dropdown-items space-x-2"
+        className="custom-dropdown-items space-x-2"
         data-tip="Help and Info"
         onClick={() =>
           (

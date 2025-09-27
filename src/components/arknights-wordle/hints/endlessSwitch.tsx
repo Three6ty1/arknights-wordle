@@ -16,16 +16,8 @@ export default function EndlessSwitch() {
   const buttonClass = highContrast ? "btn-info" : "btn-success"
 
   return (
-    /*
-    <div
-    className={`indicator-item tooltip m-2 before:whitespace-pre-wrap ${animate ? "animate-shake" : ""}`}
-    data-tip={playing ? "Endless Mode is\nlocked until the\nDaily Game is\nfinished" : "Endless Mode"}
-    onClick={() => {if (playing) {setAnimate(true); setTimeout(() =>setAnimate(false), 200);}}}
-    >
-    </div>
-    */
     <button 
-      className={"btn indicator-item tooltip flex items-center mx-1 " + (!isNormalMode ? buttonClass : "")}
+      className={"btn tooltip flex items-center mx-1 " + (!isNormalMode ? buttonClass : "")}
       data-tip="Endless Mode"
       // disabled={playing}
       onClick={() => setIsNormalMode(!isNormalMode)}

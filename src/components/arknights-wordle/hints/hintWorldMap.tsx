@@ -38,15 +38,13 @@ export default function HintWorldMap() {
 
   return (
     <div className="mx-1">
-      <div className="indicator flex">
-        <button
-          className="btn tooltip flex w-full items-center"
-          data-tip="Regions and Races"
-          onClick={() => handleClick()}
-        >
-          {worldMapIcon()}
-        </button>
-      </div>
+      <button
+        className="btn tooltip flex w-full items-center"
+        data-tip="Regions and Races"
+        onClick={() => handleClick()}
+      >
+        {worldMapIcon()}
+      </button>
       <dialog id="world_map_modal" className="modal overflow-visible">
         <div className="modal-box flex flex-col justify-start max-w-[95vw] md:w-3/5 h-2/3 mt-5 p-2 md:p-6 no-scrollbar no-scrollbar::-webkit-scrollbar ">
           <div className="text-lg custom-bold">Regions and Races</div>
