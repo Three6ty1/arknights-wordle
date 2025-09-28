@@ -23,9 +23,9 @@ export default function EndlessSwitch() {
   const buttonClass = highContrast ? "btn-info" : "btn-success"
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row space-x-2">
       <button 
-        className={`btn tooltip flex items-center mx-1 ${!isNormalMode ? buttonClass : ""}`}
+        className={`hint-tooltip-buttons ${!isNormalMode ? buttonClass : ""}`}
         data-tip="Endless Mode"
         // disabled={playing}
         onClick={() => setIsNormalMode(!isNormalMode)}
@@ -35,7 +35,7 @@ export default function EndlessSwitch() {
 
       {!isNormalMode && endlessPlaying &&
         <button
-          className={`btn tooltip flex items-center mx-1`}
+          className={`hint-tooltip-buttons`}
           data-tip="Reveal the answer"
           onClick={() => handleEndlessRevealAnswer()}
         >

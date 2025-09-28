@@ -83,11 +83,11 @@ export default function HintOperatorList() {
   };
 
   return (
-    <div className="mx-1">
+    <>
       <div className="indicator">
         {showAlert && <span className="indicator-item badge badge-xs bg-higher" />}
         <button
-          className={`btn tooltip flex w-full items-center ${!isNormalMode && (highContrast ? "btn-info text-white" : "btn-success text-white")}`}
+          className={`hint-tooltip-buttons ${!isNormalMode && (highContrast ? "btn-info text-white" : "btn-success text-white")}`}
           data-tip={(!isNormalMode ? "'Endless' " : "") + "Operator List"}
           onClick={() => handleClick()}
         >
@@ -159,6 +159,6 @@ export default function HintOperatorList() {
           <button>close</button>
         </form>
       </dialog>
-    </div>
+    </>
   );
 }

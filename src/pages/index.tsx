@@ -132,15 +132,8 @@ export default function ArknightsWordle({
         (!("data-theme" in localStorage) &&
           window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
-        document.getElementById("theme-checkbox")?.setAttribute("checked", "");
-        document
-          .getElementById("ak-wordle-root")
-          ?.setAttribute("data-theme", "dark");
+        document.getElementById("ak-wordle-root")?.setAttribute("data-theme", "dark");
         setDarkMode(true);
-      } else {
-        document
-          .getElementById("ak-wordle-root")
-          ?.setAttribute("data-theme", "light");
       }
     };
 
@@ -200,10 +193,10 @@ export default function ArknightsWordle({
       setSharePreference(sp)
     }
 
+    initTheme();
     initPlayHistory();
     initEndless();
     initGuesses();
-    initTheme();
     initHighContrast();
     initSharePreference();
 
@@ -286,12 +279,15 @@ export default function ArknightsWordle({
   }
 
   const handleThemeChange = (e: HTMLInputElement) => {
-    const theme = e.checked ? "dark" : "light";
-    localStorage.setItem("data-theme", theme);
-    document
-      .getElementById("ak-wordle-root")
-      ?.setAttribute("data-theme", theme);
-    setDarkMode(theme === "dark");
+    const theme = e.checked ? "light" : "dark";
+    var newTheme = "light"
+    if (theme === "light") {
+      newTheme = "dark"
+    }
+
+    localStorage.setItem("data-theme", newTheme);
+    document.getElementById("ak-wordle-root")?.setAttribute("data-theme", newTheme);
+    setDarkMode(newTheme === "dark");
   };
 
   const handleContrastChange = (e: HTMLInputElement) => {
@@ -344,6 +340,13 @@ export default function ArknightsWordle({
     endlessGameModeContext
   }
 
+  const themeContext: ThemeContextValue = {
+    darkMode,
+    handleThemeChange,
+    highContrast,
+    handleContrastChange
+  }
+
   return (
     <>
       <Head>
@@ -356,9 +359,10 @@ export default function ArknightsWordle({
       <main
         id="ak-wordle-root"
         className={`justify-top flex h-screen w-full flex-col items-center p-5 pt-10 text-center align-middle font-sans ` + (highContrast ? "theme-high-contrast" : "theme-default")}
+        data-theme="light"
       >
         <GameModeContext.Provider value={gameModeContext}>
-          <ThemeContext.Provider value={{darkMode, handleThemeChange, highContrast, handleContrastChange}}>
+          <ThemeContext.Provider value={themeContext}>
             <Info /> {/** Info needs theme context due to darkmode logo */}
             <PlayHistoryContext.Provider value={{playHistory}}>
               <Hints />

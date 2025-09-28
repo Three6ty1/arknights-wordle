@@ -37,9 +37,9 @@ export default function HintWorldMap() {
   };
 
   return (
-    <div className="mx-1">
+    <>
       <button
-        className="btn tooltip flex w-full items-center"
+        className="hint-tooltip-buttons"
         data-tip="Regions and Races"
         onClick={() => handleClick()}
       >
@@ -61,6 +61,6 @@ export default function HintWorldMap() {
           <button>close</button>
         </form>
       </dialog>
-    </div>
+    </>
   );
 }

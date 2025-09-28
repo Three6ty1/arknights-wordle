@@ -6,13 +6,13 @@ export default function Theme() {
   const { darkMode, handleThemeChange } = React.useContext(ThemeContext)
   
   return (
-    <label className="swap swap-rotate justify-start custom-dropdown-items space-x-2 flex">
+    <label className={`swap swap-rotate justify-start custom-dropdown-items space-x-2 flex`}>
       {/* this hidden checkbox controls the state */}
       <input
         id="theme-checkbox"
         type="checkbox"
-        className="theme-controller hidden"
-        value="dark"
+        checked={darkMode}
+        className={`theme-controller hidden`}
         onClick={(e) => handleThemeChange(e.target as HTMLInputElement)}
       />
       <svg className="swap-on h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
