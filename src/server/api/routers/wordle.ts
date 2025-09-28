@@ -45,7 +45,13 @@ export const getStats = async() => {
 }
 
 export const getAllOperators = async() => {
-    return await wordle.getAllOperators(db);
+    // Sort with language conventions and ignoring uppercase
+    const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
+    const allOperators = await wordle.getAllOperators(db);
+
+    allOperators.sort((prev, curr) => collator.compare(prev.name, curr.name))
+
+    return allOperators;
 }
 
 export type Stats = {
