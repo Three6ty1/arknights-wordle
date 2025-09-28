@@ -5,6 +5,7 @@ import { HintBreakpoints } from "./hints";
 import Image from "next/image";
 import type { Operator } from "@prisma/client";
 import { GameModeContext, ThemeContext } from "~/pages/index";
+import { startsWith } from "zod";
 
 const Professsions = [
   "Vanguard",
@@ -23,8 +24,9 @@ const operatorListIcon = () => (
   </svg>
 )
 
-export default function HintOperatorList() {
+const ALPHABET_UPPERCASE = ['#', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
+export default function HintOperatorList() {
   const {allOperators, isNormalMode, normalGameModeContext, endlessGameModeContext} = React.useContext(GameModeContext)
   const {guesses} = normalGameModeContext;
   const {endlessGuesses} = endlessGameModeContext;
@@ -33,8 +35,7 @@ export default function HintOperatorList() {
   const amtGuesses = isNormalMode ? guesses.length : endlessGuesses.length
 
   const [showAlert, setShowAlert] = React.useState(false);
-  const [selectedProfession, setSelectedProfession] =
-    React.useState<string>("");
+  const [selectedProfession, setSelectedProfession] = React.useState<string>("");
 
   React.useEffect(() => {
     const initAlerts = () => {
@@ -102,7 +103,7 @@ export default function HintOperatorList() {
           <div className="flex w-full flex-row flex-wrap justify-center">
             {/**
              * If under breakpoint 1
-             *      List all operators in alphabetical
+             *      List all operators in alphabetical (default)
              * Else
              *      If over breakpoint 2
              *          Display the operator class filters
@@ -110,9 +111,20 @@ export default function HintOperatorList() {
              *      Else
              *          List all operators sorted in rarity
              */}
-            {amtGuesses < HintBreakpoints.one.valueOf() ?
+            {amtGuesses < HintBreakpoints.one.valueOf() ? 
               <>
-                {allOperators.map((operator) => (<HintListIcon key={`${operator.name} list icon`} operator={operator} />))}
+                {allOperators.map((operator, index) => {
+                  var firstLetter = operator.name.charAt(0)
+                  if (!/[A-Z]/.test(firstLetter) || allOperators[index - 1].name.startsWith(firstLetter)) {
+                    return (
+                      <HintListIcon key={`${operator.name} list icon`} operator={operator} />
+                    )
+                  }
+
+                  return (
+                    <HintListIcon key={`${operator.name} list icon`} operator={operator} letterLabel={true} />
+                  )
+                })}
               </>
             : 
               <>
