@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 // Inclusive of min, Exclusive of max
 export function randomInteger(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
